@@ -22,7 +22,6 @@
   };
 
   const setTheme = (theme) => {
-    console.log("theme", theme);
     if (theme === "auto") {
       document.documentElement.setAttribute(
         "data-bs-theme",
@@ -36,6 +35,7 @@
     let resolvedTheme = theme;
     // 动态切换图标
     const iconPathPrefix = `/images/${resolvedTheme}/`;
+    console.log("theme", iconPathPrefix);
 
     // 替换所有具有相同类名的图标
     const updateIcons = (className, iconName) => {

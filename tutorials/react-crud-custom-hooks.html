@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="/css/styles.css" />
     <meta name="theme-color" content="#712cf9" />
+    <link rel="shortcut icon" href="/images/vane.svg" type="image/x-icon" />
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -194,6 +195,7 @@
               <div
                 class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
               >
+                <img src="/images/tutorials/react-crud-custom-hooks.png" />
                 <div class="col p-4 d-flex flex-column position-static">
                   <strong class="d-inline-block mb-2 text-primary-emphasis"
                     >World</strong
@@ -212,27 +214,13 @@
                     <svg class="bi"><use xlink:href="#chevron-right" /></svg>
                   </a>
                 </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg
-                    class="bd-placeholder-img"
-                    width="200"
-                    height="250"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Thumbnail
-                    </text>
-                  </svg>
-                </div>
+                <div class="col-auto d-none d-lg-block"></div>
               </div>
             </div>
             <div class="col-md-6">
+              <div class="d-grid gap-2 mb-3">
+                <button class="btn btn-danger" type="button">课程大䋞</button>
+              </div>
               <div id="content"></div>
             </div>
           </div>
@@ -253,7 +241,6 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/marked/14.1.0/marked.min.js"></script>
     <script>
       const md = `
-              课程大纲：
               ├── 01-课程介绍
               ├── 02-自定义 Hook 简介
               ├── 03-useState用法回顾
