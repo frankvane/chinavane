@@ -1,11 +1,479 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chinavanes.com</title>
+    <script src="/js/color-modes.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="chinavane, a website for sharing knowledge"
+    />
+    <meta name="author" content="chinavane,子心" />
+    <title>chinavane.com</title>
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta name="theme-color" content="#712cf9" />
   </head>
   <body>
-    <h1>chinavanes.com</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+        />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        />
+      </symbol>
+    </svg>
+
+    <div
+      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
+    >
+      <button
+        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="Toggle theme (auto)"
+      >
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+          <use href="#circle-half"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul
+        class="dropdown-menu dropdown-menu-end shadow"
+        aria-labelledby="bd-theme-text"
+      >
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="light"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#sun-fill"></use>
+            </svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="dark"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center active"
+            data-bs-theme-value="auto"
+            aria-pressed="true"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#circle-half"></use>
+            </svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <header data-bs-theme="dark">
+      <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4>关于我们</h4>
+              <p class="text-body-secondary">
+                <b>风向标</b>，一个致力于提供最新互联网技术的网站。<br />
+                <b>子心</b
+                >，深耕互联网20多年，从业务到需求、从需求到产品、从产品到设计、从设计到前端、从前端到开发、从开发到测试、从测试到运维、从运维到客服，全方位熟悉互联网全流程。
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>联系我们</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">微信：chinavane_2008</a></li>
+                <li>
+                  <a href="#" class="text-white"
+                    >邮箱：chinavane_2008@163.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <svg
+              t="1725506806828"
+              class="icon"
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              p-id="5105"
+              width="30"
+              height="30"
+            >
+              <path
+                d="M608.7552 459.4944h128.96l128.9088 128.9472-128.9088 136.704H608.7552v64.9984a96.6912 96.6912 0 1 1-193.3696 0v-64.9984H157.4912V459.4944h257.8944v-59.5456H286.4128L157.4912 266.0992l128.9216-128.9216h580.2112v262.7712H608.7552v59.5456zM479.808 790.144a32.2432 32.2432 0 0 0 64.4736 0v-64.9984h-64.4736v64.9984zM221.9392 523.9808v139.6608h489.0624l64.4864-75.1744-64.4864-64.4864H221.9392z m257.8688-64.4864h64.4736v-59.5456h-64.4736v59.5456z m322.368-119.04V201.6384H313.1136l-64.4608 64.4608 64.4608 74.4064h102.272v-0.7808h193.3696v0.7808H802.176z"
+                p-id="5106"
+                fill="#ff6a00"
+              ></path>
+            </svg>
+            <strong style="font-size: 1.75rem">风向标</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-5 container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">React Custom Hooks 实战课程</h1>
+            <h2>打造通用 CRUD Hook</h2>
+            <p class="text-body-secondary">
+              帮助开发者深入理解并掌握React自定义Hooks的使用技巧，从基础的useState和useEffect开始，逐步介绍了如何构建更复杂的自定义Hooks来处理状态管理、数据获取、异步操作等。<br />
+              课程内容还包括了如何使用Hooks来实现分页、筛选、排序、导入导出数据等功能，并通过具体的业务场景如用户管理来实践这些技术。<br />
+              最终，学员将学会如何构建一个全面的useCRUD
+              Hook，能够处理常见的增删查改操作，并将其应用到复合组件中，实现无限滚动、搜索、编辑、删除等复杂功能。<br />
+            </p>
+            <p class="text-body-secondary">
+              <img src="/images/clock.svg" /> 8小时15分，<img
+                src="/images/chapter.svg"
+              />
+              共55个章节，<img src="/images/download.svg" />
+              <a href="https://pan.baidu.com/s/1oWDbpf8bSrULoIItImVCEw?pwd=vane"
+                >点击下载</a
+              >
+            </p>
+            <p>
+              <a
+                href="/tutorials/react-crud-custom-hooks.html"
+                class="btn btn-primary my-2"
+                >查看详情</a
+              >
+
+              <button
+                type="button"
+                class="btn btn-secondary my-2"
+                data-bs-toggle="modal"
+                data-bs-target="#video-player-modal"
+                onclick="playVideo('react-custom-hooks')"
+              >
+                观看介绍
+              </button>
+            </p>
+          </div>
+
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <img
+              src="./images/home/react-custom-hooks.png"
+              class="img-fluid"
+              alt="React Custom Hooks"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="/images/home/react-tutorial.png"
+                  alt="react-tutorial"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    本套教程全面覆盖前端开发的核心领域，从编程基础到高级框架应用，结合理论与实践。内容包括基础知识、React高级用法、HTTP请求（Axios）、数据管理（React
+                    Query）、项目实战和个人作品集制作等。此外，还涉及Redux
+                    Toolkit的状态管理和Comfy
+                    Store电商平台的全栈开发，旨在全方位提升学员的技术能力和项目经验。
+                  </p>
+                  <small class="text-body-secondary mt-3">
+                    <img src="/images/clock.svg" /> 48小时，<img
+                      src="/images/chapter.svg"
+                    />
+                    共489个章节，<img src="/images/download.svg" />
+                    <a
+                      href="https://pan.baidu.com/s/1uW4au4UTwlywRY5CQSLLvQ?pwd=vane"
+                      >点击下载</a
+                    >
+                  </small>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="/tutorials/react-tutorial.html"
+                        class="btn btn-sm btn-outline-primary"
+                        >查看详情</a
+                      >
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#video-player-modal"
+                        onclick="playVideo('react-tutorial')"
+                      >
+                        观看介绍
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="/images/js-to-react-design-patterns.webp"
+                  alt="js-to-react-design-patterns"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    随着软件开发领域的不断进步，设计模式已经成为开发者们提升代码质量和可维护性的重要工具。无论是在前端开发中还是后端架构里，设计模式都能帮助开发者更好地组织代码，解决常见的编程问题。对于使用JavaScript和React的开发者而言，掌握这些模式尤为重要。本系列课程将为您介绍一门旨在深入探讨JavaScript和React设计模式的课程。
+                  </p>
+                  <small class="text-body-secondary mt-3">
+                    <img src="/images/clock.svg" /> 4小时15分，<img
+                      src="/images/chapter.svg"
+                    />
+                    共32个章节，<img src="/images/download.svg" />
+                    <a
+                      href="https://pan.baidu.com/s/1R6WELWSf0PM47vl4HOkBjg?pwd=vane"
+                      >点击下载</a
+                    >
+                  </small>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="/tutorials/js-to-react-design-patterns.html"
+                        class="btn btn-sm btn-outline-primary"
+                        >查看详情</a
+                      >
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#video-player-modal"
+                        onclick="playVideo('js-to-react-design-patterns')"
+                      >
+                        观看介绍
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/images/home/react-slot.png" alt="react-slot" />
+                <div class="card-body">
+                  <p class="card-text">
+                    我们将探讨如何在 React 中实现 Vue 的插槽功能（Slots）。Vue
+                    的插槽机制在组件复用和灵活性方面具有极大优势，而在
+                    React中实现类似功能存在一定的挑战。
+                    本课程将逐步讲解如何使用React的props.children、自定义props、高阶组件（HOC）、Render
+                    Props、React Context
+                    等技术来模拟Vue中的普通插槽、具名插槽以及作 用域插槽的功能。
+                  </p>
+                  <small class="text-body-secondary mt-3">
+                    <img src="/images/clock.svg" /> 2小时35分，<img
+                      src="/images/chapter.svg"
+                    />
+                    共17个章节，<img src="/images/download.svg" />
+                    <a
+                      href="https://pan.baidu.com/s/1ZRkNuEONS2KHDOFC7UgZeQ?pwd=vane"
+                      >点击下载</a
+                    >
+                  </small>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="/tutorials/react-slot.html"
+                        class="btn btn-sm btn-outline-primary"
+                        >查看详情</a
+                      >
+
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#video-player-modal"
+                        onclick="playVideo('react-slot')"
+                      >
+                        观看介绍
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="py-5 container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <img
+              src="./images/home/frontend-series.png"
+              class="img-fluid"
+              alt="React Custom Hooks"
+            />
+          </div>
+
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">前端那些事全系列课程</h1>
+            <h2>从菜鸟到大神的进阶之路</h2>
+            <p class="text-body-secondary">
+              本教程集合了前端开发的多个关键领域，旨在全面提升代码质量和开发效率。内容包括使用ESLint规范化代码，处理海量数据导出以提高工作效率，以及探索图标设计的历史与趋势。此外，还涵盖了React、TypeScript、Vue等技术方向的面试技巧，帮助开发者更好地准备面试。教程深入讲解JavaScript核心概念，如高阶函数和异步编程，并介绍如何使用JSDoc生成高质量文档。同时，还包括MySQL数据库入门、Next.js实战、Sass预处理器使用、多种文件上传方案、URL结构理解以及Node.js全系列教程，帮助开发者从零开始成长为全栈工程师。通过理论与实践相结合，本教程不仅提升了技术能力，还增强了实际项目操作经验。
+            </p>
+            <p class="text-body-secondary">
+              <img src="/images/clock.svg" /> 100小时，<img
+                src="/images/chapter.svg"
+              />
+              共687个章节，<img src="/images/download.svg" />
+              <a href="https://pan.baidu.com/s/1H64_Qyl691pp4KLs4HUUmw?pwd=vane"
+                >点击下载</a
+              >
+            </p>
+            <p>
+              <a
+                href="/tutorials/frontend-series.html"
+                class="btn btn-primary my-2"
+                >查看详情</a
+              >
+
+              <button
+                type="button"
+                class="btn btn-secondary my-2"
+                data-bs-toggle="modal"
+                data-bs-target="#video-player-modal"
+                onclick="playVideo('frontend-series')"
+              >
+                观看介绍
+              </button>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal fade"
+      id="video-player-modal"
+      tabindex="-1"
+      aria-labelledby="video-player-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">课程介绍</h1>
+          </div>
+          <div class="modal-body">
+            <video
+              id="video-player"
+              controlsList="nodownload nofullscreen noplaybackrate"
+              disablePictureInPicture
+              width="100%"
+              controls
+            ></video>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              关闭
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">返回顶部</a>
+        </p>
+        <p class="mb-1">chinavane is &copy; 子心，2024。</p>
+        <p class="mb-0">你可以添加微信：chinavane_2008，联系我。</p>
+      </div>
+    </footer>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function playVideo(videoId) {
+        var modal = document.getElementById("video-player-modal");
+        var video = document.getElementById("video-player");
+        // 设置视频的src属性
+        video.src = "./videos/" + videoId + ".mp4";
+        modal.addEventListener("shown.bs.modal", function () {
+          video.play();
+        });
+        modal.addEventListener("hidden.bs.modal", function () {
+          video.pause();
+          video.currentTime = 0; // 重置视频到起始位置
+        });
+      }
+    </script>
   </body>
 </html>
