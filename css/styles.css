@@ -79,3 +79,25 @@
 .goals-title {
   color: #ff99e0;
 }
+
+.box-light {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px; /* 使卡片边缘圆滑 */
+}
+
+.box-light:hover {
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); /* 卡片外边框光晕 */
+}
+
+.box-light img {
+  transition: box-shadow 0.3s ease; /* 为图片添加过渡效果 */
+}
+
+.box-light:hover img {
+  box-shadow: 0 0 20px 10px rgba(0, 123, 255, 0.7); /* 为图片添加光晕效果 */
+  border-radius: 8px; /* 确保光晕和图片边缘一致 */
+}
+
+.modal-open {
+  padding-right: 0 !important;
+}

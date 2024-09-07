@@ -18,6 +18,40 @@
     <link rel="shortcut icon" href="/images/vane.svg" type="image/x-icon" />
   </head>
   <body>
+    <div
+      class="modal fade"
+      id="video-player-modal"
+      tabindex="-1"
+      aria-labelledby="video-player-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">课程介绍</h1>
+          </div>
+          <div class="modal-body">
+            <video
+              id="video-player"
+              controlsList="nodownload nofullscreen noplaybackrate"
+              disablePictureInPicture
+              width="100%"
+              controls
+            ></video>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              关闭
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path
@@ -177,7 +211,7 @@
 
     <main>
       <section class="py-5 container">
-        <div class="row py-lg-5">
+        <div class="row py-lg-5 box-light px-2">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">React Custom Hooks 实战课程</h1>
             <h2>打造通用 CRUD Hook</h2>
@@ -229,7 +263,7 @@
             </p>
           </div>
 
-          <div class="col-lg-6 col-md-8 mx-auto">
+          <div class="col-lg-6 col-md-8 mx-auto px-5">
             <img
               src="./images/home/react-custom-hooks.png"
               class="img-fluid"
@@ -243,7 +277,7 @@
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
-              <div class="card shadow-sm">
+              <div class="card shadow-sm box-light">
                 <img
                   src="/images/home/react-tutorial.png"
                   alt="react-tutorial"
@@ -294,7 +328,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card shadow-sm">
+              <div class="card shadow-sm box-light">
                 <img
                   src="/images/home/js-to-react-design-patterns.webp"
                   alt="js-to-react-design-patterns"
@@ -342,7 +376,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card shadow-sm">
+              <div class="card shadow-sm box-light">
                 <img src="/images/home/react-slot.png" alt="react-slot" />
                 <div class="card-body">
                   <p class="card-text">
@@ -397,8 +431,8 @@
       </div>
 
       <section class="py-5 container">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
+        <div class="row py-lg-5 box-light">
+          <div class="col-lg-6 col-md-8 mx-auto p-5">
             <img
               src="./images/home/frontend-series.png"
               class="img-fluid"
@@ -617,40 +651,6 @@
       </section>
     </main>
 
-    <div
-      class="modal fade"
-      id="video-player-modal"
-      tabindex="-1"
-      aria-labelledby="video-player-modal"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">课程介绍</h1>
-          </div>
-          <div class="modal-body">
-            <video
-              id="video-player"
-              controlsList="nodownload nofullscreen noplaybackrate"
-              disablePictureInPicture
-              width="100%"
-              controls
-            ></video>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              关闭
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <footer class="text-body-secondary py-5">
       <div class="container">
         <p class="float-end mb-1">
@@ -666,6 +666,7 @@
     <script>
       function playVideo(videoId) {
         var modal = document.getElementById("video-player-modal");
+
         var video = document.getElementById("video-player");
         // 设置视频的src属性
         video.src = "./videos/" + videoId + ".mp4";

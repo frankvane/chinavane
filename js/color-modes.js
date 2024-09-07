@@ -46,6 +46,7 @@
     };
 
     // 替换所有相关图标
+    updateIcons("right-icon", "right.svg");
     updateIcons("clock-icon", "clock.svg");
     updateIcons("chapter-icon", "chapter.svg");
     updateIcons("download-icon", "download.svg");
