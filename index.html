@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <meta name="theme-color" content="#712cf9" />
     <link rel="shortcut icon" href="/images/vane.svg" type="image/x-icon" />
+    <script src="/js/color-modes.js"></script>
   </head>
   <body>
     <div
@@ -239,7 +240,9 @@
                 src="/images/light/download.svg"
                 alt="Download Icon"
               />
-              <a href="https://pan.baidu.com/s/1oWDbpf8bSrULoIItImVCEw?pwd=vane"
+              <a
+                target="_blank"
+                href="https://pan.baidu.com/s/1oWDbpf8bSrULoIItImVCEw?pwd=vane"
                 >点击下载</a
               >
             </p>
@@ -265,7 +268,7 @@
 
           <div class="col-lg-6 col-md-8 mx-auto px-5">
             <img
-              src="./images/home/react-custom-hooks.png"
+              src="./images/home/react-custom-hooks.webp"
               class="img-fluid"
               alt="React Custom Hooks"
             />
@@ -279,10 +282,65 @@
             <div class="col">
               <div class="card shadow-sm box-light">
                 <img
-                  src="/images/home/react-tutorial.png"
+                  src="/images/home/react-awesome-component.webp"
                   alt="react-tutorial"
                 />
                 <div class="card-body">
+                  <h4 class="card-title text-primary-emphasis">
+                    React完美组件的封装
+                  </h4>
+                  <p class="card-text">
+                    我们将探讨如何从零开始设计一个理想的React组件。学习复合组件、插槽应用、状态管理、以及动态样式等技术，你将学会如何构建功能强大且灵活的组件，提高开发效率，减少重复工作。一个高质量的组件不仅可以大幅减少代码冗余，还能促进团队协作，简化代码审查流程，最终交付出用户满意的产品。本系列课程将帮助你掌握设计React组件的关键技巧与最佳实践。
+                  </p>
+                  <small class="text-body-secondary mt-3">
+                    <img class="clock-icon" src="/images/light/clock.svg" />
+                    3小时16分，<img
+                      class="chapter-icon"
+                      src="/images/light/chapter.svg"
+                    />
+                    共26个章节，<img
+                      class="download-icon"
+                      src="/images/light/download.svg"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://pan.baidu.com/s/1VvyyQdQHJmCwzQmqNS1fzg?pwd=vane"
+                      >点击下载</a
+                    >
+                  </small>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="/tutorials/react-awesome-component.html"
+                        class="btn btn-sm btn-outline-primary"
+                        >查看详情</a
+                      >
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#video-player-modal"
+                        onclick="playVideo('react-tutorial')"
+                      >
+                        观看介绍
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm box-light">
+                <img
+                  src="/images/home/react-tutorial.webp"
+                  alt="react-tutorial"
+                />
+                <div class="card-body">
+                  <h4 class="card-title text-primary-emphasis">
+                    React全系列教程
+                  </h4>
                   <p class="card-text">
                     本套教程全面覆盖前端开发的核心领域，从编程基础到高级框架应用，结合理论与实践。内容包括基础知识、React高级用法、HTTP请求（Axios）、数据管理（React
                     Query）、项目实战和个人作品集制作等。此外，还涉及Redux
@@ -300,6 +358,7 @@
                       src="/images/light/download.svg"
                     />
                     <a
+                      target="_blank"
                       href="https://pan.baidu.com/s/1uW4au4UTwlywRY5CQSLLvQ?pwd=vane"
                       >点击下载</a
                     >
@@ -334,6 +393,9 @@
                   alt="js-to-react-design-patterns"
                 />
                 <div class="card-body">
+                  <h4 class="card-title text-primary-emphasis">
+                    从JS设计模式到React设计模式
+                  </h4>
                   <p class="card-text">
                     随着软件开发领域的不断进步，设计模式已经成为开发者们提升代码质量和可维护性的重要工具。无论是在前端开发中还是后端架构里，设计模式都能帮助开发者更好地组织代码，解决常见的编程问题。对于使用JavaScript和React的开发者而言，掌握这些模式尤为重要。本系列课程将为您介绍一门旨在深入探讨JavaScript和React设计模式的课程。
                   </p>
@@ -348,6 +410,7 @@
                       src="/images/light/download.svg"
                     />
                     <a
+                      target="_blank"
                       href="https://pan.baidu.com/s/1R6WELWSf0PM47vl4HOkBjg?pwd=vane"
                       >点击下载</a
                     >
@@ -377,8 +440,11 @@
             </div>
             <div class="col">
               <div class="card shadow-sm box-light">
-                <img src="/images/home/react-slot.png" alt="react-slot" />
+                <img src="/images/home/react-slot.webp" alt="react-slot" />
                 <div class="card-body">
+                  <h4 class="card-title text-primary-emphasis">
+                    React中实现Vue的插槽功能
+                  </h4>
                   <p class="card-text">
                     我们将探讨如何在 React 中实现 Vue 的插槽功能（Slots）。Vue
                     的插槽机制在组件复用和灵活性方面具有极大优势，而在
@@ -398,6 +464,7 @@
                       src="/images/light/download.svg"
                     />
                     <a
+                      target="_blank"
                       href="https://pan.baidu.com/s/1ZRkNuEONS2KHDOFC7UgZeQ?pwd=vane"
                       >点击下载</a
                     >
@@ -426,6 +493,111 @@
                 </div>
               </div>
             </div>
+            <div class="col">
+              <div class="card shadow-sm box-light">
+                <img src="/images/home/js-flat-flatmap.webp" alt="react-slot" />
+                <div class="card-body">
+                  <h4 class="card-title text-primary-emphasis">
+                    JavaScript数据扁平化实战
+                  </h4>
+                  <p class="card-text">
+                    《JavaScript数据扁平化实战》课程深入讲解如何利用flat和flatMap方法对复杂数据结构进行优化和转换。通过学习，将掌握扁平化数据结构的基础概念、性能表现及实际应用场景，理解如何在前端和后端开发中提升数据处理效率。课程还涵盖了数据模型中的设计模式以及在真实项目中的实战案例，为您提供全面的实践经验和解决方案。
+                  </p>
+                  <small class="text-body-secondary mt-3">
+                    <img class="clock-icon" src="/images/light/clock.svg" />
+                    2小时，<img
+                      class="chapter-icon"
+                      src="/images/light/chapter.svg"
+                    />
+                    共16个章节，<img
+                      class="download-icon"
+                      src="/images/light/download.svg"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://pan.baidu.com/s/11GZ5wToY-VHM_QG782tI5A?pwd=vane"
+                      >点击下载</a
+                    >
+                  </small>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="/tutorials/js-flat-flatmap.html"
+                        class="btn btn-sm btn-outline-primary"
+                        >查看详情</a
+                      >
+
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#video-player-modal"
+                        onclick="playVideo('js-flat-flatmap')"
+                      >
+                        观看介绍
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm box-light">
+                <img
+                  src="/images/home/js-array-map-cart.webp"
+                  alt="react-slot"
+                />
+                <div class="card-body">
+                  <h4 class="card-title text-primary-emphasis">
+                    掌握Array与Map的终极战斗
+                  </h4>
+                  <p class="card-text">
+                    本课程深入比较 JavaScript 中 Array 和 Map
+                    数据结构，探讨它们在实现购物车功能中的实际表现。通过详解使用这两种数据结构实现购物车功能的不同方式，包括初始化、添加、修改、删除与查看操作，我们将带您了解各自的优缺点和性能表现。通过实战案例和优化策略，您将掌握在实际开发中选择和使用这两种数据结构的最佳方法。
+                  </p>
+                  <small class="text-body-secondary mt-3">
+                    <img class="clock-icon" src="/images/light/clock.svg" />
+                    1小时，<img
+                      class="chapter-icon"
+                      src="/images/light/chapter.svg"
+                    />
+                    共10个章节，<img
+                      class="download-icon"
+                      src="/images/light/download.svg"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://pan.baidu.com/s/1QfGJ7zqUXQ_T8AVeqkeefw?pwd=vane"
+                      >点击下载</a
+                    >
+                  </small>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                  >
+                    <div class="btn-group">
+                      <a
+                        href="/tutorials/js-array-map-cart.html"
+                        class="btn btn-sm btn-outline-primary"
+                        >查看详情</a
+                      >
+
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#video-player-modal"
+                        onclick="playVideo('js-array-map-cart')"
+                      >
+                        观看介绍
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -434,7 +606,7 @@
         <div class="row py-lg-5 box-light">
           <div class="col-lg-6 col-md-8 mx-auto p-5">
             <img
-              src="./images/home/frontend-series.png"
+              src="./images/home/frontend-series.webp"
               class="img-fluid"
               alt="React Custom Hooks"
             />
@@ -456,7 +628,9 @@
                 class="download-icon"
                 src="/images/light/download.svg"
               />
-              <a href="https://pan.baidu.com/s/1H64_Qyl691pp4KLs4HUUmw?pwd=vane"
+              <a
+                target="_blank"
+                href="https://pan.baidu.com/s/1H64_Qyl691pp4KLs4HUUmw?pwd=vane"
                 >点击下载</a
               >
             </p>
@@ -648,7 +822,7 @@
             </p>
           </div>
           <p class="text-center py-lg-3">
-            <img src="/images/buy-me-a-coffee.jpg" alt="buy-me-a-coffee" />
+            <img src="/images/buy-me-a-coffee.webp" alt="buy-me-a-coffee" />
           </p>
         </div>
       </section>
@@ -664,7 +838,6 @@
       </div>
     </footer>
     <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/color-modes.js"></script>
 
     <script>
       function playVideo(videoId) {

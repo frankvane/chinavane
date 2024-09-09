@@ -10,8 +10,29 @@
   const getStoredTheme = () => localStorage.getItem("theme");
   const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
 
+  const setThemeIcon = (theme) => {
+    // 动态切换图标
+    const iconPathPrefix = `/images/${theme}/`;
+
+    // 替换所有具有相同类名的图标
+    const updateIcons = (className, iconName) => {
+      const icons = document.getElementsByClassName(className);
+      for (const icon of icons) {
+        icon.src = iconPathPrefix + iconName;
+      }
+    };
+
+    // 替换所有相关图标
+    updateIcons("right-icon", "right.svg");
+    updateIcons("clock-icon", "clock.svg");
+    updateIcons("chapter-icon", "chapter.svg");
+    updateIcons("download-icon", "download.svg");
+  };
+
   const getPreferredTheme = () => {
     const storedTheme = getStoredTheme();
+    setThemeIcon(storedTheme);
+
     if (storedTheme) {
       return storedTheme;
     }
@@ -32,26 +53,8 @@
     } else {
       document.documentElement.setAttribute("data-bs-theme", theme);
     }
-    let resolvedTheme = theme;
-    // 动态切换图标
-    const iconPathPrefix = `/images/${resolvedTheme}/`;
-    console.log("theme", iconPathPrefix);
 
-    // 替换所有具有相同类名的图标
-    const updateIcons = (className, iconName) => {
-      const icons = document.getElementsByClassName(className);
-      for (const icon of icons) {
-        icon.src = iconPathPrefix + iconName;
-      }
-    };
-
-    // 替换所有相关图标
-    updateIcons("right-icon", "right.svg");
-    updateIcons("clock-icon", "clock.svg");
-    updateIcons("chapter-icon", "chapter.svg");
-    updateIcons("download-icon", "download.svg");
-
-    console.log(iconPathPrefix + "clock.svg");
+    setThemeIcon(theme);
   };
 
   setTheme(getPreferredTheme());

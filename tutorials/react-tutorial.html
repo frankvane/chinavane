@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="chinavane, a website for sharing knowledge"
+    />
+    <meta name="author" content="chinavane,子心" />
+    <title>chinavane.com</title>
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta name="theme-color" content="#712cf9" />
+    <link rel="shortcut icon" href="/images/vane.svg" type="image/x-icon" />
+    <script src="/js/color-modes.js"></script>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+        />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        />
+      </symbol>
+    </svg>
+
+    <div
+      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
+    >
+      <button
+        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="Toggle theme (auto)"
+      >
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+          <use href="#circle-half"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul
+        class="dropdown-menu dropdown-menu-end shadow"
+        aria-labelledby="bd-theme-text"
+      >
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="light"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#sun-fill"></use>
+            </svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="dark"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center active"
+            data-bs-theme-value="auto"
+            aria-pressed="true"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#circle-half"></use>
+            </svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <header data-bs-theme="dark">
+      <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4>关于我们</h4>
+              <p class="text-body-secondary">
+                <b>风向标</b>，一个致力于提供最新互联网技术的网站。<br />
+                <b>子心</b
+                >，深耕互联网20多年，从业务到需求、从需求到产品、从产品到设计、从设计到前端、从前端到开发、从开发到测试、从测试到运维、从运维到客服，全方位熟悉互联网全流程。
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>联系我们</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">微信：chinavane_2008</a></li>
+                <li>
+                  <a href="#" class="text-white"
+                    >邮箱：chinavane_2008@163.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <svg
+              t="1725506806828"
+              class="icon"
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              p-id="5105"
+              width="30"
+              height="30"
+            >
+              <path
+                d="M608.7552 459.4944h128.96l128.9088 128.9472-128.9088 136.704H608.7552v64.9984a96.6912 96.6912 0 1 1-193.3696 0v-64.9984H157.4912V459.4944h257.8944v-59.5456H286.4128L157.4912 266.0992l128.9216-128.9216h580.2112v262.7712H608.7552v59.5456zM479.808 790.144a32.2432 32.2432 0 0 0 64.4736 0v-64.9984h-64.4736v64.9984zM221.9392 523.9808v139.6608h489.0624l64.4864-75.1744-64.4864-64.4864H221.9392z m257.8688-64.4864h64.4736v-59.5456h-64.4736v59.5456z m322.368-119.04V201.6384H313.1136l-64.4608 64.4608 64.4608 74.4064h102.272v-0.7808h193.3696v0.7808H802.176z"
+                p-id="5106"
+                fill="#ff6a00"
+              ></path>
+            </svg>
+            <strong style="font-size: 1.75rem">风向标</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">首页</a></li>
+              <li class="breadcrumb-item"><a href="#">系列教程</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                React全系列教程
+              </li>
+            </ol>
+          </nav>
+
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div
+                class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                id="content-intro"
+              >
+                <img src="/images/tutorials/react-tutorial.webp" />
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h2
+                    class="d-inline-block mb-5 text-primary-emphasis text-center"
+                  >
+                    《React全系列教程》<br />掌握 React：构建现代 Web
+                    应用的全面指南
+                  </h2>
+
+                  <p class="text-body-secondary">
+                    <img
+                      class="clock-icon"
+                      src="/images/light/clock.svg"
+                      alt="Clock Icon"
+                    />
+                    48小，
+                    <img
+                      class="chapter-icon"
+                      src="/images/light/chapter.svg"
+                      alt="Chapter Icon"
+                    />
+                    共489个章节，
+                    <img
+                      class="download-icon"
+                      src="/images/light/download.svg"
+                      alt="Download Icon"
+                    />
+                    <a
+                      class="btn btn-warning"
+                      target="_blank"
+                      href="https://pan.baidu.com/s/1VvyyQdQHJmCwzQmqNS1fzg?pwd=vane"
+                      >点击下载</a
+                    >
+                  </p>
+
+                  <strong class="mb-2">课程概述</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    本课程系列是为希望全面掌握 React
+                    及相关技术的开发者精心设计的。总共包含 489
+                    个视频教程，累计时长接近 48 小时。这些教程涵盖了从 React
+                    基础到高级用法的各个方面，并结合了实际项目来增强学习效果。课程内容不仅包括
+                    React
+                    的核心概念和最佳实践，还涉及了与前端开发相关的各种技术和工具，确保学员能够全面理解和应用所学知识。
+                  </p>
+
+                  <strong class="mt-5 mb-2">学习内容</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    本课程将涵盖以下主要内容：<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    Fundamentals:
+                    讲解编程的基本概念，为学习更高级的内容奠定基础。
+                    <br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    React 基础:
+                    组件创建、状态管理、生命周期、事件处理等核心知识。
+                    <br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    Backroads Application:
+                    通过构建实际应用程序，将理论知识应用于实践中。
+                    <br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    Comfy Store: 电子商务网站的开发，涉及前端和后端技术。
+                    <br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    React Advanced: 深入探讨 React
+                    的高级用法，如性能优化、最佳实践。
+                    <br />
+
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    Redux Toolkit: 使用 Redux Toolkit 简化状态管理。
+                    <br />
+
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    Fundamental-Projects: 一系列小项目，帮助巩固基础概念。
+                    <br />
+
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    MixMaster Project: 综合性项目，整合所学技术。
+                    <br />
+
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    Unsplash Images Project: 基于 Unsplash API
+                    实现的图片展示项目。
+                    <br />
+
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    Portfolio: 创建个人作品集网站，展示技能和项目。
+                    <br />
+
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    Axios: 学习如何使用 Axios 进行 HTTP 请求。
+                    <br />
+
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    包含项目如 Birthday
+                    Buddy、Tours、Reviews、Accordion、Menu、Tabs、Slider 等。
+                    <br />
+                  </p>
+
+                  <strong class="mt-5 mb-2">学习要求</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    为了顺利学习本课程，您应该具备以下基础知识和技术背景：<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    基础知识: 学员需要具备基本的 HTML、CSS 和 JavaScript
+                    知识。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    编程经验: 对编程有一定了解，能够理解和编写基础代码。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    学习态度:
+                    具有积极的学习态度，愿意通过视频和文档双重学习方式掌握内容。
+                  </p>
+                  <strong class="mt-5 mb-2">适合人群</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    本课程特别适合以下几类人群：<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    编程新手: 想要系统学习
+                    React，并掌握前端开发的基础和进阶技能。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    有一定基础的开发者: 希望提升 React
+                    技能，深入了解高级用法和实践项目。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    技术爱好者:
+                    对前端开发有浓厚兴趣，愿意通过实践项目巩固和扩展知识。<br />
+                  </p>
+
+                  <p class="text-center mt-5">
+                    <img
+                      src="/images/buy-me-a-coffee.webp"
+                      alt="buy-me-a-coffee"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-grid gap-2 mb-3">
+                <button class="btn btn-danger" type="button">课程大䋞</button>
+              </div>
+              <div id="content" style="overflow: auto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">返回顶部</a>
+        </p>
+        <p class="mb-1">chinavane is &copy; 子心，2024。</p>
+        <p class="mb-0">你可以添加微信：chinavane_2008，联系我。</p>
+      </div>
+    </footer>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/marked/14.1.0/marked.min.js"></script>
+    <script>
+      const md = `
+      chapter-01
+      │   ├── 001-what is react
+      │   ├── 002-goals
+      │   ├── 003-structure
+      │   └── 004-requirements
+      chapter-02
+      │   ├── 005-chrome
+      │   ├── 006-vscode
+      │   ├── 007-terminal
+      │   ├── 008-nodejs
+      │   └── 009-create-react-app
+      chapter-03
+      │   ├── 010-intro
+      │   ├── 011-folder structure
+      │   ├── 012-remove boilerplate
+      │   ├── 013-first component
+      │   ├── 014-extensions and settings
+      │   ├── 015-create element function
+      │   ├── 016-jsx rules
+      │   ├── 017-nest components
+      │   ├── 018-react developer tools
+      │   ├── 019-booklist
+      │   ├── 020-css
+      │   ├── 021-local images-public folder
+      │   ├── 022-jsx css
+      │   ├── 023-jsx javascript
+      │   ├── 024-props - basic setup
+      │   ├── 025-props - somewhat dynamic setup
+      │   ├── 026-props - multiple approaches
+      │   ├── 027-children prop
+      │   ├── 028-simple list
+      │   ├── 029-proper list
+      │   ├── 030-key prop
+      │   ├── 031-object as a prop
+      │   ├── 032-event basics
+      │   ├── 033-form submission
+      │   ├── 034-form submission - button example
+      │   ├── 035-anonymous function (arrow)
+      │   ├── 036-components feature
+      │   ├── 037-prop drilling
+      │   ├── 038-complex example - intro
+      │   ├── 039-complex example - bug
+      │   ├── 040-complex example - fix
+      │   ├── 041-es6 modules
+      │   ├── 042-local images (src folder)
+      │   ├── 043-numbers challenge
+      │   ├── 044-title challenge
+      │   └── 045-build folder
+      chapter-04
+      │   ├── 046-intro
+      │   ├── 047-setup
+      │   ├── 048-src boilerplate
+      │   ├── 049-structure
+      │   ├── 050-components
+      │   ├── 051-nav logo
+      │   ├── 052-smooth scrolling
+      │   ├── 053-pagelinks
+      │   ├── 054-social links
+      │   ├── 055-hero and about
+      │   ├── 056-title component
+      │   ├── 057-services
+      │   ├── 058-tours component
+      │   ├── 059-footer component
+      │   ├── 060-alternative approach - page links component
+      │   └── 061-alternative approach - more components
+      chapter-05
+      │   ├── 062-vite intro
+      │   └── 063-vite project install
+      chapter-06
+      │   ├── 064-intro
+      │   ├── 065-overview
+      │   ├── 066-project setup
+      │   ├── 067-error example
+      │   ├── 068-usestate fundamentals
+      │   ├── 069-initial render and re-renders
+      │   ├── 070-general rules of react hooks
+      │   ├── 071-usestate array example - setup
+      │   ├── 072-usestate array example - complete
+      │   ├── 073-usestate - extra info
+      │   ├── 074-usestate object example - setup
+      │   ├── 075-auto batching info
+      │   ├── 076-usestate object example - complete
+      │   ├── 077-usestate set function gotcha
+      │   ├── 078-usestate functional update form
+      │   ├── 079-usestate - settimeout example
+      │   ├── 080-code example
+      │   ├── 081-useeffect - fundamentals
+      │   ├── 082-useeffect - multiple effects
+      │   ├── 083-useeffect fetch challenge - intro
+      │   ├── 084-useeffect fetch challenge - complete
+      │   ├── 085-useeffect clean up info
+      │   ├── 086-multiple returns
+      │   ├── 087-multiple returns - fetch data setup
+      │   ├── 088-multiple returns - fetch data
+      │   ├── 089-fetch error gotcha
+      │   ├── 090-order matters
+      │   ├── 091-fetch function location
+      │   ├── 092-react hooks rules
+      │   ├── 093-vanilla.js optional
+      │   ├── 094-short circuit - overview
+      │   ├── 095-short circuit - examples
+      │   ├── 096-ternary operator
+      │   ├── 097-toggle challenge
+      │   ├── 098-user challenge
+      │   ├── 099-useeffect cleanup function - setup challenge
+      │   ├── 100-useeffect - timer example
+      │   ├── 101-useeffect - event listeners example
+      │   ├── 102-you might not need an effect
+      │   ├── 103-project structure - folder example
+      │   ├── 104-project structure - named exports
+      │   ├── 105-project structure - export group
+      │   ├── 106-leverage javascript - intro
+      │   ├── 107-leverage javascript - challenge
+      │   ├── 108-leverage javascript - complete
+      │   ├── 109-forms - setup
+      │   ├── 110-controlled inputs
+      │   ├── 111-user challenge - setup
+      │   ├── 112-user challenge - add new user
+      │   ├── 113-user challenge - remove user
+      │   ├── 114-multiple inputs
+      │   ├── 115-checkbox input
+      │   ├── 116-select input
+      │   ├── 117-formdata api
+      │   ├── 118-useref - dom node
+      │   ├── 119-useref - initial render
+      │   ├── 120-custom hooks - toggle
+      │   ├── 121-custom hooks - fetch person
+      │   ├── 122- custom hooks - generic fetch
+      │   ├── 123-context api - challenge
+      │   ├── 124-context api - prop drilling
+      │   ├── 125-context api - solution
+      │   ├── 126-context api - custom hook
+      │   ├── 127-context api - global setup
+      │   ├── 128-usereducer - intro
+      │   ├── 129-usereducer - challenge
+      │   ├── 130-usereducer - setup
+      │   ├── 131-reducer basics
+      │   ├── 132-actions and default state
+      │   ├── 133-reset list
+      │   ├── 134-remove person
+      │   ├── 135- import export
+      │   ├── 136-performance - intro
+      │   ├── 137-component re-renders
+      │   ├── 138-react dev tools
+      │   ├── 139-lower state
+      │   ├── 140-lower state - challenge
+      │   ├── 141-react.memo()
+      │   ├── 142-mind grenade
+      │   ├── 143-usecallback hook
+      │   ├── 144-usecallback hook - common use case
+      │   ├── 145-usememo hook
+      │   ├── 146-usetransition hook
+      │   └── 147-react suspense
+      chapter-07
+      │   ├── 148-intro
+      │   ├── 149-setup
+      │   ├── 150-setup - figma file
+      │   ├── 151-birthday buddy- setup
+      │   ├── 152-birthday buddy - import list
+      │   ├── 153-birthday buddy - render list
+      │   ├── 154-birthday buddy - clear list
+      │   ├── 155-birthday buddy - css (optional)
+      │   ├── 156-tours - setup
+      │   ├── 157-tours - fetch tours
+      │   ├── 158-tours - render tours
+      │   ├── 159-tours - remove tour
+      │   ├── 160-tours - read more
+      │   ├── 161-tours - refetch
+      │   ├── 162-tours - css (optional)
+      │   ├── 162-tours - css (optional).baiduyun.uploading.cfg
+      │   ├── 163-reviews - setup
+      │   ├── 164-reviews - data
+      │   ├── 165-reviews - react icons
+      │   ├── 166-reviews - first person
+      │   ├── 167-reviews - prev and next
+      │   ├── 168-reviews - check number
+      │   ├── 169-reviews - random person
+      │   ├── 170-reviews - modulus operator
+      │   ├── 171-reviews - css (optional)
+      │   ├── 171-reviews - css (optional).baiduyun.uploading.cfg
+      │   ├── 172-questions - setup
+      │   ├── 173-questions - render list
+      │   ├── 174-questions - toggle info
+      │   ├── 175-questions - alternative setup
+      │   ├── 176-questions - css (optional)
+      │   ├── 176-questions - css (optional).baiduyun.uploading.cfg
+      │   ├── 177-menu - setup
+      │   ├── 178-menu - title component
+      │   ├── 179-menu - render items
+      │   ├── 180-menu - unique categories
+      │   ├── 180-menu - unique categories.baiduyun.uploading.cfg
+      │   ├── 181-menu - display categories
+      │   ├── 182-menu - filter items
+      │   ├── 182-menu - filter items.baiduyun.uploading.cfg
+      │   ├── 183-menu - css (optional)
+      │   ├── 183-menu - css (optional).baiduyun.uploading.cfg
+      │   ├── 184-tabs - setup
+      │   ├── 185-tabs - fetch jobs
+      │   ├── 185-tabs - fetch jobs.baiduyun.uploading.cfg
+      │   ├── 186-tabs - display job
+      │   ├── 186-tabs - display job.baiduyun.uploading.cfg
+      │   ├── 187-tabs - duties and uuid library
+      │   ├── 187-tabs - duties and uuid library.baiduyun.uploading.cfg
+      │   ├── 188-tabs - button container
+      │   ├── 188-tabs - button container.baiduyun.uploading.cfg
+      │   ├── 189-tabs - current item
+      │   ├── 190-tabs - css (optional)
+      │   ├── 191-slider - setup
+      │   ├── 192-slider - structure
+      │   ├── 193-slider - css
+      │   ├── 194-slider - initial logic
+      │   ├── 195- slider - current item and prev next
+      │   ├── 196-slider - autoslide (autoplay)
+      │   ├── 197-slider - library info
+      │   ├── 198-slider - react slick setup
+      │   ├── 199-slider - react slick complete
+      │   ├── 200-lorem ipsum - setup
+      │   ├── 201-lorem ipsum - structure
+      │   ├── 202-lorem ipsum - submit form
+      │   ├── 203-lorem ipsum - nanoid library
+      │   ├── 204-lorem ipsum - css (optional)
+      │   ├── 205-color generator - setup
+      │   ├── 206-color generator - form structure
+      │   ├── 207-color generator - html color input
+      │   ├── 208-color generator - values.js library
+      │   ├── 209-color generator - render list
+      │   ├── 210-color generator - react toastify
+      │   ├── 211-color generator - clipboard api
+      │   ├── 212-color generator - css (optional)
+      │   ├── 213-grocery bud - setup
+      │   ├── 214-grocery bud - form component
+      │   ├── 215-grocery bud - add item
+      │   ├── 216-grocery bud - render items
+      │   ├── 217-grocery bud - single item
+      │   ├── 218-grocery bud - remove item
+      │   ├── 219-grocery bud - local storage
+      │   ├── 220-grocery bud - edit item (global setup)
+      │   ├── 221-grocery bud - react toastify
+      │   ├── 222-grocery bud - css (optional)
+      │   ├── 223-navbar - setup
+      │   ├── 224-navbar - data
+      │   ├── 225-navbar - initial setup
+      │   ├── 226-navbar - initial setup css
+      │   ├── 227-navbar - fixed setup
+      │   ├── 228-navbar - dynamic setup
+      │   ├── 229-navbar - question
+      │   ├── 230-navbar - complete app
+      │   ├── 231-sidebar modal - setup
+      │   ├── 232-sidebar modal - components
+      │   ├── 233-sidebar modal - global context
+      │   ├── 234-sidebar modal - home component
+      │   ├── 235-sidebar modal - modal component
+      │   ├── 236-sidebar modal - sidebar component jsx
+      │   ├── 237-sidebar modal - sidebar css
+      │   ├── 238-strapi - setup
+      │   ├── 239-strapi - data
+      │   ├── 240-strapi - global context
+      │   ├── 241-strapi - components
+      │   ├── 242-strapi - navbar css
+      │   ├── 243-strapi - hero
+      │   ├── 244-strapi - sidebar jsx
+      │   ├── 245-strapi - sidebar css
+      │   ├── 246-strapi - sidebar control
+      │   ├── 247-strapi - navlinks
+      │   ├── 248-strapi - pageid logic
+      │   ├── 249-strapi - submenu jsx
+      │   ├── 250-strapi - submenu css
+      │   ├── 251-strapi - hide submenu (part 1)
+      │   ├── 252-strapi - hide submenu (part 2)
+      │   ├── 253-strapi - hide submenu getboundingclientreact
+      │   ├── 254-cart - intro
+      │   ├── 255-cart - setup
+      │   ├── 256-cart - global context
+      │   ├── 257-cart - usereducer setup
+      │   ├── 258-cart - setup actions
+      │   ├── 259-cart - data structures
+      │   ├── 260-cart - map object
+      │   ├── 261-cart - switch to map()
+      │   ├── 262-cart - clear cart
+      │   ├── 263-cart - remove item
+      │   ├── 264-cart - increase amount
+      │   ├── 265-cart - decrease amount
+      │   ├── 266-cart - calculate totals
+      │   ├── 267-cart - fetch structure
+      │   ├── 268-cart - fetch complete
+      │   └── 269-cart - css (optional)
+      chapter-08
+      │   ├── 270-intro
+      │   ├── 271-setup
+      │   ├── 272-get request
+      │   ├── 273-setup headers
+      │   ├── 274-post request
+      │   ├── 275-global default
+      │   ├── 276-custom instance
+      │   └── 277-interceptors
+      chapter-09
+      │   ├── 278-intro
+      │   ├── 279-starter
+      │   ├── 280-server (back-end) - setup
+      │   ├── 281-tasks app (front-end) - setup
+      │   ├── 282-axios custom instance
+      │   ├── 283-http methods
+      │   ├── 284-api docs
+      │   ├── 285-react query - intro
+      │   ├── 286-react query - install and setup
+      │   ├── 287-first query
+      │   ├── 288-render data
+      │   ├── 289-error handling
+      │   ├── 290-thunder client
+      │   ├── 291-create task - challenge
+      │   ├── 292-create task - initial setup
+      │   ├── 293-usemutation helpers
+      │   ├── 294-edit task - challenge
+      │   ├── 295-edit task - complete
+      │   ├── 296-delete task
+      │   ├── 297-refactor
+      │   └── 298-alternative server setup
+      chapter-10
+      │   ├── 0-介绍
+      │   ├── 01-tanstack query简介
+      │   ├── 02-tanstack query环境的安装配置
+      │   ├── 03-tanstack query模拟数据的准备
+      │   ├── 04-tanstanc query传统的数据请求模式
+      │   ├── 05-tanstack query请求方法的抽离
+      │   ├── 06-tanstack query编写第一个react-query查询来代替axios请求
+      │   ├── 07-tanstack queryreact-query查询方法的调用
+      │   ├── 08-tanstack query中fetchstatus和status属性的理解
+      │   ├── 09-tanstack中useisfetching的理解
+      │   ├── 10-tanstack中获取单个todo信息
+      │   ├── 11-tanstack添加todo信息
+      │   ├── 12-tanstack添加todo信息按钮用户体验优化
+      │   ├── 13-tanstack修改todo信息
+      │   ├── 14-tanstack删除todo信息
+      │   ├── 15-tanstack分页列表实现
+      │   └── 16-tanstack无限加载操作
+      chapter-11
+      │   ├── 294-intro
+      │   ├── 295-structure
+      │   ├── 296-dark theme - initial setup
+      │   ├── 297-dark theme - add remove class
+      │   ├── 298-dark theme - css
+      │   ├── 299-dark theme - users prefers dark mode (css)
+      │   ├── 300-searchform
+      │   ├── 301-unsplash api - info
+      │   ├── 302-unsplash api - register
+      │   ├── 303-obtain correct url
+      │   ├── 304-setup react query
+      │   ├── 305-setup query
+      │   ├── 306-render images
+      │   ├── 307-react query dev tools
+      │   ├── 308-setup global searchvalue
+      │   ├── 309-usequery fix
+      │   ├── 310-dark mode - javascript check
+      │   ├── 311-local storage
+      │   ├── 312-env variables
+      │   ├── 313-css (optional)
+      │   ├── 314-github
+      │   └── 315-netlify deploy
+      chapter-12
+      │   ├── 316-intro
+      │   ├── 317-spa and react router info
+      │   ├── 318-basic router
+      │   ├── 319-setup pages
+      │   ├── 320-link component
+      │   ├── 321-nested pages
+      │   ├── 322-nested pages - more complex example
+      │   ├── 323-navbar
+      │   ├── 324-styled components - setup
+      │   ├── 325-styled components - wrapper
+      │   ├── 326-navbar css (optional)
+      │   ├── 327-about page
+      │   ├── 328-page layout
+      │   ├── 329-error page
+      │   ├── 330-error page - css
+      │   ├── 331-loader info
+      │   ├── 332-loader - landing page
+      │   ├── 333-cocktaildb overview
+      │   ├── 334-fetch drinks
+      │   ├── 335-single page error
+      │   ├── 336-cocktaillist
+      │   ├── 337-cocktailcard
+      │   ├── 338-cocktaillist and cocktailcard css (optional)
+      │   ├── 339-global loading and context
+      │   ├── 340-single cocktail - setup
+      │   ├── 341-single cocktail - render
+      │   ├── 342-ingredients challenge
+      │   ├── 343-additional check
+      │   ├── 344-single cocktail css (optional)
+      │   ├── 345-react toastify - setup
+      │   ├── 346-newsletter structure
+      │   ├── 347-html form submission
+      │   ├── 348-action - setup
+      │   ├── 349-submit form
+      │   ├── 350-handle errors
+      │   ├── 351-navigation state
+      │   ├── 352-searchform - structure
+      │   ├── 353-searchform - complete
+      │   ├── 354-searchform css (optional)
+      │   ├── 355-react query - setup
+      │   ├── 356-react query - landing page setup
+      │   ├── 357-react query - landing page complete
+      │   ├── 358-react query - single cocktail page
+      │   └── 359-redirects
+      chapter-13
+      │   ├── 360-project intro
+      │   ├── 361-tailwind intro
+      │   ├── 362-project setup
+      │   ├── 363-additional assets
+      │   ├── 364-navbar
+      │   ├── 365-hero
+      │   ├── 366-custom class
+      │   ├── 367-skills section
+      │   ├── 368-about section
+      │   └── 369-projects section
+      chapter-14
+      │   ├── 370-intro
+      │   ├── 371-setup
+      │   ├── 372-install
+      │   ├── 373-store
+      │   ├── 374-first slice
+      │   ├── 375-redux dev tools
+      │   ├── 376-useselector
+      │   ├── 377-hero icons
+      │   ├── 378-cart items - local data
+      │   ├── 379-cart container
+      │   ├── 380-cart item
+      │   ├── 381-reducers - clear cart
+      │   ├── 382-reducers - return state
+      │   ├── 383-reducers - remove item
+      │   ├── 384-reducers - increase and decrease
+      │   ├── 385-reducers - calculate totals
+      │   ├── 386-modal setup
+      │   ├── 387-modal complete
+      │   ├── 388-createasyncthunk
+      │   └── 389- createasyncthunk - more options
+      chapter-15
+      │   ├── 390-intro
+      │   ├── 391-daisyui
+      │   ├── 392-assets
+      │   ├── 393-vite + tailwindcss
+      │   ├── 394-daisyui setup
+      │   ├── 395-install dependencies
+      │   ├── 396-create pages
+      │   ├── 397-route structure
+      │   ├── 398-error page
+      │   ├── 399-form input
+      │   ├── 400-login page
+      │   ├── 401-submit button
+      │   ├── 402-register page
+      │   ├── 403-custom class
+      │   ├── 404-header component
+      │   ├── 405-navbar structure
+      │   ├── 406-navlinks component
+      │   ├── 407-toggle
+      │   ├── 408-add theme
+      │   ├── 409-set theme
+      │   ├── 410-about page
+      │   ├── 411-hero component
+      │   ├── 412-base url
+      │   ├── 413-landing loader
+      │   ├── 414-featured products
+      │   ├── 415-format price
+      │   ├── 416-fetch single product
+      │   ├── 417-render single product
+      │   ├── 418-single product - colors
+      │   ├── 419-single product - amount
+      │   ├── 420-generate amount inputs
+      │   ├── 421-products page - setup
+      │   ├── 422-products list
+      │   ├── 423-products container
+      │   ├── 424-filters - search input
+      │   ├── 425-filters - select input
+      │   ├── 426-filters - range input
+      │   ├── 427-filters - checkbox input
+      │   ├── 428-global loading
+      │   ├── 429-filters - params
+      │   ├── 430-pagination - setup
+      │   ├── 431-pagination - complete
+      │   ├── 432-redux toolkit - setup
+      │   ├── 433-add to cart functionality
+      │   ├── 434-additem reducer
+      │   ├── 435-refactor and local storage
+      │   ├── 436-clear, remove and edit reducers
+      │   ├── 437-cart page
+      │   ├── 438-cart totals
+      │   ├── 439-cart items - setup
+      │   ├── 440-cart items - functionality
+      │   ├── 441-user slice - setup
+      │   ├── 442-refactor theme toggle
+      │   ├── 443-Logout and Access User
+      │   ├── 444-Register User - Docs
+      │   ├── 445-Register User - Complete
+      │   ├── 446-Login User - Setup
+      │   ├── 447-Access RTK Store in Action
+      │   ├── 448-Login Page - Action Complete
+      │   ├── 449-Login User - Reducer
+      │   ├── 450-fix cart userState
+      │   ├── 451-Demo User
+      │   ├── 452-Checkout Page - Setup
+      │   ├── 453-Checkout Page - Restrict Access
+      │   ├── 454-Create Order Request
+      │   ├── 455-Checkout Form - Setup
+      │   ├── 456-Checkout Form - Complete
+      │   ├── 457-Auth Errors
+      │   ├── 458-Orders Request
+      │   ├── 459-Orders Page - Setup
+      │   ├── 460-Orders List
+      │   ├── 461-Complex Pagination
+      │   ├── 462-React Query - Setup
+      │   ├── 463-React Query - Landing Page
+      │   ├── 464-React Query - Single Product Page
+      │   ├── 465-React Query - All Products Page
+      │   ├── 466-React Query - Orders Page
+      │   └── 467-React Query - Remove Queries
+      `;
+
+      const contentHeight =
+        document.getElementById("content-intro").clientHeight - 50;
+      console.log(contentHeight);
+      document.getElementById("content").style.height = contentHeight + "px";
+      document.getElementById("content").innerHTML = marked.parse(md);
+    </script>
+  </body>
+</html>
