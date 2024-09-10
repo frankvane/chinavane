@@ -101,3 +101,16 @@
 .modal-open {
   padding-right: 0 !important;
 }
+
+.card {
+  position: relative; /* 确保父元素是相对定位 */
+}
+
+/* 选择器可以依据实际情况调整 */
+.card .new {
+  position: absolute; /* 绝对定位 */
+  top: 0; /* 距离顶部0 */
+  left: 0; /* 距离左边0 */
+  width: 60px;
+  height: 60px;
+}
