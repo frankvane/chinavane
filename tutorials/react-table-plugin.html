@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="chinavane, a website for sharing knowledge"
+    />
+    <meta name="author" content="chinavane,子心" />
+    <title>chinavane.com-Courses, Tutorials &amp; Podcast</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <meta name="theme-color" content="#712cf9" />
+    <link rel="shortcut icon" href="/images/vane.svg" type="image/x-icon" />
+    <script src="/js/color-modes.min.js"></script>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+        />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        />
+      </symbol>
+    </svg>
+
+    <div
+      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
+    >
+      <button
+        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="Toggle theme (auto)"
+      >
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+          <use href="#circle-half"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul
+        class="dropdown-menu dropdown-menu-end shadow"
+        aria-labelledby="bd-theme-text"
+      >
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="light"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#sun-fill"></use>
+            </svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="dark"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center active"
+            data-bs-theme-value="auto"
+            aria-pressed="true"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#circle-half"></use>
+            </svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <header data-bs-theme="dark">
+      <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4>关于我们</h4>
+              <p class="text-body-secondary">
+                <b>风向标</b>，一个致力于提供最新互联网技术的网站。<br />
+                <b>子心</b
+                >，深耕互联网20多年，从业务到需求、从需求到产品、从产品到设计、从设计到前端、从前端到开发、从开发到测试、从测试到运维、从运维到客服，全方位熟悉互联网全流程。
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>联系我们</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">微信：chinavane_2008</a></li>
+                <li>
+                  <a href="#" class="text-white"
+                    >邮箱：chinavane_2008@163.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <svg
+              t="1725506806828"
+              class="icon"
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              p-id="5105"
+              width="30"
+              height="30"
+            >
+              <path
+                d="M608.7552 459.4944h128.96l128.9088 128.9472-128.9088 136.704H608.7552v64.9984a96.6912 96.6912 0 1 1-193.3696 0v-64.9984H157.4912V459.4944h257.8944v-59.5456H286.4128L157.4912 266.0992l128.9216-128.9216h580.2112v262.7712H608.7552v59.5456zM479.808 790.144a32.2432 32.2432 0 0 0 64.4736 0v-64.9984h-64.4736v64.9984zM221.9392 523.9808v139.6608h489.0624l64.4864-75.1744-64.4864-64.4864H221.9392z m257.8688-64.4864h64.4736v-59.5456h-64.4736v59.5456z m322.368-119.04V201.6384H313.1136l-64.4608 64.4608 64.4608 74.4064h102.272v-0.7808h193.3696v0.7808H802.176z"
+                p-id="5106"
+                fill="#ff6a00"
+              ></path>
+            </svg>
+            <strong style="font-size: 1.75rem">风向标</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">首页</a></li>
+              <li class="breadcrumb-item"><a href="#">系列教程</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                React Table插件开发与实践
+              </li>
+            </ol>
+          </nav>
+
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div
+                class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              >
+                <img src="/images/tutorials/react-table-plugin.webp" />
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h2
+                    class="d-inline-block mb-5 text-primary-emphasis text-center"
+                  >
+                    《React Table插件开发与实践》<br />解锁插件化开发奥秘，打造前端组件的终极武器！
+                  </h2>
+
+                  <p class="text-body-secondary">
+                    <img
+                      class="clock-icon"
+                      alt="clock"
+                      src="/images/light/clock.svg"
+                    />
+                    3小时51分，<img
+                      class="chapter-icon"
+                      alt="chapter"
+                      src="/images/light/chapter.svg"
+                    />
+                    共30个章节，<img
+                      class="download-icon"
+                      alt="download"
+                      src="/images/light/download.svg"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://pan.baidu.com/s/1xaIx22_Qqk4PmamRdEpO0A?pwd=vane"
+                      >点击下载</a
+                    >
+                  </p>
+
+                  <strong class="mb-2">课程概述</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    本课程深入探讨了如何在React项目中构建插件化的架构，旨在帮助开发者掌握插件化开发的核心理念与实践技巧。通过本课程，你将学会从零构建一个灵活、可扩展的React
+                    Table组件，并逐步添加功能强大的插件，如排序、分页、筛选、国际化、数据导出、图表展示等，最终打造一个高效的表格管理工具。
+                  </p>
+
+                  <strong class="mt-5 mb-2">学习内容</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    本课程将涵盖以下主要内容：<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    插件化架构设计：了解插件化开发的设计原则，掌握如何设计灵活的插件系统。
+                    <br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    基础React Table构建：从零搭建React
+                    Table组件，学习组件的层次结构与核心功能。
+                    <br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    功能插件开发：通过实践开发各类功能插件，如排序插件、分页插件、筛选插件、国际化插件等，探索如何模块化扩展表格功能。
+                    <br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    高级功能实现：包括自定义单元格渲染、数据导出插件的实现与图表化展示插件的构建。
+                    <br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    插件管理与发布：学习如何通过打包与发布将插件发布至npm，实现在生产环境中的高效使用。
+                    <br />
+                  </p>
+
+                  <strong class="mt-5 mb-2">学习要求</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    为了顺利学习本课程，您应该具备以下基础知识和技术背景：<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    React组件开发基础。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    基本的JavaScript技能。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    对表格组件的使用与理解。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    对npm包管理器的基础操作了解。
+                  </p>
+                  <strong class="mt-5 mb-2">适合人群</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    本课程特别适合以下几类人群：<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    前端开发者：想深入理解React插件化开发，并学习如何构建模块化、可扩展表格组件的开发者。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    全栈开发者：希望提升在React项目中构建复杂功能插件的能力，解决实际业务需求。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    技术专家与架构师：需要掌握插件化开发架构与最佳实践，进一步优化项目结构与功能扩展的技术管理者。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    学生与初学者：有一定React开发基础，想要提升前端开发能力并扩展高级开发技巧的学习者。
+                  </p>
+
+                  <p class="text-center mt-5">
+                    <img
+                      src="/images/buy-me-a-coffee.webp"
+                      alt="buy-me-a-coffee"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-grid gap-2 mb-3">
+                <button class="btn btn-danger" type="button">课程大䋞</button>
+              </div>
+              <div id="content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">返回顶部</a>
+        </p>
+        <p class="mb-1">chinavane is &copy; 子心，2024。</p>
+        <p class="mb-0">你可以添加微信：chinavane_2008，联系我。</p>
+      </div>
+    </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/marked.min.js"></script>
+    <script>
+      const md = `
+      ├── 01-react-table-plugin-课程介绍
+      ├── 02-react-table-plugin-插件化架构设计原则
+      ├── 03-从零开始构建一个基础的React Table组件
+      ├── 04-React Table组件的层次结构分析
+      ├── 05-排序插件的定义
+      ├── 06-排序插件的集成
+      ├── 07-测试排序插件
+      ├── 08-排序插件的代码优化
+      ├── 09-定义分页插件的基本结构
+      ├── 10-传递分页插件
+      ├── 11-分页控制组件的创建
+      ├── 12-上下文内容获取方式的改进
+      ├── 13-筛选插件的定义
+      ├── 14-筛选插件的调用
+      ├── 15-筛选后分页Bug的修复
+      ├── 16-多国语言插件准备
+      ├── 17-多国语言插件的集成
+      ├── 18-分页控制组件的国际化完善
+      ├── 19-单元格自定义渲染
+      ├── 20-行插件的开发
+      ├── 21-导出CSV插件的开发
+      ├── 22-导出当前页CSV数据
+      ├── 23-缓存数据的导出
+      ├── 24-图表插件的实现
+      ├── 25-插件管理器的构建
+      ├── 26-打包插件
+      ├── 27-npm包的发布
+      ├── 28-在新项目中安装与使用发布的包
+      ├── 29-总结
+      ├── 30-Q&A
+      `;
+
+      document.getElementById("content").innerHTML = marked.parse(md);
+    </script>
+  </body>
+</html>
