@@ -16,6 +16,40 @@
     <script src="/js/color-modes.min.js"></script>
   </head>
   <body>
+    <div
+      class="modal fade"
+      id="video-player-modal"
+      tabindex="-1"
+      aria-labelledby="video-player-modal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">课程介绍</h1>
+          </div>
+          <div class="modal-body">
+            <video
+              id="video-player"
+              controlsList="nodownload nofullscreen noplaybackrate"
+              disablePictureInPicture
+              width="100%"
+              controls
+            ></video>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              关闭
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path
@@ -305,41 +339,47 @@
     </footer>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/marked.min.js"></script>
+    <script src="/js/playVideo.js"></script>
     <script>
       const md = `
-      ├── 01-react-table-plugin-课程介绍
-      ├── 02-react-table-plugin-插件化架构设计原则
-      ├── 03-从零开始构建一个基础的React Table组件
-      ├── 04-React Table组件的层次结构分析
-      ├── 05-排序插件的定义
-      ├── 06-排序插件的集成
-      ├── 07-测试排序插件
-      ├── 08-排序插件的代码优化
-      ├── 09-定义分页插件的基本结构
-      ├── 10-传递分页插件
-      ├── 11-分页控制组件的创建
-      ├── 12-上下文内容获取方式的改进
-      ├── 13-筛选插件的定义
-      ├── 14-筛选插件的调用
-      ├── 15-筛选后分页Bug的修复
-      ├── 16-多国语言插件准备
-      ├── 17-多国语言插件的集成
-      ├── 18-分页控制组件的国际化完善
-      ├── 19-单元格自定义渲染
-      ├── 20-行插件的开发
-      ├── 21-导出CSV插件的开发
-      ├── 22-导出当前页CSV数据
-      ├── 23-缓存数据的导出
-      ├── 24-图表插件的实现
-      ├── 25-插件管理器的构建
-      ├── 26-打包插件
-      ├── 27-npm包的发布
-      ├── 28-在新项目中安装与使用发布的包
-      ├── 29-总结
-      ├── 30-Q&A
-      `;
+- <a data-bs-toggle="modal" data-bs-target="#video-player-modal" href="javascript:void(0)" onclick="playVideo('react-table-plugin-preview/01-react-table-plugin-课程介绍')">01-react-table-plugin-课程介绍(预览)</a>
+- <a data-bs-toggle="modal" data-bs-target="#video-player-modal" href="javascript:void(0)" onclick="playVideo('react-table-plugin-preview/02-react-table-plugin-插件化架构设计原则')">02-react-table-plugin-插件化架构设计原则(预览)</a>
+- <a data-bs-toggle="modal" data-bs-target="#video-player-modal" href="javascript:void(0)" onclick="playVideo('react-table-plugin-preview/03-从零开始构建一个基础的React Table组件')">03-从零开始构建一个基础的React Table组件(预览)</a>
+- <a data-bs-toggle="modal" data-bs-target="#video-player-modal" href="javascript:void(0)" onclick="playVideo('react-table-plugin-preview/04-React Table组件的层次结构分析')">04-React Table组件的层次结构分析(预览)</a>
+- <a data-bs-toggle="modal" data-bs-target="#video-player-modal" href="javascript:void(0)" onclick="playVideo('react-table-plugin-preview/05-排序插件的定义')">05-排序插件的定义(预览)</a>
+- <a data-bs-toggle="modal" data-bs-target="#video-player-modal" href="javascript:void(0)" onclick="playVideo('react-table-plugin-preview/06-排序插件的集成')">06-排序插件的集成(预览)</a>
+- <a data-bs-toggle="modal" data-bs-target="#video-player-modal" href="javascript:void(0)" onclick="playVideo('react-table-plugin-preview/07-测试排序插件')">07-测试排序插件(预览)</a>
+- <a data-bs-toggle="modal" data-bs-target="#video-player-modal" href="javascript:void(0)" onclick="playVideo('react-table-plugin-preview/08-排序插件的代码优化')">08-排序插件的代码优化(预览)</a>
+- 09-定义分页插件的基本结构
+- 10-传递分页插件
+- 11-分页控制组件的创建
+- 12-上下文内容获取方式的改进
+- 13-筛选插件的定义
+- 14-筛选插件的调用
+- 15-筛选后分页Bug的修复
+- 16-多国语言插件准备
+- 17-多国语言插件的集成
+- 18-分页控制组件的国际化完善
+- 19-单元格自定义渲染
+- 20-行插件的开发
+- 21-导出CSV插件的开发
+- 22-导出当前页CSV数据
+- 23-缓存数据的导出
+- 24-图表插件的实现
+- 25-插件管理器的构建
+- 26-打包插件
+- 27-npm包的发布
+- 28-在新项目中安装与使用发布的包
+- 29-总结
+- 30-Q&A
+            `;
+      const html = marked.parse(md, {
+        breaks: true, // 允许换行符转换为<br>
+        sanitize: false, // 禁用HTML清理，允许内联HTML
+        smartypants: true, // 使用“智能”标点符号
+      });
 
-      document.getElementById("content").innerHTML = marked.parse(md);
+      document.getElementById("content").innerHTML = html;
     </script>
   </body>
 </html>

@@ -114,3 +114,7 @@
   width: 60px;
   height: 60px;
 }
+
+#content ul li {
+  list-style: none;
+}
