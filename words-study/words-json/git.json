@@ -1,0 +1,2023 @@
+{
+  "groups": [
+    {
+      "id": "id_000231_47d1bb73",
+      "name": "Repository Operations",
+      "description": "",
+      "rating": 4,
+      "words": [
+        {
+          "id": "id_000232_8c789b66",
+          "original": "init",
+          "phonetic": "",
+          "translation": "init",
+          "breakdown": [
+            {
+              "word": "init",
+              "phonetic": "",
+              "translation": "init"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000233_c07683d1",
+          "original": "clone",
+          "phonetic": "/k l oʊ1 n/",
+          "translation": "克隆",
+          "breakdown": [
+            {
+              "word": "clone",
+              "phonetic": "/k l oʊ1 n/",
+              "translation": "克隆"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000234_39fe8858",
+          "original": "remote",
+          "phonetic": "/r ɪ0 m oʊ1 t/",
+          "translation": "远程IP",
+          "breakdown": [
+            {
+              "word": "remote",
+              "phonetic": "/r ɪ0 m oʊ1 t/",
+              "translation": "远程IP"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000235_4fd424be",
+          "original": "fetch",
+          "phonetic": "/f ɛ1 tʃ/",
+          "translation": "拿来",
+          "breakdown": [
+            {
+              "word": "fetch",
+              "phonetic": "/f ɛ1 tʃ/",
+              "translation": "拿来"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000236_7bcb2328",
+          "original": "pull",
+          "phonetic": "/p ʊ1 l/",
+          "translation": "拉取",
+          "breakdown": [
+            {
+              "word": "pull",
+              "phonetic": "/p ʊ1 l/",
+              "translation": "拉取"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000237_4f24ebd2",
+          "original": "push",
+          "phonetic": "/p ʊ1 sH/",
+          "translation": "push",
+          "breakdown": [
+            {
+              "word": "push",
+              "phonetic": "/p ʊ1 sH/",
+              "translation": "push"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000238_93fa16c8",
+          "original": "origin",
+          "phonetic": "/ɔ1 r ʌ0 dʒ ʌ0 n/",
+          "translation": "来源",
+          "breakdown": [
+            {
+              "word": "origin",
+              "phonetic": "/ɔ1 r ʌ0 dʒ ʌ0 n/",
+              "translation": "来源"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000239_5be49fb5",
+          "original": "upstream",
+          "phonetic": "/ʌ1 p s t r i1 m/",
+          "translation": "上游",
+          "breakdown": [
+            {
+              "word": "upstream",
+              "phonetic": "/ʌ1 p s t r i1 m/",
+              "translation": "上游"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000240_8ad5a568",
+          "original": "fork",
+          "phonetic": "/f ɔ1 r k/",
+          "translation": "分叉",
+          "breakdown": [
+            {
+              "word": "fork",
+              "phonetic": "/f ɔ1 r k/",
+              "translation": "分叉"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000241_6796f0e8",
+          "original": "mirror",
+          "phonetic": "/m ɪ1 r ɜr0/",
+          "translation": "鏡子",
+          "breakdown": [
+            {
+              "word": "mirror",
+              "phonetic": "/m ɪ1 r ɜr0/",
+              "translation": "鏡子"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000242_2381f6c5",
+      "name": "Branch Operations",
+      "description": "",
+      "rating": 4,
+      "words": [
+        {
+          "id": "id_000243_0b9b96e7",
+          "original": "branch",
+          "phonetic": "/b r æ1 n tʃ/",
+          "translation": "分支",
+          "breakdown": [
+            {
+              "word": "branch",
+              "phonetic": "/b r æ1 n tʃ/",
+              "translation": "分支"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000244_18fd0b41",
+          "original": "checkout",
+          "phonetic": "/tʃ ɛ1 k aʊ2 t/",
+          "translation": "结帐",
+          "breakdown": [
+            {
+              "word": "checkout",
+              "phonetic": "/tʃ ɛ1 k aʊ2 t/",
+              "translation": "结帐"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000245_417691ee",
+          "original": "switch",
+          "phonetic": "/s w ɪ1 tʃ/",
+          "translation": "switch",
+          "breakdown": [
+            {
+              "word": "switch",
+              "phonetic": "/s w ɪ1 tʃ/",
+              "translation": "switch"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000246_7ee4d8bd",
+          "original": "merge",
+          "phonetic": "/m ɜr1 dʒ/",
+          "translation": "合并",
+          "breakdown": [
+            {
+              "word": "merge",
+              "phonetic": "/m ɜr1 dʒ/",
+              "translation": "合并"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000247_6f3313c7",
+          "original": "rebase",
+          "phonetic": "",
+          "translation": "重置",
+          "breakdown": [
+            {
+              "word": "rebase",
+              "phonetic": "",
+              "translation": "重置"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000248_850a5c95",
+          "original": "cherry-pick",
+          "phonetic": "",
+          "translation": "cherry-pick",
+          "breakdown": [
+            {
+              "word": "cherry",
+              "phonetic": "/tʃ ɛ1 r i0/",
+              "translation": "樱桃色"
+            },
+            {
+              "word": "pick",
+              "phonetic": "/p ɪ1 k/",
+              "translation": "选择"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000249_61a44c85",
+          "original": "log",
+          "phonetic": "/l ɔ1 ɡ/",
+          "translation": "日志",
+          "breakdown": [
+            {
+              "word": "log",
+              "phonetic": "/l ɔ1 ɡ/",
+              "translation": "日志"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000250_91162de2",
+          "original": "diff",
+          "phonetic": "/d ɪ1 f/",
+          "translation": "diff",
+          "breakdown": [
+            {
+              "word": "diff",
+              "phonetic": "/d ɪ1 f/",
+              "translation": "diff"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000251_7b04a6d2",
+          "original": "stash",
+          "phonetic": "/s t æ1 sH/",
+          "translation": "暂存处",
+          "breakdown": [
+            {
+              "word": "stash",
+              "phonetic": "/s t æ1 sH/",
+              "translation": "暂存处"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000252_58e87e4e",
+          "original": "tag",
+          "phonetic": "/t æ1 ɡ/",
+          "translation": "标签",
+          "breakdown": [
+            {
+              "word": "tag",
+              "phonetic": "/t æ1 ɡ/",
+              "translation": "标签"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000253_904a573c",
+      "name": "Commit Operations",
+      "description": "",
+      "rating": 4,
+      "words": [
+        {
+          "id": "id_000254_612f5118",
+          "original": "add",
+          "phonetic": "/æ1 d/",
+          "translation": "添加",
+          "breakdown": [
+            {
+              "word": "add",
+              "phonetic": "/æ1 d/",
+              "translation": "添加"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000255_ef1f8a4a",
+          "original": "commit",
+          "phonetic": "/k ʌ0 m ɪ1 t/",
+          "translation": "犯罪、押解到…；遣送到…",
+          "breakdown": [
+            {
+              "word": "commit",
+              "phonetic": "/k ʌ0 m ɪ1 t/",
+              "translation": "犯罪、押解到…；遣送到…"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000256_522dbefe",
+          "original": "status",
+          "phonetic": "/s t æ1 t ʌ0 s/",
+          "translation": "地位",
+          "breakdown": [
+            {
+              "word": "status",
+              "phonetic": "/s t æ1 t ʌ0 s/",
+              "translation": "地位"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000257_7b4a6c79",
+          "original": "reset",
+          "phonetic": "/r i0 s ɛ1 t/",
+          "translation": "重置",
+          "breakdown": [
+            {
+              "word": "reset",
+              "phonetic": "/r i0 s ɛ1 t/",
+              "translation": "重置"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000258_30dc0ba8",
+          "original": "revert",
+          "phonetic": "/r ɪ0 v ɜr1 t/",
+          "translation": "还原",
+          "breakdown": [
+            {
+              "word": "revert",
+              "phonetic": "/r ɪ0 v ɜr1 t/",
+              "translation": "还原"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000259_d4961c1d",
+          "original": "amend",
+          "phonetic": "/ʌ0 m ɛ1 n d/",
+          "translation": "改善 改善 [gai3 shan4]",
+          "breakdown": [
+            {
+              "word": "amend",
+              "phonetic": "/ʌ0 m ɛ1 n d/",
+              "translation": "改善 改善 [gai3 shan4]"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000260_79e1beff",
+          "original": "squash",
+          "phonetic": "/s k w ɑ1 sH/",
+          "translation": "挤 [ji3]",
+          "breakdown": [
+            {
+              "word": "squash",
+              "phonetic": "/s k w ɑ1 sH/",
+              "translation": "挤 [ji3]"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000261_7d652315",
+          "original": "reflog",
+          "phonetic": "",
+          "translation": "reflog",
+          "breakdown": [
+            {
+              "word": "reflog",
+              "phonetic": "",
+              "translation": "reflog"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000262_f120fc9f",
+          "original": "blame",
+          "phonetic": "/b l eɪ1 m/",
+          "translation": "归咎于",
+          "breakdown": [
+            {
+              "word": "blame",
+              "phonetic": "/b l eɪ1 m/",
+              "translation": "归咎于"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000263_05aff12b",
+          "original": "bisect",
+          "phonetic": "",
+          "translation": "切分：",
+          "breakdown": [
+            {
+              "word": "bisect",
+              "phonetic": "",
+              "translation": "切分："
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000264_d9dee2b6",
+      "name": "Configurations",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000265_2ce9c307",
+          "original": "config",
+          "phonetic": "",
+          "translation": "config",
+          "breakdown": [
+            {
+              "word": "config",
+              "phonetic": "",
+              "translation": "config"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000266_a1987b95",
+          "original": "alias",
+          "phonetic": "/eɪ1 l i0 ʌ0 s/",
+          "translation": "别名",
+          "breakdown": [
+            {
+              "word": "alias",
+              "phonetic": "/eɪ1 l i0 ʌ0 s/",
+              "translation": "别名"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000267_c3120d10",
+          "original": "ignore",
+          "phonetic": "/ɪ2 ɡ n ɔ1 r/",
+          "translation": "忽略",
+          "breakdown": [
+            {
+              "word": "ignore",
+              "phonetic": "/ɪ2 ɡ n ɔ1 r/",
+              "translation": "忽略"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000268_23d91fc3",
+          "original": "hook",
+          "phonetic": "/h ʊ1 k/",
+          "translation": "鈎子",
+          "breakdown": [
+            {
+              "word": "hook",
+              "phonetic": "/h ʊ1 k/",
+              "translation": "鈎子"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000269_2bb2eafd",
+          "original": "attributes",
+          "phonetic": "/æ1 t r ʌ0 b j u2 t s/",
+          "translation": "属性（attributes）",
+          "breakdown": [
+            {
+              "word": "attributes",
+              "phonetic": "/æ1 t r ʌ0 b j u2 t s/",
+              "translation": "属性（attributes）"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000270_8c69d634",
+          "original": "credential",
+          "phonetic": "/k r ɪ0 d ɛ1 n sH ʌ0 l/",
+          "translation": "凭证",
+          "breakdown": [
+            {
+              "word": "credential",
+              "phonetic": "/k r ɪ0 d ɛ1 n sH ʌ0 l/",
+              "translation": "凭证"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000271_590ec104",
+          "original": "core",
+          "phonetic": "/k ɔ1 r/",
+          "translation": "核心",
+          "breakdown": [
+            {
+              "word": "core",
+              "phonetic": "/k ɔ1 r/",
+              "translation": "核心"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000272_9545f74a",
+          "original": "global",
+          "phonetic": "/ɡ l oʊ1 b ʌ0 l/",
+          "translation": "全球",
+          "breakdown": [
+            {
+              "word": "global",
+              "phonetic": "/ɡ l oʊ1 b ʌ0 l/",
+              "translation": "全球"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000273_fa1d867d",
+          "original": "system",
+          "phonetic": "/s ɪ1 s t ʌ0 m/",
+          "translation": "系統",
+          "breakdown": [
+            {
+              "word": "system",
+              "phonetic": "/s ɪ1 s t ʌ0 m/",
+              "translation": "系統"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000274_4663ddda",
+          "original": "local",
+          "phonetic": "/l oʊ1 k ʌ0 l/",
+          "translation": "local",
+          "breakdown": [
+            {
+              "word": "local",
+              "phonetic": "/l oʊ1 k ʌ0 l/",
+              "translation": "local"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000275_86776216",
+      "name": "Collaboration",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000276_7f7c30e2",
+          "original": "pull-request",
+          "phonetic": "",
+          "translation": "pull请求",
+          "breakdown": [
+            {
+              "word": "pull",
+              "phonetic": "/p ʊ1 l/",
+              "translation": "拉取"
+            },
+            {
+              "word": "request",
+              "phonetic": "/r ɪ0 k w ɛ1 s t/",
+              "translation": "要求"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000277_e62af03b",
+          "original": "merge-request",
+          "phonetic": "",
+          "translation": "新合并请求",
+          "breakdown": [
+            {
+              "word": "merge",
+              "phonetic": "/m ɜr1 dʒ/",
+              "translation": "合并"
+            },
+            {
+              "word": "request",
+              "phonetic": "/r ɪ0 k w ɛ1 s t/",
+              "translation": "要求"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000278_c562600d",
+          "original": "code-review",
+          "phonetic": "",
+          "translation": "代码评审",
+          "breakdown": [
+            {
+              "word": "code",
+              "phonetic": "/k oʊ1 d/",
+              "translation": "代码"
+            },
+            {
+              "word": "review",
+              "phonetic": "/r i2 v j u1/",
+              "translation": "审校"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000279_44c28d5a",
+          "original": "conflict",
+          "phonetic": "/k ɑ1 n f l ɪ0 k t/",
+          "translation": "冲突",
+          "breakdown": [
+            {
+              "word": "conflict",
+              "phonetic": "/k ɑ1 n f l ɪ0 k t/",
+              "translation": "冲突"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000280_a86f7491",
+          "original": "resolve",
+          "phonetic": "/r i0 z ɑ1 l v/",
+          "translation": "v.解决 ,决定, 决定审判地点",
+          "breakdown": [
+            {
+              "word": "resolve",
+              "phonetic": "/r i0 z ɑ1 l v/",
+              "translation": "v.解决 ,决定, 决定审判地点"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000281_b1d26b16",
+          "original": "approve",
+          "phonetic": "/ʌ0 p r u1 v/",
+          "translation": "批准",
+          "breakdown": [
+            {
+              "word": "approve",
+              "phonetic": "/ʌ0 p r u1 v/",
+              "translation": "批准"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000282_3d8ab732",
+          "original": "comment",
+          "phonetic": "/k ɑ1 m ɛ0 n t/",
+          "translation": "评论",
+          "breakdown": [
+            {
+              "word": "comment",
+              "phonetic": "/k ɑ1 m ɛ0 n t/",
+              "translation": "评论"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000283_77d0a871",
+          "original": "fork",
+          "phonetic": "/f ɔ1 r k/",
+          "translation": "分叉",
+          "breakdown": [
+            {
+              "word": "fork",
+              "phonetic": "/f ɔ1 r k/",
+              "translation": "分叉"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000284_95839f4b",
+          "original": "upstream",
+          "phonetic": "/ʌ1 p s t r i1 m/",
+          "translation": "上游",
+          "breakdown": [
+            {
+              "word": "upstream",
+              "phonetic": "/ʌ1 p s t r i1 m/",
+              "translation": "上游"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000285_97526e51",
+          "original": "sync",
+          "phonetic": "/s ɪ1 nɡ k/",
+          "translation": "同步",
+          "breakdown": [
+            {
+              "word": "sync",
+              "phonetic": "/s ɪ1 nɡ k/",
+              "translation": "同步"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000286_3661f4f3",
+      "name": "Advanced Operations",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000287_3f60d190",
+          "original": "submodule",
+          "phonetic": "",
+          "translation": "子模块",
+          "breakdown": [
+            {
+              "word": "submodule",
+              "phonetic": "",
+              "translation": "子模块"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000288_fd1b836c",
+          "original": "subtree",
+          "phonetic": "",
+          "translation": "子树",
+          "breakdown": [
+            {
+              "word": "subtree",
+              "phonetic": "",
+              "translation": "子树"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000289_ebff3cd5",
+          "original": "worktree",
+          "phonetic": "",
+          "translation": "worktree",
+          "breakdown": [
+            {
+              "word": "worktree",
+              "phonetic": "",
+              "translation": "worktree"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000290_508f9f3e",
+          "original": "filter-branch",
+          "phonetic": "",
+          "translation": "filter-branch",
+          "breakdown": [
+            {
+              "word": "filter",
+              "phonetic": "/f ɪ1 l t ɜr0/",
+              "translation": "筛选"
+            },
+            {
+              "word": "branch",
+              "phonetic": "/b r æ1 n tʃ/",
+              "translation": "分支"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000291_ee72f035",
+          "original": "bundle",
+          "phonetic": "/b ʌ1 n d ʌ0 l/",
+          "translation": "课程套餐",
+          "breakdown": [
+            {
+              "word": "bundle",
+              "phonetic": "/b ʌ1 n d ʌ0 l/",
+              "translation": "课程套餐"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000292_b8e30c4a",
+          "original": "archive",
+          "phonetic": "/ɑ1 r k aɪ2 v/",
+          "translation": "存档",
+          "breakdown": [
+            {
+              "word": "archive",
+              "phonetic": "/ɑ1 r k aɪ2 v/",
+              "translation": "存档"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000293_7effabfd",
+          "original": "patch",
+          "phonetic": "/p æ1 tʃ/",
+          "translation": "patch",
+          "breakdown": [
+            {
+              "word": "patch",
+              "phonetic": "/p æ1 tʃ/",
+              "translation": "patch"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000294_ddec5a1c",
+      "name": "Common Flags",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000295_62306369",
+          "original": "hard",
+          "phonetic": "/h ɑ1 r d/",
+          "translation": "困难",
+          "breakdown": [
+            {
+              "word": "hard",
+              "phonetic": "/h ɑ1 r d/",
+              "translation": "困难"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000296_36e28e6a",
+          "original": "soft",
+          "phonetic": "/s ɑ1 f t/",
+          "translation": "软件",
+          "breakdown": [
+            {
+              "word": "soft",
+              "phonetic": "/s ɑ1 f t/",
+              "translation": "软件"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000297_1c273ad2",
+          "original": "mixed",
+          "phonetic": "/m ɪ1 k s t/",
+          "translation": "¸¡µ㐍£¨float£©",
+          "breakdown": [
+            {
+              "word": "mixed",
+              "phonetic": "/m ɪ1 k s t/",
+              "translation": "¸¡µ㐍£¨float£©"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000298_c8a5223f",
+          "original": "force",
+          "phonetic": "/f ɔ1 r s/",
+          "translation": "力量",
+          "breakdown": [
+            {
+              "word": "force",
+              "phonetic": "/f ɔ1 r s/",
+              "translation": "力量"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000299_28851b8d",
+          "original": "dry-run",
+          "phonetic": "",
+          "translation": "Dry- run",
+          "breakdown": [
+            {
+              "word": "dry",
+              "phonetic": "/d r aɪ1/",
+              "translation": "干式"
+            },
+            {
+              "word": "run",
+              "phonetic": "/r ʌ1 n/",
+              "translation": "跑步"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000300_c3e0fd4d",
+          "original": "no-ff",
+          "phonetic": "",
+          "translation": "no-ff",
+          "breakdown": [
+            {
+              "word": "no",
+              "phonetic": "/n oʊ1/",
+              "translation": "不"
+            },
+            {
+              "word": "ff",
+              "phonetic": "",
+              "translation": "ff"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000301_1975cfa1",
+          "original": "ff-only",
+          "phonetic": "",
+          "translation": "ff-only",
+          "breakdown": [
+            {
+              "word": "ff",
+              "phonetic": "",
+              "translation": "ff"
+            },
+            {
+              "word": "only",
+              "phonetic": "/oʊ1 n l i0/",
+              "translation": "仅有的"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000302_28187980",
+          "original": "all",
+          "phonetic": "/ɔ1 l/",
+          "translation": "全部",
+          "breakdown": [
+            {
+              "word": "all",
+              "phonetic": "/ɔ1 l/",
+              "translation": "全部"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000303_e8674a21",
+          "original": "verbose",
+          "phonetic": "",
+          "translation": "详细的",
+          "breakdown": [
+            {
+              "word": "verbose",
+              "phonetic": "",
+              "translation": "详细的"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000304_c4be939d",
+          "original": "quiet",
+          "phonetic": "/k w aɪ1 ʌ0 t/",
+          "translation": "安静",
+          "breakdown": [
+            {
+              "word": "quiet",
+              "phonetic": "/k w aɪ1 ʌ0 t/",
+              "translation": "安静"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000305_4bd6c8ab",
+      "name": "Git Services",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000306_a142ffa6",
+          "original": "GitHub",
+          "phonetic": "/ɡ ɪ1 t h ʌ0 b/",
+          "translation": "GitHub",
+          "breakdown": [
+            {
+              "word": "Git",
+              "phonetic": "/ɡ ɪ1 t/",
+              "translation": "Git"
+            },
+            {
+              "word": "Hub",
+              "phonetic": "/h ʌ1 b/",
+              "translation": "仓库"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000307_8391054d",
+          "original": "GitLab",
+          "phonetic": "",
+          "translation": "gitlab",
+          "breakdown": [
+            {
+              "word": "Git",
+              "phonetic": "/ɡ ɪ1 t/",
+              "translation": "Git"
+            },
+            {
+              "word": "Lab",
+              "phonetic": "/l æ1 b/",
+              "translation": "实验室"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000308_38b8a8b4",
+          "original": "Bitbucket",
+          "phonetic": "",
+          "translation": "Bitbucket",
+          "breakdown": [
+            {
+              "word": "Bitbucket",
+              "phonetic": "",
+              "translation": "Bitbucket"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000309_38610e47",
+          "original": "Gitee",
+          "phonetic": "",
+          "translation": "码云",
+          "breakdown": [
+            {
+              "word": "Gitee",
+              "phonetic": "",
+              "translation": "码云"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000310_7ecc628e",
+      "name": "Git Flow Model",
+      "description": "",
+      "rating": 5,
+      "words": [
+        {
+          "id": "id_000311_2c341a79",
+          "original": "master",
+          "phonetic": "/m æ1 s t ɜr0/",
+          "translation": "原模",
+          "breakdown": [
+            {
+              "word": "master",
+              "phonetic": "/m æ1 s t ɜr0/",
+              "translation": "原模"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000312_ad2e5643",
+          "original": "main",
+          "phonetic": "/m eɪ1 n/",
+          "translation": "main",
+          "breakdown": [
+            {
+              "word": "main",
+              "phonetic": "/m eɪ1 n/",
+              "translation": "main"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000313_c158157c",
+          "original": "develop",
+          "phonetic": "/d ɪ0 v ɛ1 l ʌ0 p/",
+          "translation": "开发\tkāifā",
+          "breakdown": [
+            {
+              "word": "develop",
+              "phonetic": "/d ɪ0 v ɛ1 l ʌ0 p/",
+              "translation": "开发\tkāifā"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000314_cd0d0d28",
+          "original": "feature",
+          "phonetic": "/f i1 tʃ ɜr0/",
+          "translation": "特色",
+          "breakdown": [
+            {
+              "word": "feature",
+              "phonetic": "/f i1 tʃ ɜr0/",
+              "translation": "特色"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000315_315b7e2e",
+          "original": "release",
+          "phonetic": "/r i0 l i1 s/",
+          "translation": "发放",
+          "breakdown": [
+            {
+              "word": "release",
+              "phonetic": "/r i0 l i1 s/",
+              "translation": "发放"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000316_1cfd7e64",
+          "original": "hotfix",
+          "phonetic": "",
+          "translation": "修补程序",
+          "breakdown": [
+            {
+              "word": "hotfix",
+              "phonetic": "",
+              "translation": "修补程序"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000317_421774b2",
+          "original": "support",
+          "phonetic": "/s ʌ0 p ɔ1 r t/",
+          "translation": "支持部门",
+          "breakdown": [
+            {
+              "word": "support",
+              "phonetic": "/s ʌ0 p ɔ1 r t/",
+              "translation": "支持部门"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000318_1ff6e07a",
+          "original": "bugfix",
+          "phonetic": "",
+          "translation": "错误修正",
+          "breakdown": [
+            {
+              "word": "bugfix",
+              "phonetic": "",
+              "translation": "错误修正"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000319_6e8ff7db",
+          "original": "start",
+          "phonetic": "/s t ɑ1 r t/",
+          "translation": "开始",
+          "breakdown": [
+            {
+              "word": "start",
+              "phonetic": "/s t ɑ1 r t/",
+              "translation": "开始"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000320_ddef3460",
+          "original": "finish",
+          "phonetic": "/f ɪ1 n ɪ0 sH/",
+          "translation": "完成",
+          "breakdown": [
+            {
+              "word": "finish",
+              "phonetic": "/f ɪ1 n ɪ0 sH/",
+              "translation": "完成"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000321_66b43c2e",
+          "original": "publish",
+          "phonetic": "/p ʌ1 b l ɪ0 sH/",
+          "translation": "发布",
+          "breakdown": [
+            {
+              "word": "publish",
+              "phonetic": "/p ʌ1 b l ɪ0 sH/",
+              "translation": "发布"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000322_c301eb9b",
+          "original": "version-tag",
+          "phonetic": "",
+          "translation": "version-tag",
+          "breakdown": [
+            {
+              "word": "version",
+              "phonetic": "/v ɜr1 zH ʌ0 n/",
+              "translation": "版本"
+            },
+            {
+              "word": "tag",
+              "phonetic": "/t æ1 ɡ/",
+              "translation": "标签"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000323_a1c25280",
+      "name": "Branching Strategies",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000324_e79b43a9",
+          "original": "trunk-based",
+          "phonetic": "",
+          "translation": "基于中继线",
+          "breakdown": [
+            {
+              "word": "trunk",
+              "phonetic": "/t r ʌ1 nɡ k/",
+              "translation": "躯干"
+            },
+            {
+              "word": "based",
+              "phonetic": "/b eɪ1 s t/",
+              "translation": "免疫"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000325_488029e4",
+          "original": "feature-branch",
+          "phonetic": "",
+          "translation": "feature-branch",
+          "breakdown": [
+            {
+              "word": "feature",
+              "phonetic": "/f i1 tʃ ɜr0/",
+              "translation": "特色"
+            },
+            {
+              "word": "branch",
+              "phonetic": "/b r æ1 n tʃ/",
+              "translation": "分支"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000326_cfdccc24",
+          "original": "release-branch",
+          "phonetic": "",
+          "translation": "release-branch",
+          "breakdown": [
+            {
+              "word": "release",
+              "phonetic": "/r i0 l i1 s/",
+              "translation": "发放"
+            },
+            {
+              "word": "branch",
+              "phonetic": "/b r æ1 n tʃ/",
+              "translation": "分支"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000327_2d1b3d01",
+          "original": "environment-branch",
+          "phonetic": "",
+          "translation": "environment-branch",
+          "breakdown": [
+            {
+              "word": "environment",
+              "phonetic": "/ɪ0 n v aɪ1 r ʌ0 n m ʌ0 n t/",
+              "translation": "环境"
+            },
+            {
+              "word": "branch",
+              "phonetic": "/b r æ1 n tʃ/",
+              "translation": "分支"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000328_b5db54c2",
+          "original": "long-lived-branch",
+          "phonetic": "",
+          "translation": "long-lived-branch",
+          "breakdown": [
+            {
+              "word": "long",
+              "phonetic": "/l ɔ1 nɡ/",
+              "translation": "长按"
+            },
+            {
+              "word": "lived",
+              "phonetic": "/l ɪ1 v d/",
+              "translation": "生活了"
+            },
+            {
+              "word": "branch",
+              "phonetic": "/b r æ1 n tʃ/",
+              "translation": "分支"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000329_1316545d",
+          "original": "short-lived-branch",
+          "phonetic": "",
+          "translation": "short-lived-branch",
+          "breakdown": [
+            {
+              "word": "short",
+              "phonetic": "/sH ɔ1 r t/",
+              "translation": "短整型data type in C/ C++"
+            },
+            {
+              "word": "lived",
+              "phonetic": "/l ɪ1 v d/",
+              "translation": "生活了"
+            },
+            {
+              "word": "branch",
+              "phonetic": "/b r æ1 n tʃ/",
+              "translation": "分支"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000330_184568dc",
+          "original": "pull-request",
+          "phonetic": "",
+          "translation": "pull请求",
+          "breakdown": [
+            {
+              "word": "pull",
+              "phonetic": "/p ʊ1 l/",
+              "translation": "拉取"
+            },
+            {
+              "word": "request",
+              "phonetic": "/r ɪ0 k w ɛ1 s t/",
+              "translation": "要求"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000331_ab215771",
+          "original": "merge-request",
+          "phonetic": "",
+          "translation": "新合并请求",
+          "breakdown": [
+            {
+              "word": "merge",
+              "phonetic": "/m ɜr1 dʒ/",
+              "translation": "合并"
+            },
+            {
+              "word": "request",
+              "phonetic": "/r ɪ0 k w ɛ1 s t/",
+              "translation": "要求"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000332_9c8786d9",
+          "original": "fast-forward",
+          "phonetic": "/f æ2 s t f ɔ1 r w ɜr0 d/",
+          "translation": "快速前进",
+          "breakdown": [
+            {
+              "word": "fast",
+              "phonetic": "/f æ1 s t/",
+              "translation": "快速"
+            },
+            {
+              "word": "forward",
+              "phonetic": "/f ɔ1 r w ɜr0 d/",
+              "translation": "向前"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000333_30a0ccaf",
+          "original": "squash-merge",
+          "phonetic": "",
+          "translation": "squash-merge",
+          "breakdown": [
+            {
+              "word": "squash",
+              "phonetic": "/s k w ɑ1 sH/",
+              "translation": "挤 [ji3]"
+            },
+            {
+              "word": "merge",
+              "phonetic": "/m ɜr1 dʒ/",
+              "translation": "合并"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000334_155ae474",
+          "original": "rebase-merge",
+          "phonetic": "",
+          "translation": "rebase-merge",
+          "breakdown": [
+            {
+              "word": "rebase",
+              "phonetic": "",
+              "translation": "重置"
+            },
+            {
+              "word": "merge",
+              "phonetic": "/m ɜr1 dʒ/",
+              "translation": "合并"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000335_f779af36",
+          "original": "protected-branch",
+          "phonetic": "",
+          "translation": "protected-branch",
+          "breakdown": [
+            {
+              "word": "protected",
+              "phonetic": "/p r ʌ0 t ɛ1 k t ɪ0 d/",
+              "translation": "受保护"
+            },
+            {
+              "word": "branch",
+              "phonetic": "/b r æ1 n tʃ/",
+              "translation": "分支"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000336_18b3cc69",
+      "name": "Workflow Tools",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000337_e71ff643",
+          "original": "git-flow",
+          "phonetic": "",
+          "translation": "git-flow",
+          "breakdown": [
+            {
+              "word": "git",
+              "phonetic": "/ɡ ɪ1 t/",
+              "translation": "git"
+            },
+            {
+              "word": "flow",
+              "phonetic": "/f l oʊ1/",
+              "translation": "百萬港元"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000338_a1295dc5",
+          "original": "sourcetree",
+          "phonetic": "",
+          "translation": "sourcetree",
+          "breakdown": [
+            {
+              "word": "sourcetree",
+              "phonetic": "",
+              "translation": "sourcetree"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000339_495481e0",
+          "original": "fork",
+          "phonetic": "/f ɔ1 r k/",
+          "translation": "分叉",
+          "breakdown": [
+            {
+              "word": "fork",
+              "phonetic": "/f ɔ1 r k/",
+              "translation": "分叉"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000340_1955d542",
+      "name": "Common Patterns",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000341_db5aeddc",
+          "original": "code-review",
+          "phonetic": "",
+          "translation": "代码评审",
+          "breakdown": [
+            {
+              "word": "code",
+              "phonetic": "/k oʊ1 d/",
+              "translation": "代码"
+            },
+            {
+              "word": "review",
+              "phonetic": "/r i2 v j u1/",
+              "translation": "审校"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000342_167e5759",
+          "original": "pre-commit",
+          "phonetic": "",
+          "translation": "pre-commit",
+          "breakdown": [
+            {
+              "word": "pre",
+              "phonetic": "/p r i1/",
+              "translation": "显示下一篇和前一篇的内容"
+            },
+            {
+              "word": "commit",
+              "phonetic": "/k ʌ0 m ɪ1 t/",
+              "translation": "犯罪、押解到…；遣送到…"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000343_84e3b18c",
+          "original": "post-merge",
+          "phonetic": "",
+          "translation": "合并后",
+          "breakdown": [
+            {
+              "word": "post",
+              "phonetic": "/p oʊ1 s t/",
+              "translation": "邮政"
+            },
+            {
+              "word": "merge",
+              "phonetic": "/m ɜr1 dʒ/",
+              "translation": "合并"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000344_2e011059",
+          "original": "pre-push",
+          "phonetic": "",
+          "translation": "预推",
+          "breakdown": [
+            {
+              "word": "pre",
+              "phonetic": "/p r i1/",
+              "translation": "显示下一篇和前一篇的内容"
+            },
+            {
+              "word": "push",
+              "phonetic": "/p ʊ1 sH/",
+              "translation": "push"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000345_bf0cb24f",
+          "original": "hook-scripts",
+          "phonetic": "",
+          "translation": "hook-scripts",
+          "breakdown": [
+            {
+              "word": "hook",
+              "phonetic": "/h ʊ1 k/",
+              "translation": "鈎子"
+            },
+            {
+              "word": "scripts",
+              "phonetic": "/s k r ɪ1 p t s/",
+              "translation": "脚本"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000346_e5a23e6c",
+          "original": "changelog",
+          "phonetic": "",
+          "translation": "更改日志",
+          "breakdown": [
+            {
+              "word": "changelog",
+              "phonetic": "",
+              "translation": "更改日志"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    }
+  ]
+}

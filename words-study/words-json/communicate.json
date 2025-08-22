@@ -1,0 +1,1657 @@
+{
+  "groups": [
+    {
+      "id": "id_000001_9deae021",
+      "name": "WebSocket",
+      "description": "",
+      "rating": 3,
+      "words": [
+        {
+          "id": "id_000002_ce212543",
+          "original": "WebSocket",
+          "phonetic": "",
+          "translation": "WebSocket",
+          "breakdown": [
+            {
+              "word": "Web",
+              "phonetic": "/w ɛ1 b/",
+              "translation": "網頁"
+            },
+            {
+              "word": "Socket",
+              "phonetic": "/s ɑ1 k ʌ0 t/",
+              "translation": "插座"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000003_fc0d5daa",
+          "original": "ws",
+          "phonetic": "/d ʌ1 b ʌ0 l j u0 ɛ1 s/",
+          "translation": "WS",
+          "breakdown": [
+            {
+              "word": "ws",
+              "phonetic": "/d ʌ1 b ʌ0 l j u0 ɛ1 s/",
+              "translation": "WS"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000004_e6a8ca07",
+          "original": "wss",
+          "phonetic": "",
+          "translation": "WSS",
+          "breakdown": [
+            {
+              "word": "wss",
+              "phonetic": "",
+              "translation": "WSS"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000005_f75e038b",
+          "original": "onopen",
+          "phonetic": "",
+          "translation": "onopen",
+          "breakdown": [
+            {
+              "word": "onopen",
+              "phonetic": "",
+              "translation": "onopen"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000006_ac492e74",
+          "original": "onmessage",
+          "phonetic": "",
+          "translation": "onmessage",
+          "breakdown": [
+            {
+              "word": "onmessage",
+              "phonetic": "",
+              "translation": "onmessage"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000007_23ec1384",
+          "original": "onclose",
+          "phonetic": "",
+          "translation": "onclose",
+          "breakdown": [
+            {
+              "word": "onclose",
+              "phonetic": "",
+              "translation": "onclose"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000008_6868ae7c",
+          "original": "onerror",
+          "phonetic": "",
+          "translation": "错误",
+          "breakdown": [
+            {
+              "word": "onerror",
+              "phonetic": "",
+              "translation": "错误"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000009_05947d72",
+          "original": "send",
+          "phonetic": "/s ɛ1 n d/",
+          "translation": "发送",
+          "breakdown": [
+            {
+              "word": "send",
+              "phonetic": "/s ɛ1 n d/",
+              "translation": "发送"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000010_a736f750",
+          "original": "close",
+          "phonetic": "/k l oʊ1 s/",
+          "translation": "關閉",
+          "breakdown": [
+            {
+              "word": "close",
+              "phonetic": "/k l oʊ1 s/",
+              "translation": "關閉"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000011_2f9dc295",
+          "original": "readyState",
+          "phonetic": "",
+          "translation": "readyState",
+          "breakdown": [
+            {
+              "word": "ready",
+              "phonetic": "/r ɛ1 d i0/",
+              "translation": "就绪"
+            },
+            {
+              "word": "State",
+              "phonetic": "/s t eɪ1 t/",
+              "translation": "状态"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000012_6f639604",
+          "original": "CONNECTING",
+          "phonetic": "/k ʌ0 n ɛ1 k t ɪ0 nɡ/",
+          "translation": "连接中",
+          "breakdown": [
+            {
+              "word": "CONNECTING",
+              "phonetic": "/k ʌ0 n ɛ1 k t ɪ0 nɡ/",
+              "translation": "连接中"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000013_2ef4885d",
+          "original": "OPEN",
+          "phonetic": "/oʊ1 p ʌ0 n/",
+          "translation": "正在营业",
+          "breakdown": [
+            {
+              "word": "OPEN",
+              "phonetic": "/oʊ1 p ʌ0 n/",
+              "translation": "正在营业"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000014_cc471af2",
+          "original": "CLOSING",
+          "phonetic": "/k l oʊ1 z ɪ0 nɡ/",
+          "translation": "结束语",
+          "breakdown": [
+            {
+              "word": "CLOSING",
+              "phonetic": "/k l oʊ1 z ɪ0 nɡ/",
+              "translation": "结束语"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000015_3894dae4",
+          "original": "CLOSED",
+          "phonetic": "/k l oʊ1 z d/",
+          "translation": "关闭",
+          "breakdown": [
+            {
+              "word": "CLOSED",
+              "phonetic": "/k l oʊ1 z d/",
+              "translation": "关闭"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000016_57857a8e",
+          "original": "binaryType",
+          "phonetic": "",
+          "translation": "binaryType",
+          "breakdown": [
+            {
+              "word": "binary",
+              "phonetic": "/b aɪ1 n ɜr0 i0/",
+              "translation": "二进制"
+            },
+            {
+              "word": "Type",
+              "phonetic": "/t aɪ1 p/",
+              "translation": "<g id=\"Bold\"><g id=\"Bold\">课程</g>类型</g>"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000017_53e14f3a",
+          "original": "bufferedAmount",
+          "phonetic": "",
+          "translation": "bufferedAmount",
+          "breakdown": [
+            {
+              "word": "buffered",
+              "phonetic": "/b ʌ1 f ɜr0 d/",
+              "translation": "已缓冲"
+            },
+            {
+              "word": "Amount",
+              "phonetic": "/ʌ0 m aʊ1 n t/",
+              "translation": "金额"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000018_f7797939",
+          "original": "protocol",
+          "phonetic": "/p r oʊ1 t ʌ0 k ɑ2 l/",
+          "translation": "协议",
+          "breakdown": [
+            {
+              "word": "protocol",
+              "phonetic": "/p r oʊ1 t ʌ0 k ɑ2 l/",
+              "translation": "协议"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000019_5920d16b",
+          "original": "extensions",
+          "phonetic": "/ɪ0 k s t ɛ1 n sH ʌ0 n z/",
+          "translation": "扩展",
+          "breakdown": [
+            {
+              "word": "extensions",
+              "phonetic": "/ɪ0 k s t ɛ1 n sH ʌ0 n z/",
+              "translation": "扩展"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000020_89e36998",
+          "original": "ping",
+          "phonetic": "/p ɪ1 nɡ/",
+          "translation": "偵測",
+          "breakdown": [
+            {
+              "word": "ping",
+              "phonetic": "/p ɪ1 nɡ/",
+              "translation": "偵測"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000021_326a6feb",
+          "original": "pong",
+          "phonetic": "/p ɔ1 nɡ/",
+          "translation": "乒乓球",
+          "breakdown": [
+            {
+              "word": "pong",
+              "phonetic": "/p ɔ1 nɡ/",
+              "translation": "乒乓球"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000022_cdcdc5bb",
+      "name": "Server-Sent Events (SSE)",
+      "description": "",
+      "rating": 2,
+      "words": [
+        {
+          "id": "id_000023_ac133389",
+          "original": "EventSource",
+          "phonetic": "",
+          "translation": "EventSource",
+          "breakdown": [
+            {
+              "word": "Event",
+              "phonetic": "/ɪ0 v ɛ1 n t/",
+              "translation": "比賽項目"
+            },
+            {
+              "word": "Source",
+              "phonetic": "/s ɔ1 r s/",
+              "translation": "源"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000024_4569d1c7",
+          "original": "sse",
+          "phonetic": "",
+          "translation": "东南",
+          "breakdown": [
+            {
+              "word": "sse",
+              "phonetic": "",
+              "translation": "东南"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000025_07695db4",
+          "original": "event-stream",
+          "phonetic": "",
+          "translation": "event-stream",
+          "breakdown": [
+            {
+              "word": "event",
+              "phonetic": "/ɪ0 v ɛ1 n t/",
+              "translation": "event"
+            },
+            {
+              "word": "stream",
+              "phonetic": "/s t r i1 m/",
+              "translation": "流动"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000026_dd784405",
+          "original": "lastEventId",
+          "phonetic": "",
+          "translation": "lastEventId",
+          "breakdown": [
+            {
+              "word": "last",
+              "phonetic": "/l æ1 s t/",
+              "translation": "最后的"
+            },
+            {
+              "word": "Event",
+              "phonetic": "/ɪ0 v ɛ1 n t/",
+              "translation": "比賽項目"
+            },
+            {
+              "word": "Id",
+              "phonetic": "/ɪ1 d/",
+              "translation": "ID"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000027_7ce91817",
+          "original": "retry",
+          "phonetic": "/r i0 t r aɪ1/",
+          "translation": "重试",
+          "breakdown": [
+            {
+              "word": "retry",
+              "phonetic": "/r i0 t r aɪ1/",
+              "translation": "重试"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000028_a9450097",
+          "original": "events",
+          "phonetic": "/ɪ0 v ɛ1 n t s/",
+          "translation": "活动",
+          "breakdown": [
+            {
+              "word": "events",
+              "phonetic": "/ɪ0 v ɛ1 n t s/",
+              "translation": "活动"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000029_ed80646d",
+          "original": "message",
+          "phonetic": "/m ɛ1 s ʌ0 dʒ/",
+          "translation": "消息",
+          "breakdown": [
+            {
+              "word": "message",
+              "phonetic": "/m ɛ1 s ʌ0 dʒ/",
+              "translation": "消息"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000030_8927051c",
+          "original": "open",
+          "phonetic": "/oʊ1 p ʌ0 n/",
+          "translation": "打开",
+          "breakdown": [
+            {
+              "word": "open",
+              "phonetic": "/oʊ1 p ʌ0 n/",
+              "translation": "打开"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000031_c6ea250b",
+          "original": "error",
+          "phonetic": "/ɛ1 r ɜr0/",
+          "translation": "错误",
+          "breakdown": [
+            {
+              "word": "error",
+              "phonetic": "/ɛ1 r ɜr0/",
+              "translation": "错误"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000032_db088f4d",
+          "original": "close",
+          "phonetic": "/k l oʊ1 s/",
+          "translation": "關閉",
+          "breakdown": [
+            {
+              "word": "close",
+              "phonetic": "/k l oʊ1 s/",
+              "translation": "關閉"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000033_eb91e153",
+          "original": "data",
+          "phonetic": "/d eɪ1 t ʌ0/",
+          "translation": "数据",
+          "breakdown": [
+            {
+              "word": "data",
+              "phonetic": "/d eɪ1 t ʌ0/",
+              "translation": "数据"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000034_6a355153",
+          "original": "id",
+          "phonetic": "/ɪ1 d/",
+          "translation": "账号",
+          "breakdown": [
+            {
+              "word": "id",
+              "phonetic": "/ɪ1 d/",
+              "translation": "账号"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000035_93c51c44",
+          "original": "event",
+          "phonetic": "/ɪ0 v ɛ1 n t/",
+          "translation": "event",
+          "breakdown": [
+            {
+              "word": "event",
+              "phonetic": "/ɪ0 v ɛ1 n t/",
+              "translation": "event"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000036_f085b22a",
+          "original": "reconnect",
+          "phonetic": "/r i0 k ʌ0 n ɛ1 k t/",
+          "translation": "重新连接",
+          "breakdown": [
+            {
+              "word": "reconnect",
+              "phonetic": "/r i0 k ʌ0 n ɛ1 k t/",
+              "translation": "重新连接"
+            }
+          ],
+          "cached": true,
+          "rating": 2,
+          "group_rating": 2,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000037_f6481ce7",
+      "name": "ReadableStream",
+      "description": "",
+      "rating": 3,
+      "words": [
+        {
+          "id": "id_000038_59595240",
+          "original": "ReadableStream",
+          "phonetic": "",
+          "translation": "ReadableStream",
+          "breakdown": [
+            {
+              "word": "Readable",
+              "phonetic": "/r i1 d ʌ0 b ʌ0 l/",
+              "translation": "只读"
+            },
+            {
+              "word": "Stream",
+              "phonetic": "/s t r i1 m/",
+              "translation": "流"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000039_89a87c4a",
+          "original": "ReadableStreamDefaultReader",
+          "phonetic": "",
+          "translation": "ReadableStreamDefaultReader",
+          "breakdown": [
+            {
+              "word": "Readable",
+              "phonetic": "/r i1 d ʌ0 b ʌ0 l/",
+              "translation": "只读"
+            },
+            {
+              "word": "Stream",
+              "phonetic": "/s t r i1 m/",
+              "translation": "流"
+            },
+            {
+              "word": "Default",
+              "phonetic": "/d ɪ0 f ɔ1 l t/",
+              "translation": "默认"
+            },
+            {
+              "word": "Reader",
+              "phonetic": "/r i1 d ɜr0/",
+              "translation": "‪读卡器"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000040_a330be15",
+          "original": "read",
+          "phonetic": "/r ɛ1 d/",
+          "translation": "已讀",
+          "breakdown": [
+            {
+              "word": "read",
+              "phonetic": "/r ɛ1 d/",
+              "translation": "已讀"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000041_8df61d47",
+          "original": "cancel",
+          "phonetic": "/k æ1 n s ʌ0 l/",
+          "translation": "取消",
+          "breakdown": [
+            {
+              "word": "cancel",
+              "phonetic": "/k æ1 n s ʌ0 l/",
+              "translation": "取消"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000042_5f6f5c94",
+          "original": "closed",
+          "phonetic": "/k l oʊ1 z d/",
+          "translation": "closed",
+          "breakdown": [
+            {
+              "word": "closed",
+              "phonetic": "/k l oʊ1 z d/",
+              "translation": "closed"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000043_f28b1ff4",
+          "original": "pipeTo",
+          "phonetic": "",
+          "translation": "pipeTo",
+          "breakdown": [
+            {
+              "word": "pipe",
+              "phonetic": "/p aɪ1 p/",
+              "translation": "管材"
+            },
+            {
+              "word": "To",
+              "phonetic": "/t u1/",
+              "translation": "To"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000044_958b8ca5",
+          "original": "pipeThrough",
+          "phonetic": "",
+          "translation": "pipeThrough",
+          "breakdown": [
+            {
+              "word": "pipe",
+              "phonetic": "/p aɪ1 p/",
+              "translation": "管材"
+            },
+            {
+              "word": "Through",
+              "phonetic": "/tH r u1/",
+              "translation": "贯穿"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000045_7ec9892d",
+          "original": "tee",
+          "phonetic": "/t i1/",
+          "translation": "球座",
+          "breakdown": [
+            {
+              "word": "tee",
+              "phonetic": "/t i1/",
+              "translation": "球座"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000046_92efdc5c",
+          "original": "byob",
+          "phonetic": "",
+          "translation": "byob",
+          "breakdown": [
+            {
+              "word": "byob",
+              "phonetic": "",
+              "translation": "byob"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000047_beb75916",
+          "original": "ReadableByteStreamController",
+          "phonetic": "",
+          "translation": "ReadableByteStreamController",
+          "breakdown": [
+            {
+              "word": "Readable",
+              "phonetic": "/r i1 d ʌ0 b ʌ0 l/",
+              "translation": "只读"
+            },
+            {
+              "word": "Byte",
+              "phonetic": "/b aɪ1 t/",
+              "translation": "字节"
+            },
+            {
+              "word": "Stream",
+              "phonetic": "/s t r i1 m/",
+              "translation": "流"
+            },
+            {
+              "word": "Controller",
+              "phonetic": "/k ʌ0 n t r oʊ1 l ɜr0/",
+              "translation": "控制器"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000048_2db14efa",
+          "original": "desiredSize",
+          "phonetic": "",
+          "translation": "desiredSize",
+          "breakdown": [
+            {
+              "word": "desired",
+              "phonetic": "/d ɪ0 z aɪ1 ɜr0 d/",
+              "translation": "n.预期"
+            },
+            {
+              "word": "Size",
+              "phonetic": "/s aɪ1 z/",
+              "translation": "大小"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000049_8ca962df",
+          "original": "enqueue",
+          "phonetic": "",
+          "translation": "入列",
+          "breakdown": [
+            {
+              "word": "enqueue",
+              "phonetic": "",
+              "translation": "入列"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000050_dcebb492",
+          "original": "error",
+          "phonetic": "/ɛ1 r ɜr0/",
+          "translation": "错误",
+          "breakdown": [
+            {
+              "word": "error",
+              "phonetic": "/ɛ1 r ɜr0/",
+              "translation": "错误"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000051_c8172185",
+          "original": "close",
+          "phonetic": "/k l oʊ1 s/",
+          "translation": "關閉",
+          "breakdown": [
+            {
+              "word": "close",
+              "phonetic": "/k l oʊ1 s/",
+              "translation": "關閉"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000052_d48a62fc",
+      "name": "HTTP Streaming",
+      "description": "",
+      "rating": 5,
+      "words": [
+        {
+          "id": "id_000053_e409aec6",
+          "original": "Transfer-Encoding",
+          "phonetic": "",
+          "translation": "Transfer-Encoding",
+          "breakdown": [
+            {
+              "word": "Transfer",
+              "phonetic": "/t r æ0 n s f ɜr1/",
+              "translation": "转让"
+            },
+            {
+              "word": "Encoding",
+              "phonetic": "/ɛ0 n k oʊ1 d ɪ0 nɡ/",
+              "translation": "编码"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000054_11f3ce72",
+          "original": "chunked",
+          "phonetic": "",
+          "translation": "chunked",
+          "breakdown": [
+            {
+              "word": "chunked",
+              "phonetic": "",
+              "translation": "chunked"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000055_1446a161",
+          "original": "Content-Length",
+          "phonetic": "",
+          "translation": "内容长度",
+          "breakdown": [
+            {
+              "word": "Content",
+              "phonetic": "/k ɑ1 n t ɛ0 n t/",
+              "translation": "内容："
+            },
+            {
+              "word": "Length",
+              "phonetic": "/l ɛ1 nɡ k tH/",
+              "translation": "长度"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000056_3d16a4b5",
+          "original": "flush",
+          "phonetic": "/f l ʌ1 sH/",
+          "translation": "刷新所有日志",
+          "breakdown": [
+            {
+              "word": "flush",
+              "phonetic": "/f l ʌ1 sH/",
+              "translation": "刷新所有日志"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000057_de4cc178",
+          "original": "streaming",
+          "phonetic": "/s t r i1 m ɪ0 nɡ/",
+          "translation": "串流",
+          "breakdown": [
+            {
+              "word": "streaming",
+              "phonetic": "/s t r i1 m ɪ0 nɡ/",
+              "translation": "串流"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000058_0d4d8a23",
+          "original": "pipe",
+          "phonetic": "/p aɪ1 p/",
+          "translation": "管材",
+          "breakdown": [
+            {
+              "word": "pipe",
+              "phonetic": "/p aɪ1 p/",
+              "translation": "管材"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000059_50a2e1f2",
+          "original": "fetch",
+          "phonetic": "/f ɛ1 tʃ/",
+          "translation": "拿来",
+          "breakdown": [
+            {
+              "word": "fetch",
+              "phonetic": "/f ɛ1 tʃ/",
+              "translation": "拿来"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000060_e3a22599",
+          "original": "Response",
+          "phonetic": "/r ɪ0 s p ɑ1 n s/",
+          "translation": "回复",
+          "breakdown": [
+            {
+              "word": "Response",
+              "phonetic": "/r ɪ0 s p ɑ1 n s/",
+              "translation": "回复"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000061_e12fbccf",
+          "original": "body",
+          "phonetic": "/b ɑ1 d i0/",
+          "translation": "主体",
+          "breakdown": [
+            {
+              "word": "body",
+              "phonetic": "/b ɑ1 d i0/",
+              "translation": "主体"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000062_1f6c5a38",
+          "original": "getReader",
+          "phonetic": "",
+          "translation": "getReader",
+          "breakdown": [
+            {
+              "word": "get",
+              "phonetic": "/ɡ ɛ1 t/",
+              "translation": "获取"
+            },
+            {
+              "word": "Reader",
+              "phonetic": "/r i1 d ɜr0/",
+              "translation": "‪读卡器"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000063_49e57d69",
+          "original": "text",
+          "phonetic": "/t ɛ1 k s t/",
+          "translation": "文本",
+          "breakdown": [
+            {
+              "word": "text",
+              "phonetic": "/t ɛ1 k s t/",
+              "translation": "文本"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000064_0c84d758",
+          "original": "json",
+          "phonetic": "",
+          "translation": "json",
+          "breakdown": [
+            {
+              "word": "json",
+              "phonetic": "",
+              "translation": "json"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000065_f9d73f1b",
+          "original": "arrayBuffer",
+          "phonetic": "",
+          "translation": "arrayBuffer",
+          "breakdown": [
+            {
+              "word": "array",
+              "phonetic": "/ɜr0 eɪ1/",
+              "translation": "数组"
+            },
+            {
+              "word": "Buffer",
+              "phonetic": "/b ʌ1 f ɜr0/",
+              "translation": "缓冲区"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000066_7fbf5b0a",
+          "original": "blob",
+          "phonetic": "/b l ɑ1 b/",
+          "translation": "团点",
+          "breakdown": [
+            {
+              "word": "blob",
+              "phonetic": "/b l ɑ1 b/",
+              "translation": "团点"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000067_f4669c09",
+          "original": "formData",
+          "phonetic": "",
+          "translation": "formData",
+          "breakdown": [
+            {
+              "word": "form",
+              "phonetic": "/f ɔ1 r m/",
+              "translation": "形式"
+            },
+            {
+              "word": "Data",
+              "phonetic": "/d eɪ1 t ʌ0/",
+              "translation": "数据"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000068_1967804e",
+      "name": "Real-time Protocols",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000069_8f385e42",
+          "original": "WebRTC",
+          "phonetic": "",
+          "translation": "WebRTC",
+          "breakdown": [
+            {
+              "word": "Web",
+              "phonetic": "/w ɛ1 b/",
+              "translation": "網頁"
+            },
+            {
+              "word": "RTC",
+              "phonetic": "",
+              "translation": "RTC"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000070_df60707e",
+          "original": "RTCDataChannel",
+          "phonetic": "",
+          "translation": "RTCDataChannel",
+          "breakdown": [
+            {
+              "word": "RTC",
+              "phonetic": "",
+              "translation": "RTC"
+            },
+            {
+              "word": "Data",
+              "phonetic": "/d eɪ1 t ʌ0/",
+              "translation": "数据"
+            },
+            {
+              "word": "Channel",
+              "phonetic": "/tʃ æ1 n ʌ0 l/",
+              "translation": "渠道"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000071_b110c1ea",
+          "original": "RTCPeerConnection",
+          "phonetic": "",
+          "translation": "RTCPeerConnection",
+          "breakdown": [
+            {
+              "word": "RTC",
+              "phonetic": "",
+              "translation": "RTC"
+            },
+            {
+              "word": "Peer",
+              "phonetic": "/p ɪ1 r/",
+              "translation": "同事"
+            },
+            {
+              "word": "Connection",
+              "phonetic": "/k ʌ0 n ɛ1 k sH ʌ0 n/",
+              "translation": "与公司的关系"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000072_3d9a4fde",
+          "original": "ICE",
+          "phonetic": "/aɪ1 s/",
+          "translation": "防火牆",
+          "breakdown": [
+            {
+              "word": "ICE",
+              "phonetic": "/aɪ1 s/",
+              "translation": "防火牆"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000073_9a33b9c3",
+          "original": "STUN",
+          "phonetic": "/s t ʌ1 n/",
+          "translation": "眩晕",
+          "breakdown": [
+            {
+              "word": "STUN",
+              "phonetic": "/s t ʌ1 n/",
+              "translation": "眩晕"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000074_c5c5bd35",
+          "original": "TURN",
+          "phonetic": "/t ɜr1 n/",
+          "translation": "回合制",
+          "breakdown": [
+            {
+              "word": "TURN",
+              "phonetic": "/t ɜr1 n/",
+              "translation": "回合制"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000075_c49850c0",
+          "original": "SDP",
+          "phonetic": "",
+          "translation": "SDP",
+          "breakdown": [
+            {
+              "word": "SDP",
+              "phonetic": "",
+              "translation": "SDP"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000076_154dfdd7",
+          "original": "signaling",
+          "phonetic": "/s ɪ1 ɡ n ʌ0 l ɪ0 nɡ/",
+          "translation": "有关信号的反馈。",
+          "breakdown": [
+            {
+              "word": "signaling",
+              "phonetic": "/s ɪ1 ɡ n ʌ0 l ɪ0 nɡ/",
+              "translation": "有关信号的反馈。"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000077_81011ad8",
+          "original": "datachannel",
+          "phonetic": "",
+          "translation": "datachannel",
+          "breakdown": [
+            {
+              "word": "datachannel",
+              "phonetic": "",
+              "translation": "datachannel"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000078_e4de69f6",
+          "original": "offer",
+          "phonetic": "/ɔ1 f ɜr0/",
+          "translation": "工作",
+          "breakdown": [
+            {
+              "word": "offer",
+              "phonetic": "/ɔ1 f ɜr0/",
+              "translation": "工作"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000079_bf4bbaa7",
+          "original": "answer",
+          "phonetic": "/æ1 n s ɜr0/",
+          "translation": "个答案",
+          "breakdown": [
+            {
+              "word": "answer",
+              "phonetic": "/æ1 n s ɜr0/",
+              "translation": "个答案"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000080_6f0bb398",
+          "original": "candidate",
+          "phonetic": "/k æ1 n d ʌ0 d eɪ0 t/",
+          "translation": "候选人",
+          "breakdown": [
+            {
+              "word": "candidate",
+              "phonetic": "/k æ1 n d ʌ0 d eɪ0 t/",
+              "translation": "候选人"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000081_05a802ec",
+      "name": "Communication Patterns",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000082_4e27507e",
+          "original": "pubsub",
+          "phonetic": "",
+          "translation": "pubsub",
+          "breakdown": [
+            {
+              "word": "pubsub",
+              "phonetic": "",
+              "translation": "pubsub"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000083_c5eb1fa9",
+          "original": "long-polling",
+          "phonetic": "",
+          "translation": "长时间轮询",
+          "breakdown": [
+            {
+              "word": "long",
+              "phonetic": "/l ɔ1 nɡ/",
+              "translation": "长按"
+            },
+            {
+              "word": "polling",
+              "phonetic": "/p oʊ1 l ɪ0 nɡ/",
+              "translation": "輪詢"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000084_031d1135",
+          "original": "short-polling",
+          "phonetic": "",
+          "translation": "short-polling",
+          "breakdown": [
+            {
+              "word": "short",
+              "phonetic": "/sH ɔ1 r t/",
+              "translation": "短整型data type in C/ C++"
+            },
+            {
+              "word": "polling",
+              "phonetic": "/p oʊ1 l ɪ0 nɡ/",
+              "translation": "輪詢"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000085_4c89e5e6",
+          "original": "heartbeat",
+          "phonetic": "/h ɑ1 r t b i2 t/",
+          "translation": "心跳",
+          "breakdown": [
+            {
+              "word": "heartbeat",
+              "phonetic": "/h ɑ1 r t b i2 t/",
+              "translation": "心跳"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000086_32a0d442",
+          "original": "keepalive",
+          "phonetic": "",
+          "translation": "保存",
+          "breakdown": [
+            {
+              "word": "keepalive",
+              "phonetic": "",
+              "translation": "保存"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000087_2a874ee2",
+          "original": "broadcast",
+          "phonetic": "/b r ɔ1 d k æ2 s t/",
+          "translation": "广播",
+          "breakdown": [
+            {
+              "word": "broadcast",
+              "phonetic": "/b r ɔ1 d k æ2 s t/",
+              "translation": "广播"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000088_9570e883",
+          "original": "multicast",
+          "phonetic": "",
+          "translation": "多點傳送",
+          "breakdown": [
+            {
+              "word": "multicast",
+              "phonetic": "",
+              "translation": "多點傳送"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000089_72722ea0",
+          "original": "unicast",
+          "phonetic": "",
+          "translation": "单播",
+          "breakdown": [
+            {
+              "word": "unicast",
+              "phonetic": "",
+              "translation": "单播"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000090_80bdf1d4",
+          "original": "request-response",
+          "phonetic": "",
+          "translation": "请求 - 响应",
+          "breakdown": [
+            {
+              "word": "request",
+              "phonetic": "/r ɪ0 k w ɛ1 s t/",
+              "translation": "要求"
+            },
+            {
+              "word": "response",
+              "phonetic": "/r ɪ0 s p ɑ1 n s/",
+              "translation": "回复"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000091_a11b7b69",
+          "original": "event-driven",
+          "phonetic": "",
+          "translation": "事件驱动",
+          "breakdown": [
+            {
+              "word": "event",
+              "phonetic": "/ɪ0 v ɛ1 n t/",
+              "translation": "event"
+            },
+            {
+              "word": "driven",
+              "phonetic": "/d r ɪ1 v ʌ0 n/",
+              "translation": "驱动"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    }
+  ]
+}

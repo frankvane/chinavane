@@ -1,0 +1,799 @@
+{
+  "groups": [
+    {
+      "id": "id_000279_842e40ee",
+      "name": "核心属性",
+      "description": "",
+      "rating": 5,
+      "words": [
+        {
+          "id": "id_000280_df54f73c",
+          "original": "height",
+          "phonetic": "/h aɪ1 t/",
+          "translation": "高度",
+          "breakdown": [
+            {
+              "word": "height",
+              "phonetic": "/h aɪ1 t/",
+              "translation": "高度"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000281_19a34684",
+          "original": "scroll",
+          "phonetic": "/s k r oʊ1 l/",
+          "translation": "滚动",
+          "breakdown": [
+            {
+              "word": "scroll",
+              "phonetic": "/s k r oʊ1 l/",
+              "translation": "滚动"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000282_38f06194",
+          "original": "scrollTop",
+          "phonetic": "",
+          "translation": "上滚动",
+          "breakdown": [
+            {
+              "word": "scroll",
+              "phonetic": "/s k r oʊ1 l/",
+              "translation": "滚动"
+            },
+            {
+              "word": "Top",
+              "phonetic": "/t ɑ1 p/",
+              "translation": "顶部"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000283_4b6bd95f",
+          "original": "itemHeight",
+          "phonetic": "",
+          "translation": "itemHeight",
+          "breakdown": [
+            {
+              "word": "item",
+              "phonetic": "/aɪ1 t ʌ0 m/",
+              "translation": "项目"
+            },
+            {
+              "word": "Height",
+              "phonetic": "/h aɪ1 t/",
+              "translation": "高度"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000284_992e4772",
+          "original": "itemHeights",
+          "phonetic": "",
+          "translation": "itemHeights",
+          "breakdown": [
+            {
+              "word": "item",
+              "phonetic": "/aɪ1 t ʌ0 m/",
+              "translation": "项目"
+            },
+            {
+              "word": "Heights",
+              "phonetic": "/h aɪ1 t s/",
+              "translation": "高地"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000285_93d8fb38",
+          "original": "itemSize",
+          "phonetic": "",
+          "translation": "itemSize",
+          "breakdown": [
+            {
+              "word": "item",
+              "phonetic": "/aɪ1 t ʌ0 m/",
+              "translation": "项目"
+            },
+            {
+              "word": "Size",
+              "phonetic": "/s aɪ1 z/",
+              "translation": "大小"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000286_c47b037f",
+          "original": "totalHeight",
+          "phonetic": "",
+          "translation": "totalHeight",
+          "breakdown": [
+            {
+              "word": "total",
+              "phonetic": "/t oʊ1 t ʌ0 l/",
+              "translation": "全部的"
+            },
+            {
+              "word": "Height",
+              "phonetic": "/h aɪ1 t/",
+              "translation": "高度"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000287_2131b066",
+          "original": "totalItems",
+          "phonetic": "",
+          "translation": "totalItems",
+          "breakdown": [
+            {
+              "word": "total",
+              "phonetic": "/t oʊ1 t ʌ0 l/",
+              "translation": "全部的"
+            },
+            {
+              "word": "Items",
+              "phonetic": "/aɪ1 t ʌ0 m z/",
+              "translation": "项"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000288_09fb1331",
+          "original": "viewportHeight",
+          "phonetic": "",
+          "translation": "viewportHeight",
+          "breakdown": [
+            {
+              "word": "viewport",
+              "phonetic": "",
+              "translation": "檢視區"
+            },
+            {
+              "word": "Height",
+              "phonetic": "/h aɪ1 t/",
+              "translation": "高度"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000289_4caeb291",
+          "original": "visibleHeight",
+          "phonetic": "",
+          "translation": "visibleHeight",
+          "breakdown": [
+            {
+              "word": "visible",
+              "phonetic": "/v ɪ1 z ʌ0 b ʌ0 l/",
+              "translation": "可视警报器"
+            },
+            {
+              "word": "Height",
+              "phonetic": "/h aɪ1 t/",
+              "translation": "高度"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000290_a9cebe14",
+          "original": "visibleItemCount",
+          "phonetic": "",
+          "translation": "visibleItemCount",
+          "breakdown": [
+            {
+              "word": "visible",
+              "phonetic": "/v ɪ1 z ʌ0 b ʌ0 l/",
+              "translation": "可视警报器"
+            },
+            {
+              "word": "Item",
+              "phonetic": "/aɪ1 t ʌ0 m/",
+              "translation": "物品"
+            },
+            {
+              "word": "Count",
+              "phonetic": "/k aʊ1 n t/",
+              "translation": "数数"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000291_9712c643",
+          "original": "accumulatedHeight",
+          "phonetic": "",
+          "translation": "accumulatedHeight",
+          "breakdown": [
+            {
+              "word": "accumulated",
+              "phonetic": "/ʌ0 k j u1 m j ʌ0 l eɪ2 t ɪ0 d/",
+              "translation": "adj.累积"
+            },
+            {
+              "word": "Height",
+              "phonetic": "/h aɪ1 t/",
+              "translation": "高度"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000292_e9bda418",
+          "original": "translateY",
+          "phonetic": "",
+          "translation": "平移Y",
+          "breakdown": [
+            {
+              "word": "translate",
+              "phonetic": "/t r æ0 n z l eɪ1 t/",
+              "translation": "翻译"
+            },
+            {
+              "word": "Y",
+              "phonetic": "/w aɪ1/",
+              "translation": "Y"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000293_55e2bf88",
+      "name": "索引与渲染区间",
+      "description": "",
+      "rating": 5,
+      "words": [
+        {
+          "id": "id_000294_0797df64",
+          "original": "startIndex",
+          "phonetic": "",
+          "translation": "startIndex",
+          "breakdown": [
+            {
+              "word": "start",
+              "phonetic": "/s t ɑ1 r t/",
+              "translation": "开始"
+            },
+            {
+              "word": "Index",
+              "phonetic": "/ɪ1 n d ɛ0 k s/",
+              "translation": "索引"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000295_a8009dcb",
+          "original": "endIndex",
+          "phonetic": "",
+          "translation": "endIndex",
+          "breakdown": [
+            {
+              "word": "end",
+              "phonetic": "/ɛ1 n d/",
+              "translation": "结束"
+            },
+            {
+              "word": "Index",
+              "phonetic": "/ɪ1 n d ɛ0 k s/",
+              "translation": "索引"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000296_2e46d457",
+          "original": "Buffer",
+          "phonetic": "/b ʌ1 f ɜr0/",
+          "translation": "缓冲区",
+          "breakdown": [
+            {
+              "word": "Buffer",
+              "phonetic": "/b ʌ1 f ɜr0/",
+              "translation": "缓冲区"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000297_a0c2c8a8",
+      "name": "容器与元素",
+      "description": "",
+      "rating": 5,
+      "words": [
+        {
+          "id": "id_000298_9e8a9263",
+          "original": "outerContainer",
+          "phonetic": "",
+          "translation": "outerContainer",
+          "breakdown": [
+            {
+              "word": "outer",
+              "phonetic": "/aʊ1 t ɜr0/",
+              "translation": "外部"
+            },
+            {
+              "word": "Container",
+              "phonetic": "/k ʌ0 n t eɪ1 n ɜr0/",
+              "translation": "集装箱"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000299_5c39c9e0",
+          "original": "innerContainer",
+          "phonetic": "",
+          "translation": "innerContainer",
+          "breakdown": [
+            {
+              "word": "inner",
+              "phonetic": "/ɪ1 n ɜr0/",
+              "translation": "内"
+            },
+            {
+              "word": "Container",
+              "phonetic": "/k ʌ0 n t eɪ1 n ɜr0/",
+              "translation": "集装箱"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000300_9fab3407",
+          "original": "element",
+          "phonetic": "/ɛ1 l ʌ0 m ʌ0 n t/",
+          "translation": "元素",
+          "breakdown": [
+            {
+              "word": "element",
+              "phonetic": "/ɛ1 l ʌ0 m ʌ0 n t/",
+              "translation": "元素"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000301_48b391b0",
+          "original": "overflow",
+          "phonetic": "/oʊ1 v ɜr0 f l oʊ2/",
+          "translation": "溢出",
+          "breakdown": [
+            {
+              "word": "overflow",
+              "phonetic": "/oʊ1 v ɜr0 f l oʊ2/",
+              "translation": "溢出"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000302_33d51863",
+          "original": "transform",
+          "phonetic": "/t r æ0 n s f ɔ1 r m/",
+          "translation": "转换",
+          "breakdown": [
+            {
+              "word": "transform",
+              "phonetic": "/t r æ0 n s f ɔ1 r m/",
+              "translation": "转换"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000303_e4f47026",
+      "name": "监听与事件",
+      "description": "",
+      "rating": 5,
+      "words": [
+        {
+          "id": "id_000304_461d5b90",
+          "original": "addEventListener",
+          "phonetic": "",
+          "translation": "addEventListener",
+          "breakdown": [
+            {
+              "word": "add",
+              "phonetic": "/æ1 d/",
+              "translation": "添加"
+            },
+            {
+              "word": "Event",
+              "phonetic": "/ɪ0 v ɛ1 n t/",
+              "translation": "比賽項目"
+            },
+            {
+              "word": "Listener",
+              "phonetic": "/l ɪ1 s ʌ0 n ɜr0/",
+              "translation": "听话人"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000305_34aaeb81",
+          "original": "getBoundingClientRect",
+          "phonetic": "",
+          "translation": "getBoundingClientRect",
+          "breakdown": [
+            {
+              "word": "get",
+              "phonetic": "/ɡ ɛ1 t/",
+              "translation": "获取"
+            },
+            {
+              "word": "Bounding",
+              "phonetic": "/b aʊ1 n d ɪ0 nɡ/",
+              "translation": "界线"
+            },
+            {
+              "word": "Client",
+              "phonetic": "/k l aɪ1 ʌ0 n t/",
+              "translation": "客户端"
+            },
+            {
+              "word": "Rect",
+              "phonetic": "",
+              "translation": "矩形"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000306_6a4e3c5c",
+          "original": "Observer",
+          "phonetic": "/ʌ0 b z ɜr1 v ɜr0/",
+          "translation": "观察",
+          "breakdown": [
+            {
+              "word": "Observer",
+              "phonetic": "/ʌ0 b z ɜr1 v ɜr0/",
+              "translation": "观察"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000307_6aa53799",
+          "original": "Intersection",
+          "phonetic": "/ɪ2 n t ɜr0 s ɛ1 k sH ʌ0 n/",
+          "translation": "交集",
+          "breakdown": [
+            {
+              "word": "Intersection",
+              "phonetic": "/ɪ2 n t ɜr0 s ɛ1 k sH ʌ0 n/",
+              "translation": "交集"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000308_37a5c561",
+      "name": "动画与调度",
+      "description": "",
+      "rating": 5,
+      "words": [
+        {
+          "id": "id_000309_291ae95f",
+          "original": "RequestAnimationFrame",
+          "phonetic": "",
+          "translation": "RequestAnimationFrame",
+          "breakdown": [
+            {
+              "word": "Request",
+              "phonetic": "/r ɪ0 k w ɛ1 s t/",
+              "translation": "要求"
+            },
+            {
+              "word": "Animation",
+              "phonetic": "/æ2 n ʌ0 m eɪ1 sH ʌ0 n/",
+              "translation": "动画："
+            },
+            {
+              "word": "Frame",
+              "phonetic": "/f r eɪ1 m/",
+              "translation": "框架"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000310_c8c5b3aa",
+          "original": "RAF",
+          "phonetic": "/r æ1 f/",
+          "translation": "RAF",
+          "breakdown": [
+            {
+              "word": "RAF",
+              "phonetic": "/r æ1 f/",
+              "translation": "RAF"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000311_06fa4402",
+          "original": "ticking",
+          "phonetic": "/t ɪ1 k ɪ0 nɡ/",
+          "translation": "Ticking",
+          "breakdown": [
+            {
+              "word": "ticking",
+              "phonetic": "/t ɪ1 k ɪ0 nɡ/",
+              "translation": "Ticking"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000312_6ee949fa",
+          "original": "while",
+          "phonetic": "/w aɪ1 l/",
+          "translation": "ɏһ¼¶",
+          "breakdown": [
+            {
+              "word": "while",
+              "phonetic": "/w aɪ1 l/",
+              "translation": "ɏһ¼¶"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000313_df75a15b",
+          "original": "break",
+          "phonetic": "/b r eɪ1 k/",
+          "translation": "中断",
+          "breakdown": [
+            {
+              "word": "break",
+              "phonetic": "/b r eɪ1 k/",
+              "translation": "中断"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000314_feeae3d2",
+          "original": "sum",
+          "phonetic": "/s ʌ1 m/",
+          "translation": "求和",
+          "breakdown": [
+            {
+              "word": "sum",
+              "phonetic": "/s ʌ1 m/",
+              "translation": "求和"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000315_d0dca2ae",
+          "original": "ceil",
+          "phonetic": "",
+          "translation": "ceil\n\n英 [si:l]   美 [sil]  \nvt.\n装天花板，装船内格子板;",
+          "breakdown": [
+            {
+              "word": "ceil",
+              "phonetic": "",
+              "translation": "ceil\n\n英 [si:l]   美 [sil]  \nvt.\n装天花板，装船内格子板;"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000316_c602887c",
+          "original": "auto",
+          "phonetic": "/ɔ1 t oʊ0/",
+          "translation": "自动",
+          "breakdown": [
+            {
+              "word": "auto",
+              "phonetic": "/ɔ1 t oʊ0/",
+              "translation": "自动"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000317_3913a519",
+      "name": "组件实现",
+      "description": "",
+      "rating": 5,
+      "words": [
+        {
+          "id": "id_000318_ae0da6e0",
+          "original": "FixedSizeList",
+          "phonetic": "",
+          "translation": "FixedSizeList",
+          "breakdown": [
+            {
+              "word": "Fixed",
+              "phonetic": "/f ɪ1 k s t/",
+              "translation": "固定"
+            },
+            {
+              "word": "Size",
+              "phonetic": "/s aɪ1 z/",
+              "translation": "大小"
+            },
+            {
+              "word": "List",
+              "phonetic": "/l ɪ1 s t/",
+              "translation": "列表"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000319_c86f8daf",
+          "original": "VariableSizeList",
+          "phonetic": "",
+          "translation": "VariableSizeList",
+          "breakdown": [
+            {
+              "word": "Variable",
+              "phonetic": "/v ɛ1 r i0 ʌ0 b ʌ0 l/",
+              "translation": "变量"
+            },
+            {
+              "word": "Size",
+              "phonetic": "/s aɪ1 z/",
+              "translation": "大小"
+            },
+            {
+              "word": "List",
+              "phonetic": "/l ɪ1 s t/",
+              "translation": "列表"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000320_7b77b89f",
+          "original": "Feed",
+          "phonetic": "/f i1 d/",
+          "translation": "馈送",
+          "breakdown": [
+            {
+              "word": "Feed",
+              "phonetic": "/f i1 d/",
+              "translation": "馈送"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3290 @@
+{
+  "groups": [
+    {
+      "id": "id_000498_efd21c19",
+      "name": "Core Concepts",
+      "description": "",
+      "rating": 4,
+      "words": [
+        {
+          "id": "id_000499_68cfcb6c",
+          "original": "composition-api",
+          "phonetic": "",
+          "translation": "composition-api",
+          "breakdown": [
+            {
+              "word": "composition",
+              "phonetic": "/k ɑ2 m p ʌ0 z ɪ1 sH ʌ0 n/",
+              "translation": "的组合"
+            },
+            {
+              "word": "api",
+              "phonetic": "/eɪ2 p i2 aɪ1/",
+              "translation": "API"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000500_dd7aa33c",
+          "original": "setup",
+          "phonetic": "/s ɛ1 t ʌ2 p/",
+          "translation": "设置",
+          "breakdown": [
+            {
+              "word": "setup",
+              "phonetic": "/s ɛ1 t ʌ2 p/",
+              "translation": "设置"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000501_421257a9",
+          "original": "reactive",
+          "phonetic": "/r i0 æ1 k t ɪ0 v/",
+          "translation": "反应性",
+          "breakdown": [
+            {
+              "word": "reactive",
+              "phonetic": "/r i0 æ1 k t ɪ0 v/",
+              "translation": "反应性"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000502_5df98106",
+          "original": "ref",
+          "phonetic": "/r ɛ1 f/",
+          "translation": "引用",
+          "breakdown": [
+            {
+              "word": "ref",
+              "phonetic": "/r ɛ1 f/",
+              "translation": "引用"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000503_9bffe4e7",
+          "original": "computed",
+          "phonetic": "/k ʌ0 m p j u1 t ʌ0 d/",
+          "translation": "计算",
+          "breakdown": [
+            {
+              "word": "computed",
+              "phonetic": "/k ʌ0 m p j u1 t ʌ0 d/",
+              "translation": "计算"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000504_fc9b0cb0",
+          "original": "watch",
+          "phonetic": "/w ɑ1 tʃ/",
+          "translation": "观看",
+          "breakdown": [
+            {
+              "word": "watch",
+              "phonetic": "/w ɑ1 tʃ/",
+              "translation": "观看"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000505_5b467428",
+          "original": "watchEffect",
+          "phonetic": "",
+          "translation": "观察效应",
+          "breakdown": [
+            {
+              "word": "watch",
+              "phonetic": "/w ɑ1 tʃ/",
+              "translation": "观看"
+            },
+            {
+              "word": "Effect",
+              "phonetic": "/ɪ0 f ɛ1 k t/",
+              "translation": "效果"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000506_f62af75f",
+          "original": "lifecycle",
+          "phonetic": "/l aɪ1 f s aɪ2 k ʌ0 l/",
+          "translation": "生命周期",
+          "breakdown": [
+            {
+              "word": "lifecycle",
+              "phonetic": "/l aɪ1 f s aɪ2 k ʌ0 l/",
+              "translation": "生命周期"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000507_a8474d7a",
+          "original": "template-refs",
+          "phonetic": "",
+          "translation": "template-refs",
+          "breakdown": [
+            {
+              "word": "template",
+              "phonetic": "/t ɛ1 m p l ʌ0 t/",
+              "translation": "模板"
+            },
+            {
+              "word": "refs",
+              "phonetic": "",
+              "translation": "裁判"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000508_bbe0ae37",
+          "original": "teleport",
+          "phonetic": "/t ɛ1 l ʌ0 p ɔ1 r t/",
+          "translation": "瞬移",
+          "breakdown": [
+            {
+              "word": "teleport",
+              "phonetic": "/t ɛ1 l ʌ0 p ɔ1 r t/",
+              "translation": "瞬移"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000509_6db968b9",
+          "original": "suspense",
+          "phonetic": "/s ʌ0 s p ɛ1 n s/",
+          "translation": "n.不定, 停止 ,未决,悬而未决",
+          "breakdown": [
+            {
+              "word": "suspense",
+              "phonetic": "/s ʌ0 s p ɛ1 n s/",
+              "translation": "n.不定, 停止 ,未决,悬而未决"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000510_9a6a97b8",
+          "original": "fragment",
+          "phonetic": "/f r æ1 ɡ m ʌ0 n t/",
+          "translation": "片段",
+          "breakdown": [
+            {
+              "word": "fragment",
+              "phonetic": "/f r æ1 ɡ m ʌ0 n t/",
+              "translation": "片段"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000511_a29ac76c",
+          "original": "v-model",
+          "phonetic": "",
+          "translation": "V模型",
+          "breakdown": [
+            {
+              "word": "v",
+              "phonetic": "/v i1/",
+              "translation": "v"
+            },
+            {
+              "word": "model",
+              "phonetic": "/m ɑ1 d ʌ0 l/",
+              "translation": "模型"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000512_08033b1c",
+          "original": "v-bind",
+          "phonetic": "",
+          "translation": "v-bind",
+          "breakdown": [
+            {
+              "word": "v",
+              "phonetic": "/v i1/",
+              "translation": "v"
+            },
+            {
+              "word": "bind",
+              "phonetic": "/b aɪ1 n d/",
+              "translation": "绑定"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000513_13106783",
+          "original": "v-on",
+          "phonetic": "",
+          "translation": "V-ON",
+          "breakdown": [
+            {
+              "word": "v",
+              "phonetic": "/v i1/",
+              "translation": "v"
+            },
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000514_c34d391b",
+          "original": "v-show",
+          "phonetic": "",
+          "translation": "v-show",
+          "breakdown": [
+            {
+              "word": "v",
+              "phonetic": "/v i1/",
+              "translation": "v"
+            },
+            {
+              "word": "show",
+              "phonetic": "/sH oʊ1/",
+              "translation": "显示"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000515_dd1bca35",
+          "original": "v-if",
+          "phonetic": "",
+          "translation": "v-if",
+          "breakdown": [
+            {
+              "word": "v",
+              "phonetic": "/v i1/",
+              "translation": "v"
+            },
+            {
+              "word": "if",
+              "phonetic": "/ɪ1 f/",
+              "translation": "如果"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000516_05fa76b1",
+          "original": "v-for",
+          "phonetic": "",
+          "translation": "v-for",
+          "breakdown": [
+            {
+              "word": "v",
+              "phonetic": "/v i1/",
+              "translation": "v"
+            },
+            {
+              "word": "for",
+              "phonetic": "/f ɔ1 r/",
+              "translation": "为了"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000517_d356bdfb",
+      "name": "Reactivity System",
+      "description": "",
+      "rating": 4,
+      "words": [
+        {
+          "id": "id_000518_b27203bb",
+          "original": "proxy",
+          "phonetic": "/p r ɑ1 k s i0/",
+          "translation": "代理人",
+          "breakdown": [
+            {
+              "word": "proxy",
+              "phonetic": "/p r ɑ1 k s i0/",
+              "translation": "代理人"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000519_952b173f",
+          "original": "effect",
+          "phonetic": "/ɪ0 f ɛ1 k t/",
+          "translation": "效果",
+          "breakdown": [
+            {
+              "word": "effect",
+              "phonetic": "/ɪ0 f ɛ1 k t/",
+              "translation": "效果"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000520_52a17206",
+          "original": "track",
+          "phonetic": "/t r æ1 k/",
+          "translation": "时间线",
+          "breakdown": [
+            {
+              "word": "track",
+              "phonetic": "/t r æ1 k/",
+              "translation": "时间线"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000521_97881c66",
+          "original": "trigger",
+          "phonetic": "/t r ɪ1 ɡ ɜr0/",
+          "translation": "扳机",
+          "breakdown": [
+            {
+              "word": "trigger",
+              "phonetic": "/t r ɪ1 ɡ ɜr0/",
+              "translation": "扳机"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000522_b73133e3",
+          "original": "shallowReactive",
+          "phonetic": "",
+          "translation": "浅反应",
+          "breakdown": [
+            {
+              "word": "shallow",
+              "phonetic": "/sH æ1 l oʊ0/",
+              "translation": "浅的"
+            },
+            {
+              "word": "Reactive",
+              "phonetic": "/r i0 æ1 k t ɪ0 v/",
+              "translation": "被动型"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000523_0f5584ad",
+          "original": "shallowRef",
+          "phonetic": "",
+          "translation": "浅层",
+          "breakdown": [
+            {
+              "word": "shallow",
+              "phonetic": "/sH æ1 l oʊ0/",
+              "translation": "浅的"
+            },
+            {
+              "word": "Ref",
+              "phonetic": "/r ɛ1 f/",
+              "translation": "引用"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000524_34528776",
+          "original": "readonly",
+          "phonetic": "",
+          "translation": "可读",
+          "breakdown": [
+            {
+              "word": "readonly",
+              "phonetic": "",
+              "translation": "可读"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000525_5f69d52c",
+          "original": "shallowReadonly",
+          "phonetic": "",
+          "translation": "浅读",
+          "breakdown": [
+            {
+              "word": "shallow",
+              "phonetic": "/sH æ1 l oʊ0/",
+              "translation": "浅的"
+            },
+            {
+              "word": "Readonly",
+              "phonetic": "",
+              "translation": "可读"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000526_b3cbf94b",
+          "original": "toRef",
+          "phonetic": "",
+          "translation": "托里夫",
+          "breakdown": [
+            {
+              "word": "to",
+              "phonetic": "/t u1/",
+              "translation": "to"
+            },
+            {
+              "word": "Ref",
+              "phonetic": "/r ɛ1 f/",
+              "translation": "引用"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000527_d4e94537",
+          "original": "toRefs",
+          "phonetic": "",
+          "translation": "托里夫",
+          "breakdown": [
+            {
+              "word": "to",
+              "phonetic": "/t u1/",
+              "translation": "to"
+            },
+            {
+              "word": "Refs",
+              "phonetic": "",
+              "translation": "参考"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000528_287487cd",
+          "original": "isRef",
+          "phonetic": "",
+          "translation": "ISREF",
+          "breakdown": [
+            {
+              "word": "is",
+              "phonetic": "/ɪ1 z/",
+              "translation": "为"
+            },
+            {
+              "word": "Ref",
+              "phonetic": "/r ɛ1 f/",
+              "translation": "引用"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000529_8c910b6a",
+          "original": "unref",
+          "phonetic": "",
+          "translation": "未引用",
+          "breakdown": [
+            {
+              "word": "unref",
+              "phonetic": "",
+              "translation": "未引用"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000530_41432dc4",
+          "original": "customRef",
+          "phonetic": "",
+          "translation": "CustomRef",
+          "breakdown": [
+            {
+              "word": "custom",
+              "phonetic": "/k ʌ1 s t ʌ0 m/",
+              "translation": "风俗"
+            },
+            {
+              "word": "Ref",
+              "phonetic": "/r ɛ1 f/",
+              "translation": "引用"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000531_61a4b11b",
+          "original": "markRaw",
+          "phonetic": "",
+          "translation": "马克鲁",
+          "breakdown": [
+            {
+              "word": "mark",
+              "phonetic": "/m ɑ1 r k/",
+              "translation": "标记"
+            },
+            {
+              "word": "Raw",
+              "phonetic": "/r ɑ1/",
+              "translation": "生的"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000532_e23fbf0e",
+          "original": "isReactive",
+          "phonetic": "",
+          "translation": "异常",
+          "breakdown": [
+            {
+              "word": "is",
+              "phonetic": "/ɪ1 z/",
+              "translation": "为"
+            },
+            {
+              "word": "Reactive",
+              "phonetic": "/r i0 æ1 k t ɪ0 v/",
+              "translation": "被动型"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000533_1030a99a",
+          "original": "isReadonly",
+          "phonetic": "",
+          "translation": "iSreadonly",
+          "breakdown": [
+            {
+              "word": "is",
+              "phonetic": "/ɪ1 z/",
+              "translation": "为"
+            },
+            {
+              "word": "Readonly",
+              "phonetic": "",
+              "translation": "可读"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000534_dcd94405",
+          "original": "isProxy",
+          "phonetic": "",
+          "translation": "isproxy",
+          "breakdown": [
+            {
+              "word": "is",
+              "phonetic": "/ɪ1 z/",
+              "translation": "为"
+            },
+            {
+              "word": "Proxy",
+              "phonetic": "/p r ɑ1 k s i0/",
+              "translation": "代理"
+            }
+          ],
+          "cached": true,
+          "rating": 4,
+          "group_rating": 4,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000535_90045451",
+      "name": "Component System",
+      "description": "",
+      "rating": 3,
+      "words": [
+        {
+          "id": "id_000536_30e08f6b",
+          "original": "defineComponent",
+          "phonetic": "",
+          "translation": "defineComponent",
+          "breakdown": [
+            {
+              "word": "define",
+              "phonetic": "/d ɪ0 f aɪ1 n/",
+              "translation": "定义"
+            },
+            {
+              "word": "Component",
+              "phonetic": "/k ʌ0 m p oʊ1 n ʌ0 n t/",
+              "translation": "组件"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000537_a79c983a",
+          "original": "defineAsyncComponent",
+          "phonetic": "",
+          "translation": "defineAsyncComponent",
+          "breakdown": [
+            {
+              "word": "define",
+              "phonetic": "/d ɪ0 f aɪ1 n/",
+              "translation": "定义"
+            },
+            {
+              "word": "Async",
+              "phonetic": "",
+              "translation": "异步"
+            },
+            {
+              "word": "Component",
+              "phonetic": "/k ʌ0 m p oʊ1 n ʌ0 n t/",
+              "translation": "组件"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000538_f06b9891",
+          "original": "functional-component",
+          "phonetic": "",
+          "translation": "functional-component",
+          "breakdown": [
+            {
+              "word": "functional",
+              "phonetic": "/f ʌ1 nɡ k sH ʌ0 n ʌ0 l/",
+              "translation": "adj.实用 ,功能"
+            },
+            {
+              "word": "component",
+              "phonetic": "/k ʌ0 m p oʊ1 n ʌ0 n t/",
+              "translation": "组件"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000539_77d67308",
+          "original": "dynamic-component",
+          "phonetic": "",
+          "translation": "dynamic-component",
+          "breakdown": [
+            {
+              "word": "dynamic",
+              "phonetic": "/d aɪ0 n æ1 m ɪ0 k/",
+              "translation": "动态"
+            },
+            {
+              "word": "component",
+              "phonetic": "/k ʌ0 m p oʊ1 n ʌ0 n t/",
+              "translation": "组件"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000540_6b3ac8e6",
+          "original": "keep-alive",
+          "phonetic": "",
+          "translation": "保持活力",
+          "breakdown": [
+            {
+              "word": "keep",
+              "phonetic": "/k i1 p/",
+              "translation": "保持"
+            },
+            {
+              "word": "alive",
+              "phonetic": "/ʌ0 l aɪ1 v/",
+              "translation": "活"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000541_b3d7b5e5",
+          "original": "transition",
+          "phonetic": "/t r æ0 n z ɪ1 sH ʌ0 n/",
+          "translation": "过渡",
+          "breakdown": [
+            {
+              "word": "transition",
+              "phonetic": "/t r æ0 n z ɪ1 sH ʌ0 n/",
+              "translation": "过渡"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000542_af3557fe",
+          "original": "transition-group",
+          "phonetic": "",
+          "translation": "过渡组",
+          "breakdown": [
+            {
+              "word": "transition",
+              "phonetic": "/t r æ0 n z ɪ1 sH ʌ0 n/",
+              "translation": "过渡"
+            },
+            {
+              "word": "group",
+              "phonetic": "/ɡ r u1 p/",
+              "translation": "组"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000543_a00b63e1",
+          "original": "component-props",
+          "phonetic": "",
+          "translation": "component-props",
+          "breakdown": [
+            {
+              "word": "component",
+              "phonetic": "/k ʌ0 m p oʊ1 n ʌ0 n t/",
+              "translation": "组件"
+            },
+            {
+              "word": "props",
+              "phonetic": "/p r ɑ1 p s/",
+              "translation": "属性"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000544_ab09de6f",
+          "original": "emits",
+          "phonetic": "/ɪ0 m ɪ1 t s/",
+          "translation": "散发",
+          "breakdown": [
+            {
+              "word": "emits",
+              "phonetic": "/ɪ0 m ɪ1 t s/",
+              "translation": "散发"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000545_b96106a9",
+          "original": "expose",
+          "phonetic": "/ɪ0 k s p oʊ1 z/",
+          "translation": "公開",
+          "breakdown": [
+            {
+              "word": "expose",
+              "phonetic": "/ɪ0 k s p oʊ1 z/",
+              "translation": "公開"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000546_be05095f",
+          "original": "provide",
+          "phonetic": "/p r ʌ0 v aɪ1 d/",
+          "translation": "提供",
+          "breakdown": [
+            {
+              "word": "provide",
+              "phonetic": "/p r ʌ0 v aɪ1 d/",
+              "translation": "提供"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000547_4ccfce2b",
+          "original": "inject",
+          "phonetic": "/ɪ2 n dʒ ɛ1 k t/",
+          "translation": "注入",
+          "breakdown": [
+            {
+              "word": "inject",
+              "phonetic": "/ɪ2 n dʒ ɛ1 k t/",
+              "translation": "注入"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000548_eb74aa1b",
+          "original": "slots",
+          "phonetic": "/s l ɑ1 t s/",
+          "translation": "slots",
+          "breakdown": [
+            {
+              "word": "slots",
+              "phonetic": "/s l ɑ1 t s/",
+              "translation": "slots"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000549_eea712a4",
+          "original": "attrs",
+          "phonetic": "",
+          "translation": "attrs",
+          "breakdown": [
+            {
+              "word": "attrs",
+              "phonetic": "",
+              "translation": "attrs"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000550_96da18c6",
+          "original": "render-function",
+          "phonetic": "",
+          "translation": "render-function",
+          "breakdown": [
+            {
+              "word": "render",
+              "phonetic": "/r ɛ1 n d ɜr0/",
+              "translation": "渲染"
+            },
+            {
+              "word": "function",
+              "phonetic": "/f ʌ1 nɡ k sH ʌ0 n/",
+              "translation": "功能"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000551_df039a17",
+          "original": "jsx",
+          "phonetic": "",
+          "translation": "JSX",
+          "breakdown": [
+            {
+              "word": "jsx",
+              "phonetic": "",
+              "translation": "JSX"
+            }
+          ],
+          "cached": true,
+          "rating": 3,
+          "group_rating": 3,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000552_bfd8f041",
+      "name": "Composition API",
+      "description": "",
+      "rating": 5,
+      "words": [
+        {
+          "id": "id_000553_9127fc1b",
+          "original": "setup",
+          "phonetic": "/s ɛ1 t ʌ2 p/",
+          "translation": "设置",
+          "breakdown": [
+            {
+              "word": "setup",
+              "phonetic": "/s ɛ1 t ʌ2 p/",
+              "translation": "设置"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000554_9d03f297",
+          "original": "script-setup",
+          "phonetic": "",
+          "translation": "script-setup",
+          "breakdown": [
+            {
+              "word": "script",
+              "phonetic": "/s k r ɪ1 p t/",
+              "translation": "脚本"
+            },
+            {
+              "word": "setup",
+              "phonetic": "/s ɛ1 t ʌ2 p/",
+              "translation": "设置"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000555_b3f395ea",
+          "original": "ref",
+          "phonetic": "/r ɛ1 f/",
+          "translation": "引用",
+          "breakdown": [
+            {
+              "word": "ref",
+              "phonetic": "/r ɛ1 f/",
+              "translation": "引用"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000556_259fbc80",
+          "original": "reactive",
+          "phonetic": "/r i0 æ1 k t ɪ0 v/",
+          "translation": "反应性",
+          "breakdown": [
+            {
+              "word": "reactive",
+              "phonetic": "/r i0 æ1 k t ɪ0 v/",
+              "translation": "反应性"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000557_77c5ae76",
+          "original": "computed",
+          "phonetic": "/k ʌ0 m p j u1 t ʌ0 d/",
+          "translation": "计算",
+          "breakdown": [
+            {
+              "word": "computed",
+              "phonetic": "/k ʌ0 m p j u1 t ʌ0 d/",
+              "translation": "计算"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000558_bc18d913",
+          "original": "watch",
+          "phonetic": "/w ɑ1 tʃ/",
+          "translation": "观看",
+          "breakdown": [
+            {
+              "word": "watch",
+              "phonetic": "/w ɑ1 tʃ/",
+              "translation": "观看"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000559_47e2d449",
+          "original": "watchEffect",
+          "phonetic": "",
+          "translation": "观察效应",
+          "breakdown": [
+            {
+              "word": "watch",
+              "phonetic": "/w ɑ1 tʃ/",
+              "translation": "观看"
+            },
+            {
+              "word": "Effect",
+              "phonetic": "/ɪ0 f ɛ1 k t/",
+              "translation": "效果"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000560_c06f6cf6",
+          "original": "onMounted",
+          "phonetic": "",
+          "translation": "onMounted",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Mounted",
+              "phonetic": "/m aʊ1 n t ʌ0 d/",
+              "translation": "已挂载"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000561_7b3f2891",
+          "original": "onUpdated",
+          "phonetic": "",
+          "translation": "onUpdated",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Updated",
+              "phonetic": "/ʌ0 p d eɪ1 t ɪ0 d/",
+              "translation": "已更新"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000562_7cbc4d54",
+          "original": "onUnmounted",
+          "phonetic": "",
+          "translation": "onUnmounted",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Unmounted",
+              "phonetic": "",
+              "translation": "未挂载"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000563_b79e7b34",
+          "original": "onBeforeMount",
+          "phonetic": "",
+          "translation": "onBeforeMount",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Before",
+              "phonetic": "/b ɪ0 f ɔ1 r/",
+              "translation": "之前"
+            },
+            {
+              "word": "Mount",
+              "phonetic": "/m aʊ1 n t/",
+              "translation": "挂载"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000564_ec3a9cf0",
+          "original": "onBeforeUpdate",
+          "phonetic": "",
+          "translation": "onBeforeUpdate",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Before",
+              "phonetic": "/b ɪ0 f ɔ1 r/",
+              "translation": "之前"
+            },
+            {
+              "word": "Update",
+              "phonetic": "/ʌ0 p d eɪ1 t/",
+              "translation": "更新"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000565_eef68b1a",
+          "original": "onBeforeUnmount",
+          "phonetic": "",
+          "translation": "onBeforeUnmount",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Before",
+              "phonetic": "/b ɪ0 f ɔ1 r/",
+              "translation": "之前"
+            },
+            {
+              "word": "Unmount",
+              "phonetic": "",
+              "translation": "卸载"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000566_e7ab3e16",
+          "original": "onErrorCaptured",
+          "phonetic": "",
+          "translation": "onErrorCaptured",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Error",
+              "phonetic": "/ɛ1 r ɜr0/",
+              "translation": "错误"
+            },
+            {
+              "word": "Captured",
+              "phonetic": "/k æ1 p tʃ ɜr0 d/",
+              "translation": "已捕获"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000567_c79c80a4",
+          "original": "onRenderTracked",
+          "phonetic": "",
+          "translation": "OnRenderTracked",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Render",
+              "phonetic": "/r ɛ1 n d ɜr0/",
+              "translation": "渲染"
+            },
+            {
+              "word": "Tracked",
+              "phonetic": "/t r æ1 k t/",
+              "translation": "跟踪"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000568_a3a6da57",
+          "original": "onRenderTriggered",
+          "phonetic": "",
+          "translation": "OnRenderTrigged",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Render",
+              "phonetic": "/r ɛ1 n d ɜr0/",
+              "translation": "渲染"
+            },
+            {
+              "word": "Triggered",
+              "phonetic": "/t r ɪ1 ɡ ɜr0 d/",
+              "translation": "触发"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000569_3b35bad9",
+          "original": "onActivated",
+          "phonetic": "",
+          "translation": "onActivated",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Activated",
+              "phonetic": "/æ1 k t ʌ0 v eɪ2 t ɪ0 d/",
+              "translation": "已激活"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000570_06b3f86e",
+          "original": "onDeactivated",
+          "phonetic": "",
+          "translation": "onDeactivated",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Deactivated",
+              "phonetic": "/d i2 æ1 k t ɪ0 v eɪ2 t ɪ0 d/",
+              "translation": "已停用"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000571_afaab565",
+          "original": "onServerPrefetch",
+          "phonetic": "",
+          "translation": "OnServerPrefetch",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Server",
+              "phonetic": "/s ɜr1 v ɜr0/",
+              "translation": "服务器"
+            },
+            {
+              "word": "Prefetch",
+              "phonetic": "",
+              "translation": "预取"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000572_ab4dfdd9",
+      "name": "Routing (vue-router 4)",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000573_8cea6d8a",
+          "original": "createRouter",
+          "phonetic": "",
+          "translation": "createRouter",
+          "breakdown": [
+            {
+              "word": "create",
+              "phonetic": "/k r i0 eɪ1 t/",
+              "translation": "创建"
+            },
+            {
+              "word": "Router",
+              "phonetic": "/r u1 t ɜr0/",
+              "translation": "路由器"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000574_126521c9",
+          "original": "createWebHistory",
+          "phonetic": "",
+          "translation": "createWebHistory",
+          "breakdown": [
+            {
+              "word": "create",
+              "phonetic": "/k r i0 eɪ1 t/",
+              "translation": "创建"
+            },
+            {
+              "word": "Web",
+              "phonetic": "/w ɛ1 b/",
+              "translation": "網頁"
+            },
+            {
+              "word": "History",
+              "phonetic": "/h ɪ1 s t ɜr0 i0/",
+              "translation": "历史"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000575_ac1aeb02",
+          "original": "createWebHashHistory",
+          "phonetic": "",
+          "translation": "createWebHashHistory",
+          "breakdown": [
+            {
+              "word": "create",
+              "phonetic": "/k r i0 eɪ1 t/",
+              "translation": "创建"
+            },
+            {
+              "word": "Web",
+              "phonetic": "/w ɛ1 b/",
+              "translation": "網頁"
+            },
+            {
+              "word": "Hash",
+              "phonetic": "/h æ1 sH/",
+              "translation": "哈希码"
+            },
+            {
+              "word": "History",
+              "phonetic": "/h ɪ1 s t ɜr0 i0/",
+              "translation": "历史"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000576_f7e2ba37",
+          "original": "createMemoryHistory",
+          "phonetic": "",
+          "translation": "createMemoryHistory",
+          "breakdown": [
+            {
+              "word": "create",
+              "phonetic": "/k r i0 eɪ1 t/",
+              "translation": "创建"
+            },
+            {
+              "word": "Memory",
+              "phonetic": "/m ɛ1 m ɜr0 i0/",
+              "translation": "内存變量"
+            },
+            {
+              "word": "History",
+              "phonetic": "/h ɪ1 s t ɜr0 i0/",
+              "translation": "历史"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000577_ef323b6e",
+          "original": "router-view",
+          "phonetic": "",
+          "translation": "router-view",
+          "breakdown": [
+            {
+              "word": "router",
+              "phonetic": "/r u1 t ɜr0/",
+              "translation": "路由器"
+            },
+            {
+              "word": "view",
+              "phonetic": "/v j u1/",
+              "translation": "檢視方式"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000578_f7e73210",
+          "original": "router-link",
+          "phonetic": "",
+          "translation": "router-link",
+          "breakdown": [
+            {
+              "word": "router",
+              "phonetic": "/r u1 t ɜr0/",
+              "translation": "路由器"
+            },
+            {
+              "word": "link",
+              "phonetic": "/l ɪ1 nɡ k/",
+              "translation": "链接"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000579_a74cca63",
+          "original": "useRouter",
+          "phonetic": "",
+          "translation": "USEROUTER",
+          "breakdown": [
+            {
+              "word": "use",
+              "phonetic": "/j u1 s/",
+              "translation": "使用"
+            },
+            {
+              "word": "Router",
+              "phonetic": "/r u1 t ɜr0/",
+              "translation": "路由器"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000580_f93ec0f4",
+          "original": "useRoute",
+          "phonetic": "",
+          "translation": "用户oute",
+          "breakdown": [
+            {
+              "word": "use",
+              "phonetic": "/j u1 s/",
+              "translation": "使用"
+            },
+            {
+              "word": "Route",
+              "phonetic": "/r u1 t/",
+              "translation": "专业："
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000581_766a846c",
+          "original": "onBeforeRouteLeave",
+          "phonetic": "",
+          "translation": "onBeforeRouteLeave",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Before",
+              "phonetic": "/b ɪ0 f ɔ1 r/",
+              "translation": "之前"
+            },
+            {
+              "word": "Route",
+              "phonetic": "/r u1 t/",
+              "translation": "专业："
+            },
+            {
+              "word": "Leave",
+              "phonetic": "/l i1 v/",
+              "translation": "休假"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000582_24ac102c",
+          "original": "onBeforeRouteUpdate",
+          "phonetic": "",
+          "translation": "onBeforeRouteUpdate",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Before",
+              "phonetic": "/b ɪ0 f ɔ1 r/",
+              "translation": "之前"
+            },
+            {
+              "word": "Route",
+              "phonetic": "/r u1 t/",
+              "translation": "专业："
+            },
+            {
+              "word": "Update",
+              "phonetic": "/ʌ0 p d eɪ1 t/",
+              "translation": "更新"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000583_8b792cb8",
+          "original": "route-meta",
+          "phonetic": "",
+          "translation": "route-meta",
+          "breakdown": [
+            {
+              "word": "route",
+              "phonetic": "/r u1 t/",
+              "translation": "路由"
+            },
+            {
+              "word": "meta",
+              "phonetic": "/m i1 t ʌ0/",
+              "translation": "元数据"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000584_4d7d8d23",
+          "original": "route-params",
+          "phonetic": "",
+          "translation": "route-params",
+          "breakdown": [
+            {
+              "word": "route",
+              "phonetic": "/r u1 t/",
+              "translation": "路由"
+            },
+            {
+              "word": "params",
+              "phonetic": "",
+              "translation": "参数"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000585_bb047d74",
+          "original": "route-query",
+          "phonetic": "",
+          "translation": "route-query",
+          "breakdown": [
+            {
+              "word": "route",
+              "phonetic": "/r u1 t/",
+              "translation": "路由"
+            },
+            {
+              "word": "query",
+              "phonetic": "/k w i1 r i0/",
+              "translation": "询问"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000586_f5e9eecb",
+          "original": "route-props",
+          "phonetic": "",
+          "translation": "route-props",
+          "breakdown": [
+            {
+              "word": "route",
+              "phonetic": "/r u1 t/",
+              "translation": "路由"
+            },
+            {
+              "word": "props",
+              "phonetic": "/p r ɑ1 p s/",
+              "translation": "属性"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000587_7b2633dd",
+          "original": "navigation-guard",
+          "phonetic": "",
+          "translation": "navigation-guard",
+          "breakdown": [
+            {
+              "word": "navigation",
+              "phonetic": "/n æ1 v ʌ0 ɡ eɪ1 sH ʌ0 n/",
+              "translation": "导航"
+            },
+            {
+              "word": "guard",
+              "phonetic": "/ɡ ɑ1 r d/",
+              "translation": "守衛"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000588_97562071",
+          "original": "scroll-behavior",
+          "phonetic": "",
+          "translation": "滚动行为",
+          "breakdown": [
+            {
+              "word": "scroll",
+              "phonetic": "/s k r oʊ1 l/",
+              "translation": "滚动"
+            },
+            {
+              "word": "behavior",
+              "phonetic": "/b ɪ0 h eɪ1 v j ɜr0/",
+              "translation": "行为"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000589_207a6ba2",
+          "original": "lazy-loading",
+          "phonetic": "",
+          "translation": "延迟加载",
+          "breakdown": [
+            {
+              "word": "lazy",
+              "phonetic": "/l eɪ1 z i0/",
+              "translation": "延迟"
+            },
+            {
+              "word": "loading",
+              "phonetic": "/l oʊ1 d ɪ0 nɡ/",
+              "translation": "加载中"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000590_08c86ccf",
+      "name": "State Management (Pinia)",
+      "description": "",
+      "rating": 5,
+      "words": [
+        {
+          "id": "id_000591_9c23addd",
+          "original": "defineStore",
+          "phonetic": "",
+          "translation": "defineStore",
+          "breakdown": [
+            {
+              "word": "define",
+              "phonetic": "/d ɪ0 f aɪ1 n/",
+              "translation": "定义"
+            },
+            {
+              "word": "Store",
+              "phonetic": "/s t ɔ1 r/",
+              "translation": "商店"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000592_90a2f975",
+          "original": "store",
+          "phonetic": "/s t ɔ1 r/",
+          "translation": "店铺",
+          "breakdown": [
+            {
+              "word": "store",
+              "phonetic": "/s t ɔ1 r/",
+              "translation": "店铺"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000593_77d4c7a2",
+          "original": "state",
+          "phonetic": "/s t eɪ1 t/",
+          "translation": "状态",
+          "breakdown": [
+            {
+              "word": "state",
+              "phonetic": "/s t eɪ1 t/",
+              "translation": "状态"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000594_e7d283ab",
+          "original": "getters",
+          "phonetic": "/ɡ ɛ1 t ɜr0 z/",
+          "translation": "获得者",
+          "breakdown": [
+            {
+              "word": "getters",
+              "phonetic": "/ɡ ɛ1 t ɜr0 z/",
+              "translation": "获得者"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000595_fb62fd54",
+          "original": "actions",
+          "phonetic": "/æ1 k sH ʌ0 n z/",
+          "translation": "动作",
+          "breakdown": [
+            {
+              "word": "actions",
+              "phonetic": "/æ1 k sH ʌ0 n z/",
+              "translation": "动作"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000596_c7d79783",
+          "original": "useStore",
+          "phonetic": "",
+          "translation": "Usestore",
+          "breakdown": [
+            {
+              "word": "use",
+              "phonetic": "/j u1 s/",
+              "translation": "使用"
+            },
+            {
+              "word": "Store",
+              "phonetic": "/s t ɔ1 r/",
+              "translation": "商店"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000597_4d066de1",
+          "original": "mapState",
+          "phonetic": "",
+          "translation": "MAPSTATE",
+          "breakdown": [
+            {
+              "word": "map",
+              "phonetic": "/m æ1 p/",
+              "translation": "map"
+            },
+            {
+              "word": "State",
+              "phonetic": "/s t eɪ1 t/",
+              "translation": "状态"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000598_3bf1b5ac",
+          "original": "mapWritableState",
+          "phonetic": "",
+          "translation": "mapWritableState",
+          "breakdown": [
+            {
+              "word": "map",
+              "phonetic": "/m æ1 p/",
+              "translation": "map"
+            },
+            {
+              "word": "Writable",
+              "phonetic": "",
+              "translation": "可写"
+            },
+            {
+              "word": "State",
+              "phonetic": "/s t eɪ1 t/",
+              "translation": "状态"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000599_244c0cd7",
+          "original": "mapActions",
+          "phonetic": "",
+          "translation": "地图",
+          "breakdown": [
+            {
+              "word": "map",
+              "phonetic": "/m æ1 p/",
+              "translation": "map"
+            },
+            {
+              "word": "Actions",
+              "phonetic": "/æ1 k sH ʌ0 n z/",
+              "translation": "动作"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000600_ba5ee96a",
+          "original": "mapGetters",
+          "phonetic": "",
+          "translation": "Mapgetters",
+          "breakdown": [
+            {
+              "word": "map",
+              "phonetic": "/m æ1 p/",
+              "translation": "map"
+            },
+            {
+              "word": "Getters",
+              "phonetic": "/ɡ ɛ1 t ɜr0 z/",
+              "translation": "getters"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000601_2756c04e",
+          "original": "subscribe",
+          "phonetic": "/s ʌ0 b s k r aɪ1 b/",
+          "translation": "订阅",
+          "breakdown": [
+            {
+              "word": "subscribe",
+              "phonetic": "/s ʌ0 b s k r aɪ1 b/",
+              "translation": "订阅"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000602_b4ecc82d",
+          "original": "onAction",
+          "phonetic": "",
+          "translation": "onAction",
+          "breakdown": [
+            {
+              "word": "on",
+              "phonetic": "/ɑ1 n/",
+              "translation": "在"
+            },
+            {
+              "word": "Action",
+              "phonetic": "/æ1 k sH ʌ0 n/",
+              "translation": "动作"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000603_4f7e6cd3",
+          "original": "hot-update",
+          "phonetic": "",
+          "translation": "hot-update",
+          "breakdown": [
+            {
+              "word": "hot",
+              "phonetic": "/h ɑ1 t/",
+              "translation": "火"
+            },
+            {
+              "word": "update",
+              "phonetic": "/ʌ0 p d eɪ1 t/",
+              "translation": "更新"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000604_8ee09b9d",
+          "original": "plugin",
+          "phonetic": "/p l ʌ1 ɡ ɪ0 n/",
+          "translation": "插件",
+          "breakdown": [
+            {
+              "word": "plugin",
+              "phonetic": "/p l ʌ1 ɡ ɪ0 n/",
+              "translation": "插件"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000605_5ac4d447",
+          "original": "persist",
+          "phonetic": "/p ɜr0 s ɪ1 s t/",
+          "translation": "保持",
+          "breakdown": [
+            {
+              "word": "persist",
+              "phonetic": "/p ɜr0 s ɪ1 s t/",
+              "translation": "保持"
+            }
+          ],
+          "cached": true,
+          "rating": 5,
+          "group_rating": 5,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000606_9a18c9ec",
+      "name": "Advanced Features",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000607_b463f936",
+          "original": "custom-directive",
+          "phonetic": "",
+          "translation": "custom-directive",
+          "breakdown": [
+            {
+              "word": "custom",
+              "phonetic": "/k ʌ1 s t ʌ0 m/",
+              "translation": "风俗"
+            },
+            {
+              "word": "directive",
+              "phonetic": "/d ɜr0 ɛ1 k t ɪ0 v/",
+              "translation": "n.决定审判地点 ,指示,共同体指令"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000608_ea779698",
+          "original": "custom-renderer",
+          "phonetic": "",
+          "translation": "自定义渲染器",
+          "breakdown": [
+            {
+              "word": "custom",
+              "phonetic": "/k ʌ1 s t ʌ0 m/",
+              "translation": "风俗"
+            },
+            {
+              "word": "renderer",
+              "phonetic": "",
+              "translation": "渲染器"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000609_a0cafa56",
+          "original": "compiler-macros",
+          "phonetic": "",
+          "translation": "compiler-macros",
+          "breakdown": [
+            {
+              "word": "compiler",
+              "phonetic": "/k ʌ0 m p aɪ1 l ɜr0/",
+              "translation": "編譯器"
+            },
+            {
+              "word": "macros",
+              "phonetic": "",
+              "translation": "模  板"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000610_9afd58b3",
+          "original": "ssr",
+          "phonetic": "",
+          "translation": "SSR",
+          "breakdown": [
+            {
+              "word": "ssr",
+              "phonetic": "",
+              "translation": "SSR"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000611_e949b0c1",
+          "original": "hydration",
+          "phonetic": "/h aɪ0 d r eɪ1 sH ʌ0 n/",
+          "translation": "补水",
+          "breakdown": [
+            {
+              "word": "hydration",
+              "phonetic": "/h aɪ0 d r eɪ1 sH ʌ0 n/",
+              "translation": "补水"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000612_2000e5f8",
+          "original": "server-prefetch",
+          "phonetic": "",
+          "translation": "server-prefetch",
+          "breakdown": [
+            {
+              "word": "server",
+              "phonetic": "/s ɜr1 v ɜr0/",
+              "translation": "服务"
+            },
+            {
+              "word": "prefetch",
+              "phonetic": "",
+              "translation": "预取"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000613_edb677f6",
+          "original": "async-component",
+          "phonetic": "",
+          "translation": "async-component",
+          "breakdown": [
+            {
+              "word": "async",
+              "phonetic": "",
+              "translation": "异步"
+            },
+            {
+              "word": "component",
+              "phonetic": "/k ʌ0 m p oʊ1 n ʌ0 n t/",
+              "translation": "组件"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000614_2e3a23e4",
+          "original": "dynamic-import",
+          "phonetic": "",
+          "translation": "dynamic-import",
+          "breakdown": [
+            {
+              "word": "dynamic",
+              "phonetic": "/d aɪ0 n æ1 m ɪ0 k/",
+              "translation": "动态"
+            },
+            {
+              "word": "import",
+              "phonetic": "/ɪ2 m p ɔ1 r t/",
+              "translation": "进口"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000615_face37d1",
+          "original": "suspense",
+          "phonetic": "/s ʌ0 s p ɛ1 n s/",
+          "translation": "n.不定, 停止 ,未决,悬而未决",
+          "breakdown": [
+            {
+              "word": "suspense",
+              "phonetic": "/s ʌ0 s p ɛ1 n s/",
+              "translation": "n.不定, 停止 ,未决,悬而未决"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000616_bc0d5db7",
+          "original": "teleport",
+          "phonetic": "/t ɛ1 l ʌ0 p ɔ1 r t/",
+          "translation": "瞬移",
+          "breakdown": [
+            {
+              "word": "teleport",
+              "phonetic": "/t ɛ1 l ʌ0 p ɔ1 r t/",
+              "translation": "瞬移"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000617_f2c72106",
+          "original": "transition",
+          "phonetic": "/t r æ0 n z ɪ1 sH ʌ0 n/",
+          "translation": "过渡",
+          "breakdown": [
+            {
+              "word": "transition",
+              "phonetic": "/t r æ0 n z ɪ1 sH ʌ0 n/",
+              "translation": "过渡"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000618_77bbc396",
+          "original": "transition-group",
+          "phonetic": "",
+          "translation": "过渡组",
+          "breakdown": [
+            {
+              "word": "transition",
+              "phonetic": "/t r æ0 n z ɪ1 sH ʌ0 n/",
+              "translation": "过渡"
+            },
+            {
+              "word": "group",
+              "phonetic": "/ɡ r u1 p/",
+              "translation": "组"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000619_f77c4c25",
+          "original": "css-vars",
+          "phonetic": "",
+          "translation": "css-vars",
+          "breakdown": [
+            {
+              "word": "css",
+              "phonetic": "",
+              "translation": "css样式"
+            },
+            {
+              "word": "vars",
+              "phonetic": "/v ɑ1 r z/",
+              "translation": "变量"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000620_5ce90a37",
+          "original": "css-modules",
+          "phonetic": "",
+          "translation": "css-modules",
+          "breakdown": [
+            {
+              "word": "css",
+              "phonetic": "",
+              "translation": "css样式"
+            },
+            {
+              "word": "modules",
+              "phonetic": "/m ɑ1 dʒ u0 l z/",
+              "translation": "模块"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000621_b01cbc85",
+          "original": "scoped-styles",
+          "phonetic": "",
+          "translation": "scoped-styles",
+          "breakdown": [
+            {
+              "word": "scoped",
+              "phonetic": "",
+              "translation": "范围"
+            },
+            {
+              "word": "styles",
+              "phonetic": "/s t aɪ1 l z/",
+              "translation": "风格"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000622_39fe664f",
+      "name": "Performance Optimization",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000623_07f61112",
+          "original": "tree-shaking",
+          "phonetic": "",
+          "translation": "摇树",
+          "breakdown": [
+            {
+              "word": "tree",
+              "phonetic": "/t r i1/",
+              "translation": "树"
+            },
+            {
+              "word": "shaking",
+              "phonetic": "/sH eɪ1 k ɪ0 nɡ/",
+              "translation": "蜿蜒"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000624_c158d8ef",
+          "original": "code-splitting",
+          "phonetic": "",
+          "translation": "代码拆分",
+          "breakdown": [
+            {
+              "word": "code",
+              "phonetic": "/k oʊ1 d/",
+              "translation": "代码"
+            },
+            {
+              "word": "splitting",
+              "phonetic": "/s p l ɪ1 t ɪ0 nɡ/",
+              "translation": "分割"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000625_e2f06937",
+          "original": "v-memo",
+          "phonetic": "",
+          "translation": "V-Memo",
+          "breakdown": [
+            {
+              "word": "v",
+              "phonetic": "/v i1/",
+              "translation": "v"
+            },
+            {
+              "word": "memo",
+              "phonetic": "/m ɛ1 m oʊ2/",
+              "translation": "记忆"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000626_1224eb43",
+          "original": "reactivity-transform",
+          "phonetic": "",
+          "translation": "reactivity-transform",
+          "breakdown": [
+            {
+              "word": "reactivity",
+              "phonetic": "/r i2 æ2 k t ɪ1 v ʌ0 t i0/",
+              "translation": "反应性"
+            },
+            {
+              "word": "transform",
+              "phonetic": "/t r æ0 n s f ɔ1 r m/",
+              "translation": "转换"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000627_6a62b603",
+          "original": "hoist-static",
+          "phonetic": "",
+          "translation": "hoist-static",
+          "breakdown": [
+            {
+              "word": "hoist",
+              "phonetic": "/h ɔɪ1 s t/",
+              "translation": "升降机"
+            },
+            {
+              "word": "static",
+              "phonetic": "/s t æ1 t ɪ0 k/",
+              "translation": "静态"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000628_0aa19b60",
+          "original": "patch-flags",
+          "phonetic": "",
+          "translation": "patch-flags",
+          "breakdown": [
+            {
+              "word": "patch",
+              "phonetic": "/p æ1 tʃ/",
+              "translation": "patch"
+            },
+            {
+              "word": "flags",
+              "phonetic": "/f l æ1 ɡ z/",
+              "translation": "旗帜"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000629_1eae415d",
+          "original": "block-tree",
+          "phonetic": "",
+          "translation": "block-tree",
+          "breakdown": [
+            {
+              "word": "block",
+              "phonetic": "/b l ɑ1 k/",
+              "translation": "块"
+            },
+            {
+              "word": "tree",
+              "phonetic": "/t r i1/",
+              "translation": "树"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000630_000495e0",
+          "original": "fragment",
+          "phonetic": "/f r æ1 ɡ m ʌ0 n t/",
+          "translation": "片段",
+          "breakdown": [
+            {
+              "word": "fragment",
+              "phonetic": "/f r æ1 ɡ m ʌ0 n t/",
+              "translation": "片段"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000631_58a209bb",
+          "original": "teleport",
+          "phonetic": "/t ɛ1 l ʌ0 p ɔ1 r t/",
+          "translation": "瞬移",
+          "breakdown": [
+            {
+              "word": "teleport",
+              "phonetic": "/t ɛ1 l ʌ0 p ɔ1 r t/",
+              "translation": "瞬移"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000632_f345a458",
+          "original": "suspense",
+          "phonetic": "/s ʌ0 s p ɛ1 n s/",
+          "translation": "n.不定, 停止 ,未决,悬而未决",
+          "breakdown": [
+            {
+              "word": "suspense",
+              "phonetic": "/s ʌ0 s p ɛ1 n s/",
+              "translation": "n.不定, 停止 ,未决,悬而未决"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000633_f3a99063",
+          "original": "lazy-components",
+          "phonetic": "",
+          "translation": "lazy-components",
+          "breakdown": [
+            {
+              "word": "lazy",
+              "phonetic": "/l eɪ1 z i0/",
+              "translation": "延迟"
+            },
+            {
+              "word": "components",
+              "phonetic": "/k ʌ0 m p oʊ1 n ʌ0 n t s/",
+              "translation": "成分"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000634_3a03b821",
+          "original": "virtual-scrolling",
+          "phonetic": "",
+          "translation": "虚拟滚动",
+          "breakdown": [
+            {
+              "word": "virtual",
+              "phonetic": "/v ɜr1 tʃ u0 ʌ0 l/",
+              "translation": "virtual"
+            },
+            {
+              "word": "scrolling",
+              "phonetic": "/s k r oʊ1 l ɪ0 nɡ/",
+              "translation": "滚动"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000635_ad9f6ec7",
+          "original": "compiler-optimizations",
+          "phonetic": "",
+          "translation": "compiler-optimizations",
+          "breakdown": [
+            {
+              "word": "compiler",
+              "phonetic": "/k ʌ0 m p aɪ1 l ɜr0/",
+              "translation": "編譯器"
+            },
+            {
+              "word": "optimizations",
+              "phonetic": "",
+              "translation": "最适化"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000636_50580a03",
+          "original": "production-mode",
+          "phonetic": "",
+          "translation": "生产模式",
+          "breakdown": [
+            {
+              "word": "production",
+              "phonetic": "/p r ʌ0 d ʌ1 k sH ʌ0 n/",
+              "translation": "生产"
+            },
+            {
+              "word": "mode",
+              "phonetic": "/m oʊ1 d/",
+              "translation": "模式"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000637_ac5a31ee",
+          "original": "devtools",
+          "phonetic": "",
+          "translation": "DevTools",
+          "breakdown": [
+            {
+              "word": "devtools",
+              "phonetic": "",
+              "translation": "DevTools"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000638_dc85d81f",
+      "name": "Build & Tooling",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000639_7598d0ff",
+          "original": "vite",
+          "phonetic": "",
+          "translation": "ViTE",
+          "breakdown": [
+            {
+              "word": "vite",
+              "phonetic": "",
+              "translation": "ViTE"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000640_80d72942",
+          "original": "esbuild",
+          "phonetic": "",
+          "translation": "esbuild",
+          "breakdown": [
+            {
+              "word": "esbuild",
+              "phonetic": "",
+              "translation": "esbuild"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000641_0a79ba05",
+          "original": "rollup",
+          "phonetic": "",
+          "translation": "彙總套件",
+          "breakdown": [
+            {
+              "word": "rollup",
+              "phonetic": "",
+              "translation": "彙總套件"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000642_11bcdb60",
+          "original": "env-variables",
+          "phonetic": "",
+          "translation": "env-variables",
+          "breakdown": [
+            {
+              "word": "env",
+              "phonetic": "",
+              "translation": "Env"
+            },
+            {
+              "word": "variables",
+              "phonetic": "/v ɛ1 r i0 ʌ0 b ʌ0 l z/",
+              "translation": "变量"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000643_82c2df1d",
+          "original": "define",
+          "phonetic": "/d ɪ0 f aɪ1 n/",
+          "translation": "定义",
+          "breakdown": [
+            {
+              "word": "define",
+              "phonetic": "/d ɪ0 f aɪ1 n/",
+              "translation": "定义"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000644_b7e44c07",
+          "original": "import-analysis",
+          "phonetic": "",
+          "translation": "import-analysis",
+          "breakdown": [
+            {
+              "word": "import",
+              "phonetic": "/ɪ2 m p ɔ1 r t/",
+              "translation": "进口"
+            },
+            {
+              "word": "analysis",
+              "phonetic": "/ʌ0 n æ1 l ʌ0 s ʌ0 s/",
+              "translation": "分析"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000645_8151c690",
+          "original": "hmr",
+          "phonetic": "",
+          "translation": "hmr",
+          "breakdown": [
+            {
+              "word": "hmr",
+              "phonetic": "",
+              "translation": "hmr"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000646_e7d84a89",
+          "original": "ssr-build",
+          "phonetic": "",
+          "translation": "ssr-build",
+          "breakdown": [
+            {
+              "word": "ssr",
+              "phonetic": "",
+              "translation": "SSR"
+            },
+            {
+              "word": "build",
+              "phonetic": "/b ɪ1 l d/",
+              "translation": "构建, 建造, 编译"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000647_ce9986d3",
+          "original": "pre-rendering",
+          "phonetic": "",
+          "translation": "预先渲染",
+          "breakdown": [
+            {
+              "word": "pre",
+              "phonetic": "/p r i1/",
+              "translation": "显示下一篇和前一篇的内容"
+            },
+            {
+              "word": "rendering",
+              "phonetic": "/r ɛ1 n d ɜr0 ɪ0 nɡ/",
+              "translation": "轉譯"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    },
+    {
+      "id": "id_000648_af1943bf",
+      "name": "TypeScript Support",
+      "description": "",
+      "rating": 0,
+      "words": [
+        {
+          "id": "id_000649_dab26edf",
+          "original": "type-inference",
+          "phonetic": "",
+          "translation": "类型推理",
+          "breakdown": [
+            {
+              "word": "type",
+              "phonetic": "/t aɪ1 p/",
+              "translation": "类型"
+            },
+            {
+              "word": "inference",
+              "phonetic": "/ɪ1 n f ɜr0 ʌ0 n s/",
+              "translation": "n.结论 ,推论"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000650_f7f606f8",
+          "original": "props-typing",
+          "phonetic": "",
+          "translation": "props-typing",
+          "breakdown": [
+            {
+              "word": "props",
+              "phonetic": "/p r ɑ1 p s/",
+              "translation": "属性"
+            },
+            {
+              "word": "typing",
+              "phonetic": "/t aɪ1 p ɪ0 nɡ/",
+              "translation": "打字"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000651_c9f9b823",
+          "original": "emits-typing",
+          "phonetic": "",
+          "translation": "emits-typing",
+          "breakdown": [
+            {
+              "word": "emits",
+              "phonetic": "/ɪ0 m ɪ1 t s/",
+              "translation": "散发"
+            },
+            {
+              "word": "typing",
+              "phonetic": "/t aɪ1 p ɪ0 nɡ/",
+              "translation": "打字"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000652_8a91694e",
+          "original": "ref-typing",
+          "phonetic": "",
+          "translation": "ref-typing",
+          "breakdown": [
+            {
+              "word": "ref",
+              "phonetic": "/r ɛ1 f/",
+              "translation": "引用"
+            },
+            {
+              "word": "typing",
+              "phonetic": "/t aɪ1 p ɪ0 nɡ/",
+              "translation": "打字"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000653_4af0185b",
+          "original": "reactive-typing",
+          "phonetic": "",
+          "translation": "reactive-typing",
+          "breakdown": [
+            {
+              "word": "reactive",
+              "phonetic": "/r i0 æ1 k t ɪ0 v/",
+              "translation": "反应性"
+            },
+            {
+              "word": "typing",
+              "phonetic": "/t aɪ1 p ɪ0 nɡ/",
+              "translation": "打字"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000654_bf69bfd0",
+          "original": "computed-typing",
+          "phonetic": "",
+          "translation": "computed-typing",
+          "breakdown": [
+            {
+              "word": "computed",
+              "phonetic": "/k ʌ0 m p j u1 t ʌ0 d/",
+              "translation": "计算"
+            },
+            {
+              "word": "typing",
+              "phonetic": "/t aɪ1 p ɪ0 nɡ/",
+              "translation": "打字"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000655_e167d71a",
+          "original": "event-typing",
+          "phonetic": "",
+          "translation": "event-typing",
+          "breakdown": [
+            {
+              "word": "event",
+              "phonetic": "/ɪ0 v ɛ1 n t/",
+              "translation": "event"
+            },
+            {
+              "word": "typing",
+              "phonetic": "/t aɪ1 p ɪ0 nɡ/",
+              "translation": "打字"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000656_026ced85",
+          "original": "component-typing",
+          "phonetic": "",
+          "translation": "component-typing",
+          "breakdown": [
+            {
+              "word": "component",
+              "phonetic": "/k ʌ0 m p oʊ1 n ʌ0 n t/",
+              "translation": "组件"
+            },
+            {
+              "word": "typing",
+              "phonetic": "/t aɪ1 p ɪ0 nɡ/",
+              "translation": "打字"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000657_62e3efd7",
+          "original": "generic-components",
+          "phonetic": "",
+          "translation": "generic-components",
+          "breakdown": [
+            {
+              "word": "generic",
+              "phonetic": "/dʒ ʌ0 n ɛ1 r ɪ0 k/",
+              "translation": "一般"
+            },
+            {
+              "word": "components",
+              "phonetic": "/k ʌ0 m p oʊ1 n ʌ0 n t s/",
+              "translation": "成分"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000658_dc21fd5c",
+          "original": "defineProps",
+          "phonetic": "",
+          "translation": "defineProps",
+          "breakdown": [
+            {
+              "word": "define",
+              "phonetic": "/d ɪ0 f aɪ1 n/",
+              "translation": "定义"
+            },
+            {
+              "word": "Props",
+              "phonetic": "/p r ɑ1 p s/",
+              "translation": "属性"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000659_0c1a710e",
+          "original": "defineEmits",
+          "phonetic": "",
+          "translation": "定义",
+          "breakdown": [
+            {
+              "word": "define",
+              "phonetic": "/d ɪ0 f aɪ1 n/",
+              "translation": "定义"
+            },
+            {
+              "word": "Emits",
+              "phonetic": "/ɪ0 m ɪ1 t s/",
+              "translation": "散发"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        },
+        {
+          "id": "id_000660_319b2090",
+          "original": "withDefaults",
+          "phonetic": "",
+          "translation": "withDefaults",
+          "breakdown": [
+            {
+              "word": "with",
+              "phonetic": "/w ɪ1 dH/",
+              "translation": "使用"
+            },
+            {
+              "word": "Defaults",
+              "phonetic": "/d ɪ0 f ɔ1 l t s/",
+              "translation": "默认值"
+            }
+          ],
+          "cached": true,
+          "rating": 0,
+          "group_rating": 0,
+          "has_own_rating": false
+        }
+      ]
+    }
+  ]
+}
