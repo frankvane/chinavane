@@ -1,0 +1,29 @@
+import{j as e,R as d}from"./index-BWM6UHr8.js";import{c as a,C as u}from"./ComponentTemplate-ClBHhBQ8.js";import{d as l}from"./middleware-CPUTVaT6.js";const n=a(l(t=>({count:0,step:1,increment:()=>t(o=>({count:o.count+o.step})),decrement:()=>t(o=>({count:o.count-o.step})),setStep:o=>t({step:o})}),{name:"GlobalSharedCounter"})),i=t=>t.count,p=t=>t.step,m=()=>{const t=n(i),o=n(p),r=n(s=>s.increment),c=n(s=>s.setStep);return e.jsxs("div",{className:"space-y-2 p-3 border rounded",children:[e.jsx("div",{className:"font-medium",children:"全局计数器 A"}),e.jsxs("div",{className:"text-sm",children:["Count: ",t," | Step: ",o]}),e.jsxs("div",{className:"flex gap-2",children:[e.jsx("button",{className:"px-3 py-1 bg-blue-600 text-white rounded",onClick:r,children:"+step"}),e.jsx("button",{className:"px-3 py-1 bg-gray-200 rounded",onClick:()=>c(5),children:"步长=5"}),e.jsx("button",{className:"px-3 py-1 bg-gray-200 rounded",onClick:()=>c(1),children:"步长=1"})]})]})},x=()=>{const t=n(i),o=n(r=>r.decrement);return e.jsxs("div",{className:"space-y-2 p-3 border rounded",children:[e.jsx("div",{className:"font-medium",children:"全局计数器 B"}),e.jsxs("div",{className:"text-sm",children:["Count: ",t]}),e.jsx("div",{className:"flex gap-2",children:e.jsx("button",{className:"px-3 py-1 bg-red-600 text-white rounded",onClick:o,children:"-step"})})]})};function S(){return d.useMemo(()=>a(t=>({count:0,inc:()=>t(o=>({count:o.count+1})),dec:()=>t(o=>({count:o.count-1}))})),[])}const h=()=>{const t=S(),o=t(s=>s.count),r=t(s=>s.inc),c=t(s=>s.dec);return e.jsxs("div",{className:"space-y-2 p-3 border rounded",children:[e.jsx("div",{className:"font-medium",children:"局部计数器（每个组件实例独立）"}),e.jsxs("div",{className:"text-sm",children:["Count: ",o]}),e.jsxs("div",{className:"flex gap-2",children:[e.jsx("button",{className:"px-3 py-1 bg-gray-200 rounded",onClick:c,children:"-1"}),e.jsx("button",{className:"px-3 py-1 bg-gray-200 rounded",onClick:r,children:"+1"})]})]})},C=`import { create } from "zustand";\r
+import { devtools } from "zustand/middleware";\r
+import type { SharedCounterState } from "../types";\r
+\r
+export const useSharedCounter = create(\r
+  devtools<SharedCounterState>(\r
+    (set) => ({\r
+      count: 0,\r
+      step: 1,\r
+      increment: () => set((s) => ({ count: s.count + s.step })),\r
+      decrement: () => set((s) => ({ count: s.count - s.step })),\r
+      setStep: (n) => set({ step: n }),\r
+    }),\r
+    { name: "GlobalSharedCounter" }\r
+  )\r
+);\r
+\r
+export const selectCount = (s: SharedCounterState) => s.count;\r
+export const selectStep = (s: SharedCounterState) => s.step;\r
+`,v=`export interface SharedCounterState {
+  count: number;
+  step: number;
+  increment: () => void;
+  decrement: () => void;
+  setStep: (n: number) => void;
+}
+
+export type SharedSelector<T> = (s: SharedCounterState) => T;
+`,N=()=>e.jsx(u,{title:"跨页面状态共享",description:"演示全局 store（跨页面共享）与局部 store（组件级隔离）的组合模式，并给出选择与迁移建议。",overview:[{title:"核心概念",items:["全局 store 适合跨页面/模块共享，局部 store 适合组件隔离和临时状态。","全局 store 单例导出，局部 store 用工厂函数确保每个组件独立。","选择器只读 + 组件拆分，减少无关渲染，提升性能。","全局 store 可配合 DevTools 观测，便于调试和问题定位。","局部 store 适合表单草稿、临时缓存等短生命周期数据。","跨页面共享应基于明确的领域边界与数据契约。","避免在局部 store 中承载跨域职责，保持职责清晰。"]},{title:"主要优势",items:["全局 store 统一规则、可复用，减少重复代码和状态分散。","局部 store 封装性强、无副作用，降低回归风险。","可按需渐进迁移，灵活应对业务变化。","全局/局部边界清晰，便于团队协作和维护。","全局 store 支持多页面/多组件同步，局部 store 保证隔离。","更利于性能优化与按需订阅，减小渲染面。","兼容 SSR/CSR，不同页面间共享初始态与缓存。"]},{title:"适用场景",items:["用户信息、主题、权限、购物车等全局数据共享。","表单草稿、临时缓存、一步流程等局部隔离状态。","需要跨页面/模块同步的业务域。","需要组件级隔离、避免全局污染的场景。","渐进式重构，逐步从全局迁回局部（或相反）。"]},{title:"注意事项",items:["全局 store 设计需按领域拆分，避免变成“万能桶”。","局部 store 不要承担跨页面职责，避免数据不一致。","选择器应返回原始值或稳定引用，避免对象型返回导致重渲染。","全局/局部 store 的职责边界要文档化，便于团队理解。","局部 store 工厂函数要保证每次调用返回新实例。","避免在全局 store 中保存瞬态 UI 状态（如弹窗输入）。"]}],examples:[{title:"全局计数器 A（共享）",component:e.jsx(m,{}),description:"多个页面/组件共享同一份全局状态，动作在任意处触发都会同步。",observationPoints:["在 A 中修改步长/自增，B 视图同步反映","刷新后可通过持久化策略保留步长（如需）","DevTools 中可看到同一 store 的变更记录"],keyPoints:["全局 store 倾向跨模块共享的业务域","选择器尽量返回原始值，组件拆分订阅","全局动作应语义明确并避免副作用"],commonTraps:["全局 store 过大、职责不清","在全局 store 中混入临时 UI 状态"],solutions:["按领域拆分全局 store，或使用 multi-store 模式","将瞬态 UI 状态留在组件/局部 store"],preCode:[{title:"类型定义",code:v},{title:"全局 Store 定义",code:C}]},{title:"全局计数器 B（共享）",component:e.jsx(x,{}),description:"共享相同全局状态，B 中的动作也会影响 A。",observationPoints:["在 B 中自减，A 视图同步变化","跨路由/页面跳转后仍可共享状态（全局单例）"],keyPoints:["共享的本质是同一个 store 实例","跨页面共享时谨慎选择持久化策略"],commonTraps:["在组件内 new 多个 store 实例导致“看起来不共享”","在不同入口重复创建全局 store"],solutions:["将全局 store 单例放在模块外部并统一导出","通过应用入口初始化一次全局 store"]},{title:"局部计数器（隔离）",component:e.jsx(h,{}),description:"每个组件实例拥有独立的状态，不影响其他页面或组件。",observationPoints:["创建多个 LocalCounter 实例，互不干扰","卸载/重挂载时局部状态重置"],keyPoints:["局部 store 适合只在组件内使用的临时数据","使用工厂 Hook 保证每次实例化独立"],commonTraps:["本应全局的数据误放在局部，造成重复与不一致","将局部 store 暴露给全局使用"],solutions:["按“是否跨页面/模块复用”判断是否全局化","确保局部 store 不泄漏到组件外部上下文"]}],tutorial:{concepts:["全局与局部的职责与边界","单例全局 store 的导出与复用","局部 store 工厂（Hook + create）的封装","选择器精确订阅与组件拆分","跨页面共享与持久化/缓存策略"],steps:["定义 SharedCounterState 与全局 store 单例","在 A/B 组件中各自订阅需要的片段","实现 LocalCounter 的工厂 Hook 确保实例隔离","为全局与局部各自编写只读选择器","按领域为全局 store 拆分模块与命名空间"],tips:["保持全局 store 的领域清晰、接口稳定","局部 store 仅在组件树内部使用，避免泄漏跨页依赖","在入口处统一初始化全局单例，避免重复创建","配合 DevTools 检查全局变更与订阅边界"]},interview:{questions:[{question:"什么时候使用全局 store？",answer:"当数据需要跨页面/模块共享、或多个组件需要读/改同一份数据时。"},{question:"如何避免全局 store 变成“万能桶”？",answer:"基于领域拆分多个 store；只暴露必要的状态与动作。"},{question:"局部 store 的典型使用边界是什么？",answer:"局部 UI 状态、短生命周期数据、不需跨组件/页面复用的临时数据。"},{question:"如何在多入口/多路由下保持全局单例？",answer:"将单例定义在模块顶层并在应用入口初始化一次，确保唯一性。"}],keyPoints:["领域驱动拆分全局 store","局部 store 封装隔离、避免耦合","选择器原始值与拆分订阅","全局单例初始化策略"]},bestPractices:{dos:["全局 store 单例导出 + DevTools 观测","选择器原始值 + 组件拆分订阅","明确全局/局部边界并文档化","入口统一初始化全局 store，防止重复创建"],donts:["不要把短期临时状态放进全局 store","不要在组件内创建多个“全局”实例","不要在全局 store 混入局部 UI 细节"],patterns:["全局单例（跨页共享）+ 局部工厂（组件隔离）","按领域拆分 + 只读选择器 + DevTools","跨页面共享 + 可选持久化/缓存"]}});export{N as default};
