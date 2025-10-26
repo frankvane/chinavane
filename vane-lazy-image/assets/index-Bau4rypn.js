@@ -1,0 +1,1 @@
+function a(i={}){const{priority:o="medium"}=i;return{name:"priority-loading",version:"1.0.0",config:i,hooks:{transformProps:r=>{switch(o){case"high":return{...r,loading:"eager",rootMargin:"0px"};case"low":return{...r,loading:"lazy",rootMargin:r.rootMargin??"400px"};case"medium":default:return{...r,loading:"lazy",rootMargin:r.rootMargin??"200px"}}}}}}export{a as c};

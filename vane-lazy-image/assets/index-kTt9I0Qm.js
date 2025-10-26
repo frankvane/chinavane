@@ -1,0 +1,1 @@
+function c(t={}){const{ratio:n=4/3}=t;return{name:"aspect-ratio-spacer",version:"1.0.0",config:t,hooks:{onMount:a=>{var r;const e=(r=a.containerRef)==null?void 0:r.current;if(e)try{e.style.aspectRatio=String(n)}catch{}}}}}export{c};

@@ -1,0 +1,1 @@
+function i(a={}){const{durationMs:r=400,easing:c="ease"}=a;return{name:"fade-in",version:"1.0.0",config:a,hooks:{onMount:n=>{var e;const t=(e=n.imageRef)==null?void 0:e.current;if(t)try{t.style.opacity="0",t.style.transition=`opacity ${r}ms ${c}`}catch{}},onLoadSuccess:n=>{var e;const t=(e=n.imageRef)==null?void 0:e.current;if(t)try{t.style.opacity="1"}catch{}}}}}export{i as c};

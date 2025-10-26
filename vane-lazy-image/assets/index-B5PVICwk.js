@@ -1,0 +1,1 @@
+function u(r){const{fallbackSrc:n}=r;return{name:"fallback-image",version:"1.0.0",config:r,hooks:{onLoadError:(a,o)=>{var t,c;try{(t=a.sharedData)==null||t.set("had-error",!0)}catch{}const e=(c=a.imageRef)==null?void 0:c.current;if(!e)return!0;try{e.src=n}catch{}return!0}}}}export{u as c};
