@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="人机职业病诊疗中心 - 15种赛博失魂症与15剂数字还魂汤" />
+    <meta name="author" content="chinavane,子心" />
+    <title>人机职业病诊疗中心 - chinavane.com</title>
+    <link rel="shortcut icon" href="/images/vane.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0a0a0f;
+        font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+          "SimHei", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 20px;
+        min-height: 100vh;
+      }
+
+      h1.page-title {
+        color: #e0e0ff;
+        font-size: 1.4rem;
+        text-align: center;
+        letter-spacing: 2px;
+        opacity: 0.7;
+      }
+
+      /* 9:16 card container */
+      .card-9x16 {
+        width: 450px;
+        height: 800px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 0 40px rgba(150, 100, 255, 0.4),
+          0 0 80px rgba(100, 50, 200, 0.15);
+        flex-shrink: 0;
+      }
+
+      /* ── Card 1: Title ── */
+      .card-title {
+        background: linear-gradient(160deg, #0d0d1a 0%, #1a0533 50%, #0d0d1a 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 36px;
+        text-align: center;
+      }
+
+      .card-title .top-tag {
+        font-size: 0.75rem;
+        letter-spacing: 4px;
+        color: #9b59ff;
+        text-transform: uppercase;
+        margin-bottom: 28px;
+        border: 1px solid #9b59ff55;
+        padding: 5px 16px;
+        border-radius: 20px;
+      }
+
+      .card-title .main-title {
+        font-size: 2.4rem;
+        font-weight: 900;
+        line-height: 1.3;
+        background: linear-gradient(135deg, #ff6a00, #ee0979, #9b59ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 24px;
+      }
+
+      .card-title .subtitle {
+        font-size: 1.05rem;
+        color: #c0c0e0;
+        line-height: 1.7;
+        margin-bottom: 36px;
+      }
+
+      .card-title .year-badge {
+        font-size: 0.9rem;
+        color: #ff6a00;
+        border: 1px solid #ff6a0066;
+        padding: 6px 20px;
+        border-radius: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 32px;
+      }
+
+      .card-title .divider {
+        width: 60px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #9b59ff, transparent);
+        margin: 0 auto 32px;
+      }
+
+      .card-title .footer-text {
+        font-size: 0.75rem;
+        color: #665577;
+        letter-spacing: 2px;
+      }
+
+      /* circuit decoration */
+      .circuit-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        opacity: 0.06;
+      }
+
+      /* ── Card 2 & 3: Symptoms ── */
+      .card-symptoms {
+        background: linear-gradient(160deg, #0d0d1a 0%, #0a1a2a 60%, #0d0d1a 100%);
+        display: flex;
+        flex-direction: column;
+        padding: 36px 30px;
+      }
+
+      .card-symptoms .card-header-section {
+        margin-bottom: 22px;
+      }
+
+      .section-tag {
+        display: inline-block;
+        font-size: 0.68rem;
+        letter-spacing: 3px;
+        color: #ee0979;
+        border: 1px solid #ee097955;
+        padding: 4px 14px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1.3;
+      }
+
+      .section-title span {
+        background: linear-gradient(90deg, #ff6a00, #ee0979);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .section-subtitle {
+        font-size: 0.78rem;
+        color: #7070a0;
+        margin-top: 5px;
+        letter-spacing: 1px;
+      }
+
+      .symptom-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        flex: 1;
+      }
+
+      .symptom-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(238, 9, 121, 0.15);
+        border-radius: 12px;
+        padding: 12px 14px;
+        transition: border-color 0.2s;
+      }
+
+      .symptom-num {
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: #ee0979;
+        background: rgba(238, 9, 121, 0.12);
+        border-radius: 8px;
+        padding: 3px 8px;
+        flex-shrink: 0;
+        margin-top: 2px;
+        letter-spacing: 0;
+      }
+
+      .symptom-content .symptom-name {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #f0d0e0;
+        margin-bottom: 3px;
+      }
+
+      .symptom-content .symptom-desc {
+        font-size: 0.72rem;
+        color: #8080a8;
+        line-height: 1.5;
+      }
+
+      /* ── Card 4: Symptoms continued ── */
+      /* same as card-symptoms */
+
+      /* ── Card 5, 6, 7: Remedies ── */
+      .card-remedies {
+        background: linear-gradient(160deg, #0d0d1a 0%, #0a1f0a 60%, #0d0d1a 100%);
+        display: flex;
+        flex-direction: column;
+        padding: 36px 30px;
+      }
+
+      .remedy-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        flex: 1;
+      }
+
+      .remedy-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(0, 200, 100, 0.15);
+        border-radius: 12px;
+        padding: 12px 14px;
+      }
+
+      .remedy-num {
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: #00c864;
+        background: rgba(0, 200, 100, 0.12);
+        border-radius: 8px;
+        padding: 3px 8px;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      .remedy-content .remedy-name {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #c0f0d0;
+        margin-bottom: 3px;
+      }
+
+      .remedy-content .remedy-desc {
+        font-size: 0.72rem;
+        color: #608068;
+        line-height: 1.5;
+      }
+
+      .section-tag-green {
+        display: inline-block;
+        font-size: 0.68rem;
+        letter-spacing: 3px;
+        color: #00c864;
+        border: 1px solid #00c86455;
+        padding: 4px 14px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+      }
+
+      .section-title-green span {
+        background: linear-gradient(90deg, #00c864, #00e5a0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* ── Card 8: Closing ── */
+      .card-closing {
+        background: linear-gradient(160deg, #0d0d1a 0%, #1a0f00 50%, #0d0d1a 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 40px;
+        text-align: center;
+      }
+
+      .card-closing .big-question {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: #ffffff;
+        line-height: 1.6;
+        margin-bottom: 32px;
+      }
+
+      .card-closing .big-question em {
+        font-style: normal;
+        background: linear-gradient(90deg, #ff6a00, #ee0979);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .card-closing .answer-box {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 150, 50, 0.25);
+        border-radius: 16px;
+        padding: 24px 28px;
+        margin-bottom: 32px;
+      }
+
+      .card-closing .answer-box p {
+        font-size: 0.88rem;
+        color: #c0b090;
+        line-height: 1.9;
+      }
+
+      .card-closing .answer-box strong {
+        color: #ff9632;
+      }
+
+      .card-closing .brand {
+        font-size: 0.75rem;
+        color: #443333;
+        letter-spacing: 3px;
+      }
+
+      /* ── Card 9: Summary ── */
+      .card-summary {
+        background: linear-gradient(160deg, #080814 0%, #12012a 40%, #080814 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 44px 36px;
+        text-align: center;
+      }
+
+      .card-summary .top-section {
+        width: 100%;
+      }
+
+      .card-summary .glow-title {
+        font-size: 2rem;
+        font-weight: 900;
+        background: linear-gradient(135deg, #9b59ff, #ff6a00, #ee0979);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 12px;
+      }
+
+      .card-summary .glow-subtitle {
+        font-size: 0.82rem;
+        color: #6655aa;
+        letter-spacing: 2px;
+        margin-bottom: 32px;
+      }
+
+      .card-summary .stat-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-bottom: 28px;
+      }
+
+      .stat-box {
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 14px;
+        padding: 18px 10px;
+        border: 1px solid rgba(155, 89, 255, 0.2);
+      }
+
+      .stat-box .stat-num {
+        font-size: 2.4rem;
+        font-weight: 900;
+        line-height: 1;
+        margin-bottom: 6px;
+      }
+
+      .stat-box .stat-num.red {
+        color: #ee0979;
+      }
+
+      .stat-box .stat-num.green {
+        color: #00c864;
+      }
+
+      .stat-box .stat-label {
+        font-size: 0.75rem;
+        color: #7070a0;
+        letter-spacing: 1px;
+      }
+
+      .card-summary .quote-block {
+        background: rgba(155, 89, 255, 0.08);
+        border-left: 3px solid #9b59ff;
+        border-radius: 0 12px 12px 0;
+        padding: 16px 20px;
+        text-align: left;
+        margin-bottom: 28px;
+      }
+
+      .card-summary .quote-block p {
+        font-size: 0.82rem;
+        color: #b090d0;
+        line-height: 1.8;
+        font-style: italic;
+      }
+
+      .card-summary .bottom-brand {
+        font-size: 0.72rem;
+        color: #3d2255;
+        letter-spacing: 3px;
+      }
+
+      /* page label */
+      .page-num {
+        position: absolute;
+        bottom: 18px;
+        right: 20px;
+        font-size: 0.65rem;
+        color: #333355;
+        letter-spacing: 1px;
+      }
+
+      /* responsive */
+      @media (max-width: 500px) {
+        .card-9x16 {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 9 / 16;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="page-title">▎人机职业病诊疗中心 · 9×16 系列图卡</h1>
+
+    <!-- ══════════════════════════════════════
+         Card 1 · Title
+    ══════════════════════════════════════ -->
+    <div class="card-9x16 card-title">
+      <svg class="circuit-bg" viewBox="0 0 450 800" xmlns="http://www.w3.org/2000/svg">
+        <line x1="30" y1="0" x2="30" y2="800" stroke="#9b59ff" stroke-width="1"/>
+        <line x1="420" y1="0" x2="420" y2="800" stroke="#9b59ff" stroke-width="1"/>
+        <line x1="0" y1="120" x2="450" y2="120" stroke="#9b59ff" stroke-width="1"/>
+        <line x1="0" y1="680" x2="450" y2="680" stroke="#9b59ff" stroke-width="1"/>
+        <circle cx="30" cy="120" r="4" fill="#9b59ff"/>
+        <circle cx="420" cy="120" r="4" fill="#9b59ff"/>
+        <circle cx="30" cy="680" r="4" fill="#9b59ff"/>
+        <circle cx="420" cy="680" r="4" fill="#9b59ff"/>
+        <line x1="80" y1="200" x2="200" y2="200" stroke="#ee0979" stroke-width="1"/>
+        <line x1="200" y1="200" x2="200" y2="260" stroke="#ee0979" stroke-width="1"/>
+        <line x1="250" y1="600" x2="380" y2="600" stroke="#ee0979" stroke-width="1"/>
+        <line x1="250" y1="540" x2="250" y2="600" stroke="#ee0979" stroke-width="1"/>
+        <circle cx="80" cy="200" r="3" fill="#ee0979"/>
+        <circle cx="250" cy="540" r="3" fill="#ee0979"/>
+      </svg>
+
+      <div class="top-tag">公元二〇二六年</div>
+      <div class="main-title">人机职业病<br/>诊疗中心</div>
+      <div class="year-badge">赛博时代 · 悬壶济代码</div>
+      <div class="divider"></div>
+      <div class="subtitle">
+        数字江湖暗流涌动<br/>
+        多少侠客内力被 AI 掏空<br/>
+        几许宗师道心随算法溃散<br/>
+        <br/>
+        <strong style="color:#9b59ff">十五症 · 十五方</strong><br/>
+        妙手回春，死而复生
+      </div>
+      <div class="footer-text">chinavane.com · 子心出品</div>
+      <div class="page-num">01 / 09</div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         Card 2 · Symptoms 01–05
+    ══════════════════════════════════════ -->
+    <div class="card-9x16 card-symptoms">
+      <div class="card-header-section">
+        <div class="section-tag">赛博失魂症 · 第一卷</div>
+        <div class="section-title"><span>十五症</span>蚀骨穿肠</div>
+        <div class="section-subtitle">症状 01 — 05 · 你中了几条？</div>
+      </div>
+      <div class="symptom-list">
+        <div class="symptom-item">
+          <div class="symptom-num">01</div>
+          <div class="symptom-content">
+            <div class="symptom-name">提示词依赖症</div>
+            <div class="symptom-desc">离开 AI 补全便手指发颤，独立写出 Hello World 都需要三分钟</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">02</div>
+          <div class="symptom-content">
+            <div class="symptom-name">架构失忆症</div>
+            <div class="symptom-desc">说得出微服务、DDD，却画不出一张完整的系统架构图</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">03</div>
+          <div class="symptom-content">
+            <div class="symptom-name">调试恐惧症</div>
+            <div class="symptom-desc">遇到 bug 第一反应是扔给 AI，断点调试技能已彻底遗忘</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">04</div>
+          <div class="symptom-content">
+            <div class="symptom-name">算法空洞症</div>
+            <div class="symptom-desc">排序、查找、动态规划，全靠复制粘贴，脑中一片空白</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">05</div>
+          <div class="symptom-content">
+            <div class="symptom-name">代码洁癖消融症</div>
+            <div class="symptom-desc">AI 生成的屎山代码，只要能跑便签收，不再重构不再审查</div>
+          </div>
+        </div>
+      </div>
+      <div class="page-num">02 / 09</div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         Card 3 · Symptoms 06–10
+    ══════════════════════════════════════ -->
+    <div class="card-9x16 card-symptoms">
+      <div class="card-header-section">
+        <div class="section-tag">赛博失魂症 · 第二卷</div>
+        <div class="section-title"><span>十五症</span>蚀骨穿肠</div>
+        <div class="section-subtitle">症状 06 — 10 · 病入膏肓了吗？</div>
+      </div>
+      <div class="symptom-list">
+        <div class="symptom-item">
+          <div class="symptom-num">06</div>
+          <div class="symptom-content">
+            <div class="symptom-name">需求理解钝化症</div>
+            <div class="symptom-desc">产品文档直接扔给 AI 解读，自己的理解力悄然退化</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">07</div>
+          <div class="symptom-content">
+            <div class="symptom-name">文档书写失语症</div>
+            <div class="symptom-desc">注释、README、设计文档全靠 AI 代笔，表达能力如断线风筝</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">08</div>
+          <div class="symptom-content">
+            <div class="symptom-name">技术选型焦虑症</div>
+            <div class="symptom-desc">没有 AI 推荐便寸步难行，选个框架要反复确认三十遍</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">09</div>
+          <div class="symptom-content">
+            <div class="symptom-name">深度思考萎缩症</div>
+            <div class="symptom-desc">遇到复杂问题立刻求助 AI，独立推理与思考的肌肉已经萎缩</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">10</div>
+          <div class="symptom-content">
+            <div class="symptom-name">代码阅读障碍症</div>
+            <div class="symptom-desc">面对他人代码如看天书，只会让 AI 翻译，不再细细品读</div>
+          </div>
+        </div>
+      </div>
+      <div class="page-num">03 / 09</div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         Card 4 · Symptoms 11–15
+    ══════════════════════════════════════ -->
+    <div class="card-9x16 card-symptoms">
+      <div class="card-header-section">
+        <div class="section-tag">赛博失魂症 · 第三卷</div>
+        <div class="section-title"><span>十五症</span>蚀骨穿肠</div>
+        <div class="section-subtitle">症状 11 — 15 · 终极诊断</div>
+      </div>
+      <div class="symptom-list">
+        <div class="symptom-item">
+          <div class="symptom-num">11</div>
+          <div class="symptom-content">
+            <div class="symptom-name">测试驱动消亡症</div>
+            <div class="symptom-desc">单元测试、集成测试全跳过，"AI 帮我测过了" 成口头禅</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">12</div>
+          <div class="symptom-content">
+            <div class="symptom-name">版本管理麻木症</div>
+            <div class="symptom-desc">commit 信息千篇一律写"AI generated"，diff 从不细看</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">13</div>
+          <div class="symptom-content">
+            <div class="symptom-name">性能感知缺失症</div>
+            <div class="symptom-desc">AI 给什么就用什么，时间复杂度与内存占用不再纳入考量</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">14</div>
+          <div class="symptom-content">
+            <div class="symptom-name">安全意识熄灭症</div>
+            <div class="symptom-desc">SQL 注入、XSS、CSRF，以为 AI 已帮你防好，其实漏洞遍地</div>
+          </div>
+        </div>
+        <div class="symptom-item">
+          <div class="symptom-num">15</div>
+          <div class="symptom-content">
+            <div class="symptom-name">职业认同危机症</div>
+            <div class="symptom-desc">"AI 都能写代码，我还有什么价值？" 道心动摇，夜不能寐</div>
+          </div>
+        </div>
+      </div>
+      <div class="page-num">04 / 09</div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         Card 5 · Remedies 01–05
+    ══════════════════════════════════════ -->
+    <div class="card-9x16 card-remedies">
+      <div class="card-header-section">
+        <div class="section-tag-green">数字还魂汤 · 第一剂</div>
+        <div class="section-title section-title-green"><span>十五方</span>妙手回春</div>
+        <div class="section-subtitle" style="color:#4a8060">药方 01 — 05 · 对症下药</div>
+      </div>
+      <div class="remedy-list">
+        <div class="remedy-item">
+          <div class="remedy-num">方01</div>
+          <div class="remedy-content">
+            <div class="remedy-name">每日裸写练功法</div>
+            <div class="remedy-desc">每天关闭 AI，手写 100 行代码，重建肌肉记忆，恢复指感</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方02</div>
+          <div class="remedy-content">
+            <div class="remedy-name">白板架构绘图法</div>
+            <div class="remedy-desc">拿起马克笔，在白板上独立完成系统设计，再与 AI 对比</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方03</div>
+          <div class="remedy-content">
+            <div class="remedy-name">断点追踪复元术</div>
+            <div class="remedy-desc">主动开 debugger，一步步跟踪调用栈，重拾调试的乐趣</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方04</div>
+          <div class="remedy-content">
+            <div class="remedy-name">算法冥想十分钟</div>
+            <div class="remedy-desc">每天用纸笔推导一道算法题，不看题解，只是思考与感受</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方05</div>
+          <div class="remedy-content">
+            <div class="remedy-name">代码审视清净心</div>
+            <div class="remedy-desc">对 AI 生成代码逐行审查，重建代码洁癖，拒绝屎山入库</div>
+          </div>
+        </div>
+      </div>
+      <div class="page-num">05 / 09</div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         Card 6 · Remedies 06–10
+    ══════════════════════════════════════ -->
+    <div class="card-9x16 card-remedies">
+      <div class="card-header-section">
+        <div class="section-tag-green">数字还魂汤 · 第二剂</div>
+        <div class="section-title section-title-green"><span>十五方</span>妙手回春</div>
+        <div class="section-subtitle" style="color:#4a8060">药方 06 — 10 · 内功修炼</div>
+      </div>
+      <div class="remedy-list">
+        <div class="remedy-item">
+          <div class="remedy-num">方06</div>
+          <div class="remedy-content">
+            <div class="remedy-name">原文精读炼意法</div>
+            <div class="remedy-desc">亲自阅读需求文档，提炼关键词，先思后问，再让 AI 验证</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方07</div>
+          <div class="remedy-content">
+            <div class="remedy-name">徒手书写文档功</div>
+            <div class="remedy-desc">自己起草 README 和注释，AI 只能润色不能代劳，找回文字感</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方08</div>
+          <div class="remedy-content">
+            <div class="remedy-name">技术选型决断心法</div>
+            <div class="remedy-desc">先独立列出选型标准和 pros/cons，再与 AI 讨论，锻炼判断力</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方09</div>
+          <div class="remedy-content">
+            <div class="remedy-name">深度思考隔离舱</div>
+            <div class="remedy-desc">遇到复杂问题，先给自己 30 分钟独立思考，禁止开启 AI</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方10</div>
+          <div class="remedy-content">
+            <div class="remedy-name">源码精读还元丹</div>
+            <div class="remedy-desc">每周精读一个开源库核心模块，不借助 AI，靠自己理解逻辑</div>
+          </div>
+        </div>
+      </div>
+      <div class="page-num">06 / 09</div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         Card 7 · Remedies 11–15
+    ══════════════════════════════════════ -->
+    <div class="card-9x16 card-remedies">
+      <div class="card-header-section">
+        <div class="section-tag-green">数字还魂汤 · 第三剂</div>
+        <div class="section-title section-title-green"><span>十五方</span>妙手回春</div>
+        <div class="section-subtitle" style="color:#4a8060">药方 11 — 15 · 道心重铸</div>
+      </div>
+      <div class="remedy-list">
+        <div class="remedy-item">
+          <div class="remedy-num">方11</div>
+          <div class="remedy-content">
+            <div class="remedy-name">TDD 起死回生法</div>
+            <div class="remedy-desc">强制先写测试再写实现，让红绿循环重燃对质量的敬畏</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方12</div>
+          <div class="remedy-content">
+            <div class="remedy-name">提交信息正骨术</div>
+            <div class="remedy-desc">每次 commit 亲手描述改动意图，培养对代码变更的感知力</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方13</div>
+          <div class="remedy-content">
+            <div class="remedy-name">性能剖析明目散</div>
+            <div class="remedy-desc">用 profiler 亲手定位瓶颈，让时间复杂度感知重新入骨</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方14</div>
+          <div class="remedy-content">
+            <div class="remedy-name">安全扫描固本汤</div>
+            <div class="remedy-desc">建立安全 checklist，手动验证注入与越权漏洞，不信任任何黑盒</div>
+          </div>
+        </div>
+        <div class="remedy-item">
+          <div class="remedy-num">方15</div>
+          <div class="remedy-content">
+            <div class="remedy-name">人机共生悟道茶</div>
+            <div class="remedy-desc">AI 是工具非主人，你是问题的定义者与价值的创造者，道心自稳</div>
+          </div>
+        </div>
+      </div>
+      <div class="page-num">07 / 09</div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         Card 8 · Closing Question
+    ══════════════════════════════════════ -->
+    <div class="card-9x16 card-closing">
+      <svg class="circuit-bg" viewBox="0 0 450 800" xmlns="http://www.w3.org/2000/svg">
+        <line x1="225" y1="0" x2="225" y2="800" stroke="#ff6a00" stroke-width="1"/>
+        <line x1="0" y1="400" x2="450" y2="400" stroke="#ff6a00" stroke-width="1"/>
+        <circle cx="225" cy="400" r="8" fill="none" stroke="#ff6a00" stroke-width="1"/>
+        <circle cx="225" cy="400" r="20" fill="none" stroke="#ff6a00" stroke-width="0.5" opacity="0.5"/>
+        <circle cx="225" cy="400" r="40" fill="none" stroke="#ff6a00" stroke-width="0.3" opacity="0.3"/>
+      </svg>
+
+      <div class="big-question">
+        列位看官<br/>
+        您身上疼的<br/>
+        究竟是<em>病</em><br/>
+        还是<em>时代的烙印</em>？
+      </div>
+
+      <div class="answer-box">
+        <p>
+          病，可以医治。<br/>
+          <strong>烙印，需要承受。</strong><br/>
+          <br/>
+          但无论是病是印<br/>
+          保持对代码的<strong>敬畏</strong><br/>
+          保持对思考的<strong>热爱</strong><br/>
+          你，就还活着。
+        </p>
+      </div>
+
+      <div class="brand">chinavane.com · 子心出品</div>
+      <div class="page-num">08 / 09</div>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         Card 9 · Summary / Stats
+    ══════════════════════════════════════ -->
+    <div class="card-9x16 card-summary">
+      <div class="top-section">
+        <div class="glow-title">诊疗中心</div>
+        <div class="glow-subtitle">人机职业病全纪录 · 公元 2026</div>
+
+        <div class="stat-grid">
+          <div class="stat-box">
+            <div class="stat-num red">15</div>
+            <div class="stat-label">赛博失魂症</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num green">15</div>
+            <div class="stat-label">数字还魂汤</div>
+          </div>
+          <div class="stat-box" style="grid-column: span 2;">
+            <div class="stat-num" style="color:#9b59ff; font-size:1.8rem">∞</div>
+            <div class="stat-label">与 AI 共生的可能</div>
+          </div>
+        </div>
+
+        <div class="quote-block">
+          <p>
+            "工欲善其事，必先利其器。<br/>
+            然利器者，乃磨砺自身之刀，<br/>
+            非借外力之剑也。<br/>
+            AI 为剑，汝为剑客，<br/>
+            勿让剑反持汝手。"
+          </p>
+        </div>
+      </div>
+
+      <div class="bottom-brand">chinavane.com · 子心出品 · 2026</div>
+      <div class="page-num">09 / 09</div>
+    </div>
+  </body>
+</html>
