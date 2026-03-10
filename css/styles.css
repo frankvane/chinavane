@@ -122,3 +122,10 @@
 .hand-cursor {
   cursor: pointer;
 }
+
+.tutorial-icon-preview {
+  max-height: 300px;
+  object-fit: contain;
+  background: #f5f5f5;
+  padding: 2rem;
+}
