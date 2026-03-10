@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-cn" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="chinavane, a website for sharing knowledge"
+    />
+    <meta name="author" content="chinavane,子心" />
+    <title>MagicX 微信发布器 - chinavane.com</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <meta name="theme-color" content="#712cf9" />
+    <link rel="shortcut icon" href="/images/vane.svg" type="image/x-icon" />
+    <script src="/js/color-modes.min.js"></script>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+        />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+        />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+        />
+      </symbol>
+    </svg>
+
+    <div
+      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
+    >
+      <button
+        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="Toggle theme (auto)"
+      >
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+          <use href="#circle-half"></use>
+        </svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul
+        class="dropdown-menu dropdown-menu-end shadow"
+        aria-labelledby="bd-theme-text"
+      >
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="light"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#sun-fill"></use>
+            </svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center"
+            data-bs-theme-value="dark"
+            aria-pressed="false"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#moon-stars-fill"></use>
+            </svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="dropdown-item d-flex align-items-center active"
+            data-bs-theme-value="auto"
+            aria-pressed="true"
+          >
+            <svg class="bi me-2 opacity-50" width="1em" height="1em">
+              <use href="#circle-half"></use>
+            </svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em">
+              <use href="#check2"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <header data-bs-theme="dark">
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <svg
+              t="1725506806828"
+              class="icon"
+              viewBox="0 0 1024 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              p-id="5105"
+              width="30"
+              height="30"
+            >
+              <path
+                d="M608.7552 459.4944h128.96l128.9088 128.9472-128.9088 136.704H608.7552v64.9984a96.6912 96.6912 0 1 1-193.3696 0v-64.9984H157.4912V459.4944h257.8944v-59.5456H286.4128L157.4912 266.0992l128.9216-128.9216h580.2112v262.7712H608.7552v59.5456zM479.808 790.144a32.2432 32.2432 0 0 0 64.4736 0v-64.9984h-64.4736v64.9984zM221.9392 523.9808v139.6608h489.0624l64.4864-75.1744-64.4864-64.4864H221.9392z m257.8688-64.4864h64.4736v-59.5456h-64.4736v59.5456z m322.368-119.04V201.6384H313.1136l-64.4608 64.4608 64.4608 74.4064h102.272v-0.7808h193.3696v0.7808H802.176z"
+                p-id="5106"
+                fill="#ff6a00"
+              ></path>
+            </svg>
+            <strong style="font-size: 1.75rem">风向标</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">首页</a></li>
+              <li class="breadcrumb-item"><a href="#">工具与平台</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                MagicX 微信发布器
+              </li>
+            </ol>
+          </nav>
+
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div
+                class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                id="content-intro"
+              >
+                <img src="/images/home/wechat-icon.webp" class="tutorial-icon-preview" />
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h2
+                    class="d-inline-block mb-5 text-primary-emphasis text-center"
+                  >
+                    《MagicX 微信发布器》<br />AI 驱动的微信公众号内容发布平台
+                  </h2>
+
+                  <strong class="mb-2">产品概述</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    MagicX 微信发布器是一款 AI 驱动的微信公众号内容创作与发布平台。
+                    基于 React + TypeScript + Node.js 构建，集成微信公众平台 API，
+                    支持可视化富文本编辑、AI 辅助内容生成、一键排版美化、定时发布、
+                    数据统计分析等核心功能。助力内容创作者高效管理和运营微信公众号，
+                    大幅提升内容生产效率与发布质量。
+                  </p>
+
+                  <strong class="mt-5 mb-2">核心功能</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>AI 内容生成</strong>：接入 DeepSeek / OpenAI 等大语言模型，智能生成文章标题、正文、摘要，支持流式输出实时预览。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>可视化富文本编辑器</strong>：所见即所得的编辑体验，支持图文混排、代码高亮、表格、分隔线等丰富格式。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>一键排版美化</strong>：内置多套微信公众号专属排版主题，自动适配微信样式规范，告别繁琐手动排版。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>素材管理</strong>：图片、音频、视频等素材统一管理，支持批量上传至微信素材库，快速复用。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>定时发布</strong>：灵活设置发布时间，支持草稿保存、预约发布、立即发布多种模式，精准触达粉丝高活跃时段。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>多账号管理</strong>：支持同时绑定多个微信公众号，统一管理，一键切换，适合团队协作与多品牌运营。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>数据统计与分析</strong>：阅读量、点赞、分享、粉丝增长等关键指标可视化展示，助力内容策略优化。<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>模板市场</strong>：丰富的文章模板库，涵盖行业资讯、产品推广、活动预告等多种场景，开箱即用。<br />
+                  </p>
+
+                  <strong class="mt-5 mb-2">技术架构</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>前端</strong>：React 18 + TypeScript 5 + Vite + Tailwind CSS<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>状态管理</strong>：Zustand / React Query<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>富文本编辑</strong>：基于 Tiptap / Quill 深度定制<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>后端</strong>：Node.js + Express / Koa + RESTful API<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>AI 集成</strong>：DeepSeek API / OpenAI API + ReadableStream 流式传输<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>微信接口</strong>：微信公众平台 API（草稿箱、发布、素材、数据统计）<br />
+                    <img class="right-icon" src="/images/light/right.svg" />
+                    <strong>数据库</strong>：MongoDB / MySQL + Redis 缓存<br />
+                  </p>
+
+                  <strong class="mt-5 mb-2">适合人群</strong>
+                  <p class="card-text mb-auto text-body-secondary">
+                    微信公众号运营者、内容创作者、自媒体从业者。<br />
+                    希望提升公众号内容生产效率、实现自动化发布的团队。<br />
+                    对 AI 内容生成、微信生态开发感兴趣的前端/全栈工程师。<br />
+                    企业新媒体运营部门，需要多账号统一管理的团队。<br />
+                  </p>
+
+                  <p class="text-center mt-5">
+                    <img
+                      src="/images/buy-me-a-coffee.webp"
+                      alt="buy-me-a-coffee"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-grid gap-2 mb-3">
+                <button class="btn btn-success" type="button">功能模块</button>
+              </div>
+              <div
+                id="content"
+                style="overflow: auto; max-height: 1200px"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">返回顶部</a>
+        </p>
+        <p class="mb-1">chinavane is &copy; 子心，2024。</p>
+        <p class="mb-0">你可以添加微信：chinavane_2008，联系我。</p>
+      </div>
+    </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/marked.min.js"></script>
+    <script>
+      const md = `
+        ## 一、平台基础搭建
+        ├── 1.1 MagicX 微信发布器项目介绍与架构设计
+        ├── 1.2 React + TypeScript + Vite 项目初始化
+        ├── 1.3 Tailwind CSS 集成与主题配置
+        ├── 1.4 路由设计：React Router v6 实战
+        ├── 1.5 状态管理：Zustand Store 设计
+        ├── 1.6 网络请求：Axios 封装与 React Query 集成
+        ├── 1.7 Node.js + Express 后端服务搭建
+        ├── 1.8 MongoDB 数据库设计与连接
+
+        ## 二、微信公众平台 API 对接
+        ├── 2.1 微信公众平台开发者配置与 AppID 申请
+        ├── 2.2 access_token 获取与自动刷新机制
+        ├── 2.3 微信服务器验证与消息接收
+        ├── 2.4 草稿箱 API：新建、修改、删除草稿
+        ├── 2.5 发布 API：提交发布、轮询发布状态
+        ├── 2.6 素材管理 API：图片、音频、视频上传
+        ├── 2.7 数据统计 API：文章阅读、分享、收藏数据获取
+        ├── 2.8 用户管理 API：粉丝列表、标签、备注
+
+        ## 三、AI 内容生成模块
+        ├── 3.1 DeepSeek API 集成与 API Key 管理
+        ├── 3.2 Node.js 流式代理：ReadableStream + SSE
+        ├── 3.3 React 前端流式渲染：逐字输出效果实现
+        ├── 3.4 AI 文章标题生成：Prompt 工程实战
+        ├── 3.5 AI 正文生成：长文本分段生成策略
+        ├── 3.6 AI 摘要提取与关键词生成
+        ├── 3.7 AI 配图建议：结合图片素材库推荐
+        ├── 3.8 自定义 Prompt 模板管理
+
+        ## 四、富文本编辑器
+        ├── 4.1 Tiptap 编辑器集成与基础配置
+        ├── 4.2 自定义工具栏：字体、颜色、对齐、列表
+        ├── 4.3 图片插入与上传：拖拽 + 粘贴 + 选择文件
+        ├── 4.4 代码块高亮：Highlight.js 集成
+        ├── 4.5 表格组件：动态增删行列
+        ├── 4.6 微信公众号样式适配：内联样式转换
+        ├── 4.7 HTML 净化：防 XSS 攻击的内容过滤
+
+        ## 五、排版主题系统
+        ├── 5.1 排版主题架构设计：CSS 变量 + 模板引擎
+        ├── 5.2 内置主题一：简约白
+        ├── 5.3 内置主题二：科技蓝
+        ├── 5.4 内置主题三：清新绿
+        ├── 5.5 内置主题四：商务黑
+        ├── 5.6 自定义主题：颜色、字体、间距可视化配置
+        ├── 5.7 主题预览与一键应用
+        ├── 5.8 主题导入导出与分享
+
+        ## 六、素材管理模块
+        ├── 6.1 素材库 UI 设计：瀑布流布局展示
+        ├── 6.2 图片上传：单张 + 批量 + 进度条
+        ├── 6.3 图片压缩与格式转换：WebP 优化
+        ├── 6.4 音频 / 视频素材管理
+        ├── 6.5 素材与微信公众平台同步
+        ├── 6.6 素材搜索与标签分类
+
+        ## 七、发布与调度系统
+        ├── 7.1 草稿管理：创建、编辑、预览、删除
+        ├── 7.2 立即发布流程与状态轮询
+        ├── 7.3 定时发布：node-cron 任务调度
+        ├── 7.4 发布历史记录与状态追踪
+        ├── 7.5 消息通知：发布成功 / 失败提醒
+
+        ## 八、多账号管理
+        ├── 8.1 多公众号绑定与授权管理
+        ├── 8.2 账号切换与数据隔离
+        ├── 8.3 团队协作：成员邀请、权限分配
+        ├── 8.4 操作日志与审计
+
+        ## 九、数据统计与分析
+        ├── 9.1 文章数据看板：阅读、点赞、分享趋势图
+        ├── 9.2 粉丝增长分析：折线图 + 同比环比
+        ├── 9.3 内容表现排行榜
+        ├── 9.4 Recharts / ECharts 数据可视化实战
+        ├── 9.5 数据导出：Excel / CSV
+
+        ## 十、工程化与部署
+        ├── 10.1 前端构建优化：代码分割、懒加载、Tree Shaking
+        ├── 10.2 后端 PM2 进程管理与自动重启
+        ├── 10.3 Nginx 反向代理配置
+        ├── 10.4 Docker 容器化部署
+        ├── 10.5 CI/CD：GitHub Actions 自动化部署
+      `;
+
+      document.getElementById("content").innerHTML = marked.parse(md);
+    </script>
+  </body>
+</html>
