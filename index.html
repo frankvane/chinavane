@@ -11,6 +11,13 @@
     <title>chinavane.com-Courses, Tutorials &amp; Podcast</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/vane-design.css" />
     <meta name="theme-color" content="#712cf9" />
     <meta name="author" content="chinavane,子心" />
     <meta name="team" content="chinavane" />
@@ -210,8 +217,43 @@
     </header>
 
     <main>
+      <!-- ===== Hero ===== -->
+      <section class="vane-hero">
+        <div class="container position-relative">
+          <span class="eyebrow">vane-components</span>
+          <h1>组件，<span class="grad">即看即用</span></h1>
+          <p class="lead">
+            8 个插件化 React 组件，100+ 内置插件。下面每个区块都是可交互的实时演示台——看效果、抄源码、直接集成进你的项目。
+          </p>
+          <div class="hero-cta">
+            <a href="#vane-components" class="btn btn-primary">浏览组件 ↓</a>
+            <a href="#tutorials" class="btn btn-outline-light">配套教程 →</a>
+          </div>
+          <div class="stats">
+            <div><div class="num">8</div><div class="lbl">组件包</div></div>
+            <div><div class="num">100+</div><div class="lbl">内置插件</div></div>
+            <div><div class="num">◐</div><div class="lbl">暗色优先</div></div>
+            <div><div class="num">MIT</div><div class="lbl">开源协议</div></div>
+          </div>
+          <div class="vane-marquee" aria-hidden="true">
+            <div class="track">
+              <span>vane-<b>card</b></span><span>vane-<b>comment</b></span><span>vane-<b>coupon</b></span><span>vane-<b>file-preview</b></span><span>vane-<b>lazy-image</b></span><span>vane-<b>profile</b></span><span>vane-<b>sku</b></span><span>vane-<b>waterfall</b></span>
+              <span>vane-<b>card</b></span><span>vane-<b>comment</b></span><span>vane-<b>coupon</b></span><span>vane-<b>file-preview</b></span><span>vane-<b>lazy-image</b></span><span>vane-<b>profile</b></span><span>vane-<b>sku</b></span><span>vane-<b>waterfall</b></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 组件库 ===== -->
+      <section class="vane-section-head container" id="vane-components">
+        <span class="eyebrow">Components</span>
+        <h2 class="title">组件库 · vane-components</h2>
+        <p class="sub">8 个插件化 React 组件，100+ 内置插件。下面每个区块都是可交互的实时演示台——看效果、抄源码、直接集成进你的项目。</p>
+        <div class="accent-bar"></div>
+      </section>
+
       <section class="py-5 container">
-        <div class="row py-lg-5 box-light px-2">
+        <div class="row py-lg-5 box-light px-2 align-items-center">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">vane-file-preview</h1>
             <h2>一个功能非常强大、高度可扩展的 React 文件预览组件库</h2>
@@ -233,16 +275,34 @@
           </div>
           <div class="col-lg-6 col-md-8 mx-auto px-5">
             <img
-              src="./images/home/vane-file-preview.webp"
-              class="img-fluid"
-              alt="vane-file-preview"
+              src="/images/vane-poster-file-preview.svg"
+              class="vane-poster img-fluid"
+              alt="vane-file-preview 概念海报"
             />
           </div>
         </div>
       </section>
 
+      <section class="py-4 container">
+        <div class="demo-frame" data-src="/vane-file-preview/index.html">
+          <div class="demo-head">
+            <h3 class="fw-light mb-0">vane-file-preview · 在线演示</h3>
+            <div class="d-flex align-items-center gap-2">
+              <span class="live">Live</span>
+              <a href="/vane-file-preview/index.html" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">新窗口 ↗</a>
+            </div>
+          </div>
+          <div class="demo-placeholder">
+            <span class="demo-ph-name">vane-file-preview</span>
+            <p class="demo-ph-sub">点击下方按钮加载实时交互 Demo，默认不占用页面资源</p>
+            <button class="demo-play" type="button" aria-label="加载 vane-file-preview 实时 Demo"><svg class="demo-play-ico" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> <span class="demo-play-label">加载实时 Demo</span></button>
+          </div>
+          <iframe loading="lazy" title="vane-file-preview 在线演示"></iframe>
+        </div>
+      </section>
+
       <section class="py-5 container">
-        <div class="row py-lg-5 box-light px-2">
+        <div class="row py-lg-5 box-light px-2 align-items-center">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">vane-card</h1>
             <h2>一个功能强大、高度可扩展的 React Card 卡片组件方案</h2>
@@ -258,16 +318,34 @@
           </div>
           <div class="col-lg-6 col-md-8 mx-auto px-5">
             <img
-              src="./images/home/vane-card.webp"
-              class="img-fluid"
-              alt="vane-card"
+              src="/images/vane-poster-card.svg"
+              class="vane-poster img-fluid"
+              alt="vane-card 概念海报"
             />
           </div>
         </div>
       </section>
 
+      <section class="py-4 container">
+        <div class="demo-frame" data-src="/vane-card/index.html">
+          <div class="demo-head">
+            <h3 class="fw-light mb-0">vane-card · 在线演示</h3>
+            <div class="d-flex align-items-center gap-2">
+              <span class="live">Live</span>
+              <a href="/vane-card/index.html" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">新窗口 ↗</a>
+            </div>
+          </div>
+          <div class="demo-placeholder">
+            <span class="demo-ph-name">vane-card</span>
+            <p class="demo-ph-sub">点击下方按钮加载实时交互 Demo，默认不占用页面资源</p>
+            <button class="demo-play" type="button" aria-label="加载 vane-card 实时 Demo"><svg class="demo-play-ico" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> <span class="demo-play-label">加载实时 Demo</span></button>
+          </div>
+          <iframe loading="lazy" title="vane-card 在线演示"></iframe>
+        </div>
+      </section>
+
       <section class="py-5 container">
-        <div class="row py-lg-5 box-light px-2">
+        <div class="row py-lg-5 box-light px-2 align-items-center">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">vane-waterfall</h1>
             <h2>
@@ -287,16 +365,34 @@
           </div>
           <div class="col-lg-6 col-md-8 mx-auto px-5">
             <img
-              src="./images/home/vane-waterfall.webp"
-              class="img-fluid"
-              alt="vane-waterfall"
+              src="/images/vane-poster-waterfall.svg"
+              class="vane-poster img-fluid"
+              alt="vane-waterfall 概念海报"
             />
           </div>
         </div>
       </section>
 
+      <section class="py-4 container">
+        <div class="demo-frame" data-src="/vane-waterfall/index.html">
+          <div class="demo-head">
+            <h3 class="fw-light mb-0">vane-waterfall · 在线演示</h3>
+            <div class="d-flex align-items-center gap-2">
+              <span class="live">Live</span>
+              <a href="/vane-waterfall/index.html" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">新窗口 ↗</a>
+            </div>
+          </div>
+          <div class="demo-placeholder">
+            <span class="demo-ph-name">vane-waterfall</span>
+            <p class="demo-ph-sub">点击下方按钮加载实时交互 Demo，默认不占用页面资源</p>
+            <button class="demo-play" type="button" aria-label="加载 vane-waterfall 实时 Demo"><svg class="demo-play-ico" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> <span class="demo-play-label">加载实时 Demo</span></button>
+          </div>
+          <iframe loading="lazy" title="vane-waterfall 在线演示"></iframe>
+        </div>
+      </section>
+
       <section class="py-5 container">
-        <div class="row py-lg-5 box-light px-2">
+        <div class="row py-lg-5 box-light px-2 align-items-center">
           <div class="col-lg-6 col-md-8 mx-auto">
             <h1 class="fw-light">vane-lazy-image</h1>
             <h2>
@@ -314,12 +410,162 @@
           </div>
           <div class="col-lg-6 col-md-8 mx-auto px-5">
             <img
-              src="./images/home/vane-lazy-image.webp"
-              class="img-fluid"
-              alt="vane-lazy-image"
+              src="/images/vane-poster-lazy-image.svg"
+              class="vane-poster img-fluid"
+              alt="vane-lazy-image 概念海报"
             />
           </div>
         </div>
+      </section>
+
+      <section class="py-4 container">
+        <div class="demo-frame" data-src="/vane-lazy-image/index.html">
+          <div class="demo-head">
+            <h3 class="fw-light mb-0">vane-lazy-image · 在线演示</h3>
+            <div class="d-flex align-items-center gap-2">
+              <span class="live">Live</span>
+              <a href="/vane-lazy-image/index.html" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">新窗口 ↗</a>
+            </div>
+          </div>
+          <div class="demo-placeholder">
+            <span class="demo-ph-name">vane-lazy-image</span>
+            <p class="demo-ph-sub">点击下方按钮加载实时交互 Demo，默认不占用页面资源</p>
+            <button class="demo-play" type="button" aria-label="加载 vane-lazy-image 实时 Demo"><svg class="demo-play-ico" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> <span class="demo-play-label">加载实时 Demo</span></button>
+          </div>
+          <iframe loading="lazy" title="vane-lazy-image 在线演示"></iframe>
+        </div>
+      </section>
+
+      <section class="py-5 container">
+        <div class="row py-lg-5 box-light px-2 align-items-center">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">vane-comment</h1>
+            <h2>插件式通用评论区引擎</h2>
+            <p class="text-body-secondary">插件式通用评论区引擎：点赞 / 排序 / 楼中楼 / 富编辑，视频·社交·电商评论区同一内核按需装配。</p>
+            <p><a href="/vane-comment/index.html" target="_blank" rel="noopener" class="btn btn-info my-2">开始了解</a></p>
+          </div>
+          <div class="col-lg-6 col-md-8 mx-auto px-5">
+            <img src="/images/vane-poster-comment.svg" class="vane-poster img-fluid" alt="vane-comment 概念海报" />
+          </div>
+        </div>
+      </section>
+      <section class="py-4 container">
+        <div class="demo-frame" data-src="/vane-comment/index.html">
+          <div class="demo-head">
+            <h3 class="fw-light mb-0">vane-comment · 在线演示</h3>
+            <div class="d-flex align-items-center gap-2">
+              <span class="live">Live</span>
+              <a href="/vane-comment/index.html" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">新窗口 ↗</a>
+            </div>
+          </div>
+          <div class="demo-placeholder">
+            <span class="demo-ph-name">vane-comment</span>
+            <p class="demo-ph-sub">点击下方按钮加载实时交互 Demo，默认不占用页面资源</p>
+            <button class="demo-play" type="button" aria-label="加载 vane-comment 实时 Demo"><svg class="demo-play-ico" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> <span class="demo-play-label">加载实时 Demo</span></button>
+          </div>
+          <iframe loading="lazy" title="vane-comment 在线演示"></iframe>
+        </div>
+      </section>
+
+      <section class="py-5 container">
+        <div class="row py-lg-5 box-light px-2 align-items-center">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">vane-coupon</h1>
+            <h2>优惠券展示与领取引擎</h2>
+            <p class="text-body-secondary">券展示与领取：领取态 / 有效期 / 规则展开 / 叠加态全部页面可调可选、源码可复制。</p>
+            <p><a href="/vane-coupon/index.html" target="_blank" rel="noopener" class="btn btn-warning my-2">开始了解</a></p>
+          </div>
+          <div class="col-lg-6 col-md-8 mx-auto px-5">
+            <img src="/images/vane-poster-coupon.svg" class="vane-poster img-fluid" alt="vane-coupon 概念海报" />
+          </div>
+        </div>
+      </section>
+      <section class="py-4 container">
+        <div class="demo-frame" data-src="/vane-coupon/index.html">
+          <div class="demo-head">
+            <h3 class="fw-light mb-0">vane-coupon · 在线演示</h3>
+            <div class="d-flex align-items-center gap-2">
+              <span class="live">Live</span>
+              <a href="/vane-coupon/index.html" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">新窗口 ↗</a>
+            </div>
+          </div>
+          <div class="demo-placeholder">
+            <span class="demo-ph-name">vane-coupon</span>
+            <p class="demo-ph-sub">点击下方按钮加载实时交互 Demo，默认不占用页面资源</p>
+            <button class="demo-play" type="button" aria-label="加载 vane-coupon 实时 Demo"><svg class="demo-play-ico" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> <span class="demo-play-label">加载实时 Demo</span></button>
+          </div>
+          <iframe loading="lazy" title="vane-coupon 在线演示"></iframe>
+        </div>
+      </section>
+
+      <section class="py-5 container">
+        <div class="row py-lg-5 box-light px-2 align-items-center">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">vane-profile</h1>
+            <h2>插件式个人主页引擎</h2>
+            <p class="text-body-secondary">插件式个人主页引擎：头图 Banner + 数据行 StatRow + 内容页签 Tab 联动全部页面可调可选。</p>
+            <p><a href="/vane-profile/index.html" target="_blank" rel="noopener" class="btn btn-dark my-2">开始了解</a></p>
+          </div>
+          <div class="col-lg-6 col-md-8 mx-auto px-5">
+            <img src="/images/vane-poster-profile.svg" class="vane-poster img-fluid" alt="vane-profile 概念海报" />
+          </div>
+        </div>
+      </section>
+      <section class="py-4 container">
+        <div class="demo-frame" data-src="/vane-profile/index.html">
+          <div class="demo-head">
+            <h3 class="fw-light mb-0">vane-profile · 在线演示</h3>
+            <div class="d-flex align-items-center gap-2">
+              <span class="live">Live</span>
+              <a href="/vane-profile/index.html" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">新窗口 ↗</a>
+            </div>
+          </div>
+          <div class="demo-placeholder">
+            <span class="demo-ph-name">vane-profile</span>
+            <p class="demo-ph-sub">点击下方按钮加载实时交互 Demo，默认不占用页面资源</p>
+            <button class="demo-play" type="button" aria-label="加载 vane-profile 实时 Demo"><svg class="demo-play-ico" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> <span class="demo-play-label">加载实时 Demo</span></button>
+          </div>
+          <iframe loading="lazy" title="vane-profile 在线演示"></iframe>
+        </div>
+      </section>
+
+      <section class="py-5 container">
+        <div class="row py-lg-5 box-light px-2 align-items-center">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">vane-sku</h1>
+            <h2>插件式 SKU 规格选择引擎</h2>
+            <p class="text-body-secondary">插件式 React SKU 规格选择引擎：组合矩阵 / 禁用推导 / 价格联动 / 限购校验全部页面可调可选。</p>
+            <p><a href="/vane-sku/index.html" target="_blank" rel="noopener" class="btn btn-secondary my-2">开始了解</a></p>
+          </div>
+          <div class="col-lg-6 col-md-8 mx-auto px-5">
+            <img src="/images/vane-poster-sku.svg" class="vane-poster img-fluid" alt="vane-sku 概念海报" />
+          </div>
+        </div>
+      </section>
+      <section class="py-4 container">
+        <div class="demo-frame" data-src="/vane-sku/index.html">
+          <div class="demo-head">
+            <h3 class="fw-light mb-0">vane-sku · 在线演示</h3>
+            <div class="d-flex align-items-center gap-2">
+              <span class="live">Live</span>
+              <a href="/vane-sku/index.html" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">新窗口 ↗</a>
+            </div>
+          </div>
+          <div class="demo-placeholder">
+            <span class="demo-ph-name">vane-sku</span>
+            <p class="demo-ph-sub">点击下方按钮加载实时交互 Demo，默认不占用页面资源</p>
+            <button class="demo-play" type="button" aria-label="加载 vane-sku 实时 Demo"><svg class="demo-play-ico" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5L19.5 10H13z"/></svg> <span class="demo-play-label">加载实时 Demo</span></button>
+          </div>
+          <iframe loading="lazy" title="vane-sku 在线演示"></iframe>
+        </div>
+      </section>
+
+      <!-- ===== 教程与实战 ===== -->
+      <section class="vane-section-head container" id="tutorials">
+        <span class="eyebrow">Tutorials</span>
+        <h2 class="title">教程与实战 · 从新手到大神</h2>
+        <p class="sub">配套视频课程、实战项目与技能点解析，覆盖 React / Vue / TypeScript / Node 全栈成长路径。</p>
+        <div class="accent-bar"></div>
       </section>
 
       <section class="py-5 container">
@@ -1457,5 +1703,57 @@
     </footer>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/playVideo.js"></script>
+    <script>
+      // 滚动揭示：组件区块进入视口时淡入上浮，带交错延迟；无 IntersectionObserver 时直接显示。
+      (function () {
+        var sections = Array.prototype.slice.call(
+          document.querySelectorAll("main > section:not(.vane-hero)")
+        );
+        if (!("IntersectionObserver" in window)) {
+          sections.forEach(function (s) {
+            s.classList.add("reveal", "in");
+          });
+          return;
+        }
+        var step = 0;
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (!e.isIntersecting) return;
+              var el = e.target;
+              el.style.transitionDelay = (step % 4) * 70 + "ms";
+              step++;
+              requestAnimationFrame(function () {
+                el.classList.add("in");
+              });
+              io.unobserve(el);
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
+        );
+        sections.forEach(function (s) {
+          s.classList.add("reveal");
+          io.observe(s);
+        });
+      })();
+
+      /* 在线演示：折叠按需加载，点击 toggle 展开/收起（默认零 React 实例） */
+      document.querySelectorAll(".demo-frame").forEach(function (frame) {
+        var btn = frame.querySelector(".demo-play");
+        if (!btn) return;
+        var label = btn.querySelector(".demo-play-label");
+        btn.setAttribute("aria-expanded", "false");
+        btn.addEventListener("click", function () {
+          var src = frame.getAttribute("data-src");
+          var iframe = frame.querySelector("iframe");
+          if (src && iframe && !iframe.getAttribute("src")) {
+            iframe.src = src;
+          }
+          var open = frame.classList.toggle("is-open");
+          if (label) label.textContent = open ? "收起 Demo" : "加载实时 Demo";
+          btn.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+      });
+    </script>
   </body>
 </html>

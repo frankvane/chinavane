@@ -1,0 +1,427 @@
+/* =========================================================================
+   vane-design.css — chinavane 定制设计层
+   叠加在 Bootstrap + styles.min.css 之后，不修改任何框架/主题切换逻辑。
+   设计方向：工业实用 + 粗野感，品牌橙 #ff6a00 做统一强调，暗色 Hero 打头。
+   ========================================================================= */
+
+/* ---------- 设计令牌 ---------- */
+:root {
+  --vane-accent: #ff6a00;
+  --vane-accent-2: #ffb347;
+  --vane-ink: #0e0d0c;
+  --vane-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --vane-dur: 460ms;
+  --vane-radius: 16px;
+  --vane-shadow-1: 0 2px 10px rgba(16, 16, 15, 0.08);
+  --vane-shadow-2: 0 16px 44px rgba(16, 16, 15, 0.16);
+  --vane-shadow-3: 0 30px 80px rgba(16, 16, 15, 0.22);
+  --font-display: "Sora", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-body: "Manrope", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+/* ---------- 字体 ---------- */
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+h1, h2, h3, h4, h5, .navbar-brand strong {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+/* 组件区块标题加大字距收紧，去掉 Bootstrap 默认 fw-light 的松散感 */
+main section h1.fw-light {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+main section h2 {
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
+  font-weight: 500;
+  color: var(--vane-accent);
+  letter-spacing: 0;
+  margin-top: 0.4rem;
+}
+
+/* ---------- 卡片：去掉丑陋蓝色光晕，换成品牌橙微光 + 上浮 ---------- */
+.box-light {
+  transition: transform var(--vane-dur) var(--vane-ease),
+    box-shadow var(--vane-dur) var(--vane-ease);
+  border-radius: var(--vane-radius);
+  border: 1px solid rgba(16, 16, 15, 0.06);
+  box-shadow: var(--vane-shadow-1);
+}
+.box-light:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 54px rgba(255, 106, 0, 0.16);
+}
+.box-light img {
+  transition: transform var(--vane-dur) var(--vane-ease);
+  border-radius: 10px;
+}
+.box-light:hover img {
+  box-shadow: none;
+  transform: scale(1.02);
+}
+
+/* ---------- 按钮：强调态更锋利 ---------- */
+.btn {
+  font-family: var(--font-body);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: 999px;
+  padding-inline: 1.25rem;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  transition: transform 160ms var(--vane-ease), background-color 160ms ease;
+}
+
+/* ---------- 在线演示 iframe 容器：主题化边框 ---------- */
+.demo-frame {
+  border: 1px solid rgba(16, 16, 15, 0.1);
+  border-radius: var(--vane-radius);
+  overflow: hidden;
+  background: var(--vane-ink);
+  box-shadow: var(--vane-shadow-2);
+}
+/* 默认折叠：iframe 不渲染，占位约 200px，零 React 实例 */
+.demo-frame iframe {
+  display: none;
+  width: 100%;
+  border: 0;
+}
+.demo-frame.is-open iframe {
+  display: block;
+  height: 760px;
+}
+/* 折叠占位：深色氛围 + 加载按钮，点击才注入真实 Demo */
+.demo-placeholder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 200px;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: #f3efe7;
+  background:
+    radial-gradient(130% 130% at 50% -10%, rgba(255, 106, 0, 0.22), transparent 60%),
+    var(--vane-ink);
+}
+.demo-ph-name {
+  font-family: "Sora", var(--vane-font-body);
+  font-weight: 700;
+  font-size: 1.45rem;
+  letter-spacing: 0.04em;
+}
+.demo-ph-sub {
+  margin: 0;
+  max-width: 30rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.demo-play {
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: "Sora", var(--vane-font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #0d0b09;
+  background: linear-gradient(135deg, #ff8a3d, #ff6a00);
+  box-shadow: 0 6px 20px rgba(255, 106, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.demo-play:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(255, 106, 0, 0.45);
+}
+.demo-play:active {
+  transform: translateY(0);
+}
+.demo-play:focus-visible {
+  outline: 2px solid #ffd9b3;
+  outline-offset: 2px;
+}
+.demo-play-ico {
+  flex: none;
+}
+.demo-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  background: var(--vane-ink);
+  color: #f3efe7;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.demo-head .live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b9b3a8;
+}
+.demo-head .live::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #38e07b;
+  box-shadow: 0 0 0 0 rgba(56, 224, 123, 0.6);
+  animation: vane-pulse 2s infinite;
+}
+@keyframes vane-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(56, 224, 123, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(56, 224, 123, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(56, 224, 123, 0); }
+}
+
+/* ---------- 组件概念海报（缺失 4 个组件用） ---------- */
+.vane-poster {
+  width: 100%;
+  height: auto;
+  border-radius: var(--vane-radius);
+  display: block;
+  box-shadow: var(--vane-shadow-2);
+}
+
+/* ---------- HERO ---------- */
+.vane-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: #f4f0e8;
+  background: var(--vane-ink);
+  padding: clamp(4rem, 11vw, 8.5rem) 0 clamp(3rem, 7vw, 5rem);
+}
+.vane-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(46rem 34rem at 10% -12%, rgba(255, 106, 0, 0.5), transparent 60%),
+    radial-gradient(40rem 32rem at 94% 4%, rgba(124, 92, 255, 0.32), transparent 58%),
+    radial-gradient(38rem 30rem at 58% 122%, rgba(45, 212, 191, 0.22), transparent 60%);
+  filter: saturate(1.12);
+}
+.vane-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.05;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.vane-hero .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vane-accent-2);
+  border: 1px solid rgba(255, 179, 71, 0.4);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+}
+.vane-hero .eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--vane-accent);
+}
+.vane-hero h1 {
+  font-weight: 700;
+  font-size: clamp(2.6rem, 7.2vw, 5.4rem);
+  line-height: 1.0;
+  letter-spacing: -0.035em;
+  margin: 1.4rem 0 1.1rem;
+  max-width: 16ch;
+}
+.vane-hero h1 .grad {
+  background: linear-gradient(100deg, var(--vane-accent-2), var(--vane-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.vane-hero .lead {
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.7;
+  color: rgba(244, 240, 232, 0.78);
+  max-width: 52ch;
+}
+.vane-hero .hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+.vane-hero .hero-cta .btn {
+  --bs-btn-padding-y: 0.7rem;
+  --bs-btn-padding-x: 1.5rem;
+  font-weight: 700;
+}
+.vane-hero .btn-primary {
+  --bs-btn-bg: var(--vane-accent);
+  --bs-btn-border-color: var(--vane-accent);
+  --bs-btn-hover-bg: #ff8224;
+  --bs-btn-hover-border-color: #ff8224;
+  --bs-btn-color: #1a1208;
+}
+.vane-hero .btn-outline-light {
+  --bs-btn-color: #f4f0e8;
+  --bs-btn-border-color: rgba(244, 240, 232, 0.4);
+  --bs-btn-hover-bg: rgba(244, 240, 232, 0.1);
+  --bs-btn-hover-color: #fff;
+}
+.vane-hero .stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.2rem, 4vw, 3rem);
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(244, 240, 232, 0.14);
+}
+.vane-hero .stats .num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.vane-hero .stats .lbl {
+  font-size: 0.82rem;
+  color: rgba(244, 240, 232, 0.6);
+  margin-top: 0.4rem;
+}
+
+/* 组件名跑马灯 */
+.vane-marquee {
+  position: relative;
+  margin-top: 3.5rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+.vane-marquee .track {
+  display: flex;
+  gap: 2.5rem;
+  width: max-content;
+  animation: vane-scroll 26s linear infinite;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  letter-spacing: -0.01em;
+  color: rgba(244, 240, 232, 0.5);
+}
+.vane-marquee .track span b {
+  color: var(--vane-accent-2);
+}
+@keyframes vane-scroll {
+  to { transform: translateX(-50%); }
+}
+
+/* ---------- 区块节奏与分隔 ---------- */
+main section.container {
+  scroll-margin-top: 80px;
+}
+.vane-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(16, 16, 15, 0.14), transparent);
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+/* ---------- 区块标题（组件库 / 教程 分隔） ---------- */
+.vane-section-head {
+  padding: clamp(3.2rem, 6vw, 4.8rem) 0 clamp(0.5rem, 1.5vw, 1.2rem);
+  scroll-margin-top: 80px;
+}
+.vane-section-head .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vane-accent);
+  border: 1px solid rgba(255, 106, 0, 0.4);
+  border-radius: 999px;
+  padding: 0.32rem 0.9rem;
+}
+.vane-section-head .eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--vane-accent);
+}
+.vane-section-head .title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 4.4vw, 2.9rem);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 1rem 0 0.6rem;
+  color: var(--bs-body-color);
+}
+.vane-section-head .sub {
+  font-size: clamp(1rem, 1.5vw, 1.12rem);
+  line-height: 1.7;
+  color: var(--bs-secondary-color);
+  max-width: 60ch;
+  margin: 0;
+}
+.vane-section-head .accent-bar {
+  width: 64px;
+  height: 5px;
+  border-radius: 999px;
+  margin-top: 1.3rem;
+  background: linear-gradient(90deg, var(--vane-accent), var(--vane-accent-2));
+}
+
+/* ---------- 滚动揭示 ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--vane-dur) var(--vane-ease),
+    transform var(--vane-dur) var(--vane-ease);
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- 降级 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .vane-marquee .track { animation: none; }
+  .demo-head .live::before { animation: none; }
+  .box-light:hover { transform: none; }
+  .btn:hover { transform: none; }
+}
+
+/* ---------- 响应式收紧 ---------- */
+@media (max-width: 767.98px) {
+  .vane-hero { padding-top: 3.5rem; }
+  .demo-frame.is-open iframe { height: 560px; }
+  main section h2 { font-size: 1.05rem; }
+}

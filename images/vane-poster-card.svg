@@ -1,0 +1,41 @@
+<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="vane-card 概念海报">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#241a0e"/>
+      <stop offset="1" stop-color="#120c05"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.16" r="0.7">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="440" rx="22" fill="url(#bg)"/>
+  <rect width="600" height="440" rx="22" fill="url(#glow)"/>
+  <!-- 产品卡外框 -->
+  <rect x="78" y="116" width="224" height="256" rx="16" fill="none" stroke="#f59e0b" stroke-width="3"/>
+  <!-- 图片占位 -->
+  <rect x="96" y="134" width="188" height="116" rx="10" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <circle cx="128" cy="162" r="9" fill="#f59e0b"/>
+  <path d="M102 236 l44 -36 l30 24 l24 -20 l44 32 v8 a10 10 0 0 1 -10 10 h-188 a10 10 0 0 1 -10 -10 z" fill="#f59e0b"/>
+  <!-- 标题与描述行 -->
+  <rect x="96" y="266" width="150" height="12" rx="6" fill="#f59e0b" opacity="0.9"/>
+  <rect x="96" y="288" width="188" height="9" rx="4.5" fill="#f59e0b" opacity="0.5"/>
+  <rect x="96" y="304" width="158" height="9" rx="4.5" fill="#f59e0b" opacity="0.5"/>
+  <!-- 星级 -->
+  <g fill="#fcd34d">
+    <path transform="translate(100,332)" d="M0 -6 L1.8 -1.8 L6.5 -1.8 L2.8 0.9 L4 6 L0 3 L-4 6 L-2.8 0.9 L-6.5 -1.8 L-1.8 -1.8 Z"/>
+    <path transform="translate(124,332)" d="M0 -6 L1.8 -1.8 L6.5 -1.8 L2.8 0.9 L4 6 L0 3 L-4 6 L-2.8 0.9 L-6.5 -1.8 L-1.8 -1.8 Z"/>
+    <path transform="translate(148,332)" d="M0 -6 L1.8 -1.8 L6.5 -1.8 L2.8 0.9 L4 6 L0 3 L-4 6 L-2.8 0.9 L-6.5 -1.8 L-1.8 -1.8 Z"/>
+    <path transform="translate(172,332)" d="M0 -6 L1.8 -1.8 L6.5 -1.8 L2.8 0.9 L4 6 L0 3 L-4 6 L-2.8 0.9 L-6.5 -1.8 L-1.8 -1.8 Z"/>
+    <path transform="translate(196,332)" d="M0 -6 L1.8 -1.8 L6.5 -1.8 L2.8 0.9 L4 6 L0 3 L-4 6 L-2.8 0.9 L-6.5 -1.8 L-1.8 -1.8 Z"/>
+  </g>
+  <!-- 价格标签 -->
+  <path d="M452 146 c0 -16 14 -28 30 -28 h24 a8 8 0 0 1 8 8 v40 a8 8 0 0 1 -8 8 h-24 c-16 0 -30 -12 -30 -28 z" fill="#f59e0b"/>
+  <circle cx="470" cy="146" r="6" fill="#120c05"/>
+  <!-- 字母徽标 -->
+  <circle cx="500" cy="92" r="40" fill="#f59e0b"/>
+  <text x="500" y="108" text-anchor="middle" font-family="Sora, sans-serif" font-size="44" font-weight="700" fill="#120c05">K</text>
+  <!-- 名称 -->
+  <text x="50" y="406" font-family="Sora, sans-serif" font-size="30" font-weight="700" fill="#f4f0e8" letter-spacing="-0.5">vane-card</text>
+  <text x="50" y="430" font-family="Manrope, sans-serif" font-size="15" fill="#f59e0b" letter-spacing="2">PRODUCT CARD</text>
+</svg>

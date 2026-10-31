@@ -1,0 +1,36 @@
+<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="vane-coupon 概念海报">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d1014"/>
+      <stop offset="1" stop-color="#0c0809"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.18" r="0.7">
+      <stop offset="0" stop-color="#ff4d6d" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ff4d6d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="440" rx="22" fill="url(#bg)"/>
+  <rect width="600" height="440" rx="22" fill="url(#glow)"/>
+  <!-- 券身 -->
+  <g>
+    <rect x="90" y="130" width="420" height="180" rx="18" fill="none" stroke="#ff4d6d" stroke-width="3"/>
+    <!-- 左侧金额区 -->
+    <path d="M90 148 v144 a18 18 0 0 0 18 18 h120 v-180 h-120 a18 18 0 0 0 -18 18 z" fill="rgba(255,77,109,0.12)"/>
+    <text x="168" y="232" text-anchor="middle" font-family="Sora, sans-serif" font-size="64" font-weight="700" fill="#ff4d6d">¥50</text>
+    <text x="168" y="262" text-anchor="middle" font-family="Manrope, sans-serif" font-size="14" fill="#ffb3c0" letter-spacing="1">满 299 可用</text>
+    <!-- 齿孔分割 -->
+    <line x1="290" y1="130" x2="290" y2="310" stroke="#ff4d6d" stroke-width="2" stroke-dasharray="2 10" opacity="0.7"/>
+    <!-- 右侧信息 -->
+    <text x="330" y="190" font-family="Sora, sans-serif" font-size="24" font-weight="700" fill="#f4f0e8">新人专享券</text>
+    <text x="330" y="220" font-family="Manrope, sans-serif" font-size="14" fill="#c9bcc0">领取即生效 · 7 天有效</text>
+    <!-- 领取按钮 -->
+    <rect x="330" y="244" width="120" height="40" rx="20" fill="#ff4d6d"/>
+    <text x="390" y="269" text-anchor="middle" font-family="Manrope, sans-serif" font-size="16" font-weight="700" fill="#1d1014">立即领取</text>
+  </g>
+  <!-- 徽标 -->
+  <circle cx="500" cy="96" r="40" fill="#ff4d6d"/>
+  <text x="500" y="112" text-anchor="middle" font-family="Sora, sans-serif" font-size="40" font-weight="700" fill="#1d1014">优</text>
+  <!-- 名称 -->
+  <text x="50" y="406" font-family="Sora, sans-serif" font-size="30" font-weight="700" fill="#f4f0e8" letter-spacing="-0.5">vane-coupon</text>
+  <text x="50" y="430" font-family="Manrope, sans-serif" font-size="15" fill="#ff4d6d" letter-spacing="2">COUPON ENGINE</text>
+</svg>

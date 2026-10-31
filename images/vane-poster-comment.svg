@@ -1,0 +1,35 @@
+<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="vane-comment 概念海报">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1611"/>
+      <stop offset="1" stop-color="#0c0a08"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.16" r="0.7">
+      <stop offset="0" stop-color="#ff7a29" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff7a29" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="440" rx="22" fill="url(#bg)"/>
+  <rect width="600" height="440" rx="22" fill="url(#glow)"/>
+  <!-- 主对话气泡 -->
+  <g fill="none" stroke="#ff7a29" stroke-width="3" stroke-linejoin="round">
+    <path d="M96 132 h300 a18 18 0 0 1 18 18 v92 a18 18 0 0 1 -18 18 h-176 l-40 36 v-36 h-84 a18 18 0 0 1 -18 -18 v-92 a18 18 0 0 1 18 -18 z"/>
+  </g>
+  <g fill="#ff7a29">
+    <circle cx="148" cy="180" r="7"/>
+    <circle cx="186" cy="180" r="7"/>
+    <circle cx="224" cy="180" r="7"/>
+  </g>
+  <!-- 小气泡 -->
+  <g fill="none" stroke="#ffb347" stroke-width="3" stroke-linejoin="round" opacity="0.85">
+    <path d="M330 250 h150 a16 16 0 0 1 16 16 v58 a16 16 0 0 1 -16 16 h-104 l-30 26 v-26 h-16 a16 16 0 0 1 -16 -16 v-58 a16 16 0 0 1 16 -16 z"/>
+  </g>
+  <!-- 点赞心形 -->
+  <path d="M150 300 c-14 -22 -52 -10 -52 16 c0 22 52 46 52 46 s52 -24 52 -46 c0 -26 -38 -38 -52 -16 z" fill="#ff4d6d"/>
+  <!-- 字母徽标 -->
+  <circle cx="498" cy="96" r="40" fill="#ff7a29"/>
+  <text x="498" y="112" text-anchor="middle" font-family="Sora, sans-serif" font-size="44" font-weight="700" fill="#1c1611">C</text>
+  <!-- 名称 -->
+  <text x="50" y="406" font-family="Sora, sans-serif" font-size="30" font-weight="700" fill="#f4f0e8" letter-spacing="-0.5">vane-comment</text>
+  <text x="50" y="430" font-family="Manrope, sans-serif" font-size="15" fill="#ff7a29" letter-spacing="2">COMMENT ENGINE</text>
+</svg>
