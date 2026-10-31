@@ -503,6 +503,180 @@ main section.py-5 .row.py-lg-5 {
   .btn:hover { transform: none; }
 }
 
+/* =========================================================================
+   后半部分区块精致化（album / 技能点 / 技术栈 / 打赏 / footer）
+   与组件库、教程区同一套设计语言：发丝边框、细双层阴影、统一圆角。
+   ========================================================================= */
+
+/* ---------- Album：老式 Bootstrap 卡片升级为统一精致卡片 ---------- */
+.album {
+  background: var(--bs-body-bg) !important; /* 去掉 Tertiary 灰块，融入页面 */
+}
+.album .card {
+  border: 1px solid var(--vane-hairline);
+  border-radius: var(--vane-radius);
+  overflow: hidden;
+  background: var(--bs-body-bg);
+  box-shadow: var(--vane-shadow-1) !important;
+  transition: transform var(--vane-dur) var(--vane-ease),
+    box-shadow var(--vane-dur) var(--vane-ease);
+}
+.album .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(255, 106, 0, 0.13) !important;
+}
+.album .card > img:not(.new) {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--vane-hairline);
+}
+.album .card .card-body {
+  padding: 1rem 1.05rem 1.1rem;
+}
+.album .card .card-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.02rem;
+  letter-spacing: -0.02em;
+  color: var(--bs-body-color) !important;
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.album .card .new-tag {
+  width: 34px;
+  height: auto;
+  flex: none;
+}
+.album .card .card-text {
+  font-size: 0.84rem;
+  line-height: 1.52;
+  color: var(--bs-secondary-color);
+  margin: 0 0 0.7rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.album .card small.text-body-secondary {
+  font-size: 0.76rem;
+  line-height: 1.9;
+  display: block;
+}
+.album .card small img {
+  width: 14px;
+  height: 14px;
+  vertical-align: -2px;
+  margin: 0 0.2rem 0 0;
+  opacity: 0.65;
+}
+.album .card .new {
+  width: 50px;
+  height: 50px;
+}
+.album .card .btn-group {
+  width: 100%;
+  gap: 0.4rem;
+}
+.album .card .btn-group .btn {
+  flex: 1;
+}
+
+/* ---------- 区块小标题（技能点 / 技术栈 / 打赏）精致化 ---------- */
+.goals-title {
+  font-family: var(--font-display);
+  font-weight: 700 !important;
+  letter-spacing: -0.03em;
+  color: var(--bs-body-color) !important;
+  line-height: 1.1;
+}
+
+/* 技能点小卡 */
+.skill-point {
+  padding: 1.3rem 1rem !important;
+  border-radius: var(--vane-radius);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-point img {
+  width: 82px !important;
+  height: 82px !important;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+  padding: 9px;
+  margin: 0 0 0.7rem !important;
+  box-shadow: var(--vane-shadow-1);
+}
+.skill-point p {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--bs-secondary-color);
+  margin: 0;
+}
+
+/* 技术栈图标瓷砖 */
+.tech-tile {
+  padding: 1.1rem !important;
+  border-radius: var(--vane-radius);
+  background: var(--bs-body-bg);
+  border: 1px solid var(--vane-hairline);
+  box-shadow: var(--vane-shadow-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--vane-dur) var(--vane-ease),
+    box-shadow var(--vane-dur) var(--vane-ease);
+}
+.tech-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--vane-shadow-2);
+}
+.tech-tile img {
+  max-height: 56px;
+  width: auto;
+}
+
+/* 渐变强调文字（替换内联黄/粉） */
+.vane-grad-text {
+  background: linear-gradient(100deg, var(--vane-accent-2), var(--vane-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+/* ---------- 打赏区 / footer 精致化 ---------- */
+section.py-5.container.mt-3 .row.box-light {
+  border-radius: var(--vane-radius);
+  padding: clamp(1.6rem, 3vw, 2.4rem) !important;
+}
+section.py-5.container.mt-3 .row.box-light p:last-of-type {
+  color: var(--bs-secondary-color);
+  font-size: 0.86rem;
+  line-height: 1.85;
+  margin-top: 0.4rem;
+}
+footer.text-body-secondary {
+  border-top: 1px solid var(--vane-hairline-strong);
+  padding-top: 2.4rem !important;
+  padding-bottom: 2.4rem !important;
+}
+footer.text-body-secondary a {
+  text-decoration: none;
+}
+footer.text-body-secondary a:hover {
+  text-decoration: underline;
+}
+
+
 /* ---------- 响应式收紧 ---------- */
 @media (max-width: 767.98px) {
   .vane-hero { padding-top: 2.6rem; }
