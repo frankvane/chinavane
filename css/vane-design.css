@@ -568,7 +568,7 @@ main section.py-5 .row.py-lg-5 {
   line-height: 1.9;
   display: block;
 }
-.album .card small img {
+.album .card small svg {
   width: 14px;
   height: 14px;
   vertical-align: -2px;
@@ -596,14 +596,31 @@ main section.py-5 .row.py-lg-5 {
   line-height: 1.1;
 }
 
-/* 技能点小卡 */
+/* 技能点小卡
+   关键：卡片样式不能直接依赖列的 gutter padding（那是卡片内边距，
+   会导致相邻卡片边框贴边框），改为 gutter 归零 + 真实 margin 撑开间距。 */
+.skill-row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
 .skill-point {
   padding: 1.3rem 1rem !important;
+  margin: 0 0.5rem 1rem;
   border-radius: var(--vane-radius);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+/* margin 撑开间距后按断点补偿列宽，避免每行列数变少 */
+@media (min-width: 992px) {
+  .skill-row > .skill-point { width: calc(25% - 1rem); }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .skill-row > .skill-point { width: calc(33.333% - 1rem); }
+}
+@media (max-width: 767.98px) {
+  .skill-row > .skill-point { width: calc(100% - 1rem); }
 }
 .skill-point img {
   width: 82px !important;
@@ -624,7 +641,7 @@ main section.py-5 .row.py-lg-5 {
 
 /* 技术栈图标瓷砖 */
 .tech-tile {
-  padding: 1.1rem !important;
+  padding: 1.3rem 0.9rem !important;
   border-radius: var(--vane-radius);
   background: var(--bs-body-bg);
   border: 1px solid var(--vane-hairline);
@@ -640,8 +657,14 @@ main section.py-5 .row.py-lg-5 {
   box-shadow: var(--vane-shadow-2);
 }
 .tech-tile img {
-  max-height: 56px;
+  max-height: 60px;
   width: auto;
+}
+
+/* 目标 / 打赏大卡片：抵消 row 的负外边距，让卡片与容器对齐 */
+main section .row.box-light {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 /* 渐变强调文字（替换内联黄/粉） */
