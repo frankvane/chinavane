@@ -77,117 +77,6 @@ main section h2 {
   transition: transform 160ms var(--vane-ease), background-color 160ms ease;
 }
 
-/* ---------- 在线演示 iframe 容器：主题化边框 ---------- */
-.demo-frame {
-  border: 1px solid rgba(16, 16, 15, 0.1);
-  border-radius: var(--vane-radius);
-  overflow: hidden;
-  background: var(--vane-ink);
-  box-shadow: var(--vane-shadow-2);
-}
-/* 默认折叠：iframe 不渲染，占位约 200px，零 React 实例 */
-.demo-frame iframe {
-  display: none;
-  width: 100%;
-  border: 0;
-}
-.demo-frame.is-open iframe {
-  display: block;
-  height: 760px;
-}
-/* 折叠占位：深色氛围 + 加载按钮，点击才注入真实 Demo */
-.demo-placeholder {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  min-height: 200px;
-  padding: 2.5rem 1rem;
-  text-align: center;
-  color: #f3efe7;
-  background:
-    radial-gradient(130% 130% at 50% -10%, rgba(255, 106, 0, 0.22), transparent 60%),
-    var(--vane-ink);
-}
-.demo-ph-name {
-  font-family: "Sora", var(--vane-font-body);
-  font-weight: 700;
-  font-size: 1.45rem;
-  letter-spacing: 0.04em;
-}
-.demo-ph-sub {
-  margin: 0;
-  max-width: 30rem;
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-.demo-play {
-  margin-top: 0.5rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1.25rem;
-  border: 0;
-  border-radius: 999px;
-  cursor: pointer;
-  font-family: "Sora", var(--vane-font-body);
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: #0d0b09;
-  background: linear-gradient(135deg, #ff8a3d, #ff6a00);
-  box-shadow: 0 6px 20px rgba(255, 106, 0, 0.35);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-.demo-play:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 26px rgba(255, 106, 0, 0.45);
-}
-.demo-play:active {
-  transform: translateY(0);
-}
-.demo-play:focus-visible {
-  outline: 2px solid #ffd9b3;
-  outline-offset: 2px;
-}
-.demo-play-ico {
-  flex: none;
-}
-.demo-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  padding: 0.6rem 0.9rem;
-  background: var(--vane-ink);
-  color: #f3efe7;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-.demo-head .live {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #b9b3a8;
-}
-.demo-head .live::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #38e07b;
-  box-shadow: 0 0 0 0 rgba(56, 224, 123, 0.6);
-  animation: vane-pulse 2s infinite;
-}
-@keyframes vane-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(56, 224, 123, 0.6); }
-  70% { box-shadow: 0 0 0 8px rgba(56, 224, 123, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(56, 224, 123, 0); }
-}
-
 /* ---------- 组件概念海报（缺失 4 个组件用） ---------- */
 .vane-poster {
   width: 100%;
@@ -197,6 +86,78 @@ main section h2 {
   box-shadow: var(--vane-shadow-2);
 }
 
+/* ---------- 组件库网格（替代长列表，紧凑化） ---------- */
+.vane-grid-wrap {
+  padding: clamp(0.5rem, 1.5vw, 1.2rem) 0 clamp(2rem, 4vw, 3rem);
+}
+.vane-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+.vane-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--vane-shadow-1);
+  transition: transform var(--vane-dur) var(--vane-ease),
+    box-shadow var(--vane-dur) var(--vane-ease);
+}
+.vane-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 42px rgba(255, 106, 0, 0.14);
+}
+.vane-card-media {
+  display: block;
+  line-height: 0;
+  background: var(--vane-ink);
+}
+.vane-card-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.vane-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.95rem 1rem 1.05rem;
+  flex: 1;
+}
+.vane-card-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--bs-body-color);
+}
+.vane-card-body p {
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--bs-secondary-color);
+  margin: 0;
+  flex: 1;
+}
+.vane-card-body .btn {
+  align-self: flex-start;
+  margin-top: 0.35rem;
+}
+@media (max-width: 1199.98px) {
+  .vane-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 767.98px) {
+  .vane-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+}
+@media (max-width: 479.98px) {
+  .vane-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- HERO ---------- */
 .vane-hero {
   position: relative;
@@ -204,7 +165,7 @@ main section h2 {
   overflow: hidden;
   color: #f4f0e8;
   background: var(--vane-ink);
-  padding: clamp(4rem, 11vw, 8.5rem) 0 clamp(3rem, 7vw, 5rem);
+  padding: clamp(3rem, 8vw, 6rem) 0 clamp(2.2rem, 5vw, 3.4rem);
 }
 .vane-hero::before {
   content: "";
@@ -351,7 +312,7 @@ main section.container {
 
 /* ---------- 区块标题（组件库 / 教程 分隔） ---------- */
 .vane-section-head {
-  padding: clamp(3.2rem, 6vw, 4.8rem) 0 clamp(0.5rem, 1.5vw, 1.2rem);
+  padding: clamp(2.4rem, 4.5vw, 3.4rem) 0 clamp(0.5rem, 1.5vw, 1.2rem);
   scroll-margin-top: 80px;
 }
 .vane-section-head .eyebrow {
@@ -414,7 +375,6 @@ main section.container {
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   .vane-marquee .track { animation: none; }
-  .demo-head .live::before { animation: none; }
   .box-light:hover { transform: none; }
   .btn:hover { transform: none; }
 }
@@ -422,6 +382,5 @@ main section.container {
 /* ---------- 响应式收紧 ---------- */
 @media (max-width: 767.98px) {
   .vane-hero { padding-top: 3.5rem; }
-  .demo-frame.is-open iframe { height: 560px; }
   main section h2 { font-size: 1.05rem; }
 }
