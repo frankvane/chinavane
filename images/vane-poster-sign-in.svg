@@ -1,0 +1,68 @@
+<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="vane-sign-in 概念海报">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d1208"/>
+      <stop offset="1" stop-color="#0c0806"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.18" r="0.7">
+      <stop offset="0" stop-color="#ff7a29" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff7a29" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="440" rx="22" fill="url(#bg)"/>
+  <rect width="600" height="440" rx="22" fill="url(#glow)"/>
+
+  <!-- 日历卡 -->
+  <rect x="120" y="118" width="360" height="206" rx="18" fill="none" stroke="#cf4407" stroke-width="3"/>
+  <text x="148" y="158" font-family="Sora, sans-serif" font-size="22" font-weight="700" fill="#f4f0e8">11 月 · 连续签到</text>
+  <text x="452" y="158" text-anchor="end" font-family="Manrope, sans-serif" font-size="16" font-weight="700" fill="#cf4407">已签 6 天</text>
+
+  <!-- 7 个签到格 -->
+  <g font-family="Manrope, sans-serif" font-size="13" fill="#ffd9c2">
+    <!-- 前 6 格：已签 -->
+    <g>
+      <rect x="140" y="180" width="40" height="40" rx="9" fill="rgba(207,68,7,0.16)"/>
+      <path d="M151 200 l6 7 l11 -14" fill="none" stroke="#cf4407" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="160" y="238" text-anchor="middle">1</text>
+    </g>
+    <g>
+      <rect x="188" y="180" width="40" height="40" rx="9" fill="rgba(207,68,7,0.16)"/>
+      <path d="M199 200 l6 7 l11 -14" fill="none" stroke="#cf4407" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="208" y="238" text-anchor="middle">2</text>
+    </g>
+    <g>
+      <rect x="236" y="180" width="40" height="40" rx="9" fill="rgba(207,68,7,0.16)"/>
+      <path d="M247 200 l6 7 l11 -14" fill="none" stroke="#cf4407" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="256" y="238" text-anchor="middle">3</text>
+    </g>
+    <g>
+      <rect x="284" y="180" width="40" height="40" rx="9" fill="rgba(207,68,7,0.16)"/>
+      <path d="M295 200 l6 7 l11 -14" fill="none" stroke="#cf4407" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="304" y="238" text-anchor="middle">4</text>
+    </g>
+    <g>
+      <rect x="332" y="180" width="40" height="40" rx="9" fill="rgba(207,68,7,0.16)"/>
+      <path d="M343 200 l6 7 l11 -14" fill="none" stroke="#cf4407" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="352" y="238" text-anchor="middle">5</text>
+    </g>
+    <g>
+      <rect x="380" y="180" width="40" height="40" rx="9" fill="rgba(207,68,7,0.16)"/>
+      <path d="M391 200 l6 7 l11 -14" fill="none" stroke="#cf4407" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="400" y="238" text-anchor="middle">6</text>
+    </g>
+    <!-- 第 7 格：今日，高亮 -->
+    <g>
+      <rect x="428" y="180" width="40" height="40" rx="9" fill="#cf4407"/>
+      <path d="M439 200 l6 7 l11 -14" fill="none" stroke="#1d1208" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="448" y="238" text-anchor="middle" fill="#cf4407" font-weight="700">7</text>
+    </g>
+  </g>
+
+  <!-- 徽标 -->
+  <circle cx="500" cy="96" r="40" fill="#cf4407"/>
+  <text x="500" y="112" text-anchor="middle" font-family="Sora, sans-serif" font-size="40" font-weight="700" fill="#1d1208">签</text>
+
+  <!-- 名称 -->
+  <text x="50" y="406" font-family="Sora, sans-serif" font-size="30" font-weight="700" fill="#f4f0e8" letter-spacing="-0.5">vane-sign-in</text>
+  <text x="50" y="430" font-family="Manrope, sans-serif" font-size="15" fill="#cf4407" letter-spacing="2">DAILY CHECK-IN</text>
+</svg>
