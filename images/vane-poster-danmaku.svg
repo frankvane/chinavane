@@ -1,0 +1,80 @@
+<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="vane-danmaku 概念海报">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e150e"/>
+      <stop offset="1" stop-color="#0b0907"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.84" cy="0.15" r="0.72">
+      <stop offset="0" stop-color="#ff7a29" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ff7a29" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame">
+      <rect width="600" height="440" rx="22"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="600" height="440" fill="url(#bg)"/>
+    <rect width="600" height="440" fill="url(#glow)"/>
+
+    <!-- 弹幕轨道：由左向右飞出的胶囊；右侧 450 之后留给徽标 -->
+    <g font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15">
+      <!-- 第 1 行 -->
+      <g>
+        <rect x="52" y="110" width="128" height="30" rx="15" fill="rgba(255,122,41,0.16)" stroke="#ff7a29" stroke-opacity="0.55"/>
+        <text x="116" y="130" text-anchor="middle" fill="#ffd7bd">前方高能</text>
+      </g>
+      <g opacity="0.55">
+        <rect x="202" y="110" width="86" height="30" rx="15" fill="rgba(244,240,232,0.08)" stroke="#f4f0e8" stroke-opacity="0.28"/>
+        <text x="245" y="130" text-anchor="middle" fill="#ddd8cc">2333</text>
+      </g>
+      <g opacity="0.3">
+        <rect x="306" y="110" width="126" height="30" rx="15" fill="rgba(244,240,232,0.06)" stroke="#f4f0e8" stroke-opacity="0.2"/>
+        <text x="369" y="130" text-anchor="middle" fill="#cfcabd">这波可以的</text>
+      </g>
+
+      <!-- 第 2 行：主弹幕，实心强调 -->
+      <g>
+        <rect x="118" y="158" width="176" height="34" rx="17" fill="#ff7a29"/>
+        <text x="206" y="181" text-anchor="middle" fill="#1b1209" font-weight="700">666666</text>
+      </g>
+      <g opacity="0.45">
+        <rect x="314" y="158" width="112" height="34" rx="17" fill="rgba(255,122,41,0.14)" stroke="#ff7a29" stroke-opacity="0.4"/>
+        <text x="370" y="181" text-anchor="middle" fill="#ffd7bd">主播牛</text>
+      </g>
+
+      <!-- 第 3 行：人物避让区（挖空），弹幕绕行 -->
+      <g>
+        <rect x="50" y="212" width="102" height="30" rx="15" fill="rgba(244,240,232,0.07)" stroke="#f4f0e8" stroke-opacity="0.24"/>
+        <text x="101" y="232" text-anchor="middle" fill="#c9c4b7">哈哈哈哈</text>
+      </g>
+      <rect x="196" y="204" width="196" height="106" rx="18" fill="none" stroke="#ff7a29" stroke-opacity="0.45" stroke-dasharray="7 7"/>
+      <text x="294" y="262" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" fill="#ff9d68" letter-spacing="2.5">SAFE ZONE</text>
+      <g opacity="0.5">
+        <rect x="414" y="228" width="94" height="30" rx="15" fill="rgba(255,122,41,0.12)" stroke="#ff7a29" stroke-opacity="0.35"/>
+        <text x="461" y="248" text-anchor="middle" fill="#ffd7bd">来了来了</text>
+      </g>
+
+      <!-- 第 4 行 -->
+      <g opacity="0.62">
+        <rect x="86" y="320" width="120" height="30" rx="15" fill="rgba(244,240,232,0.07)" stroke="#f4f0e8" stroke-opacity="0.26"/>
+        <text x="146" y="340" text-anchor="middle" fill="#cdc8bb">刷屏预警</text>
+      </g>
+      <g opacity="0.38">
+        <rect x="228" y="320" width="132" height="30" rx="15" fill="rgba(244,240,232,0.05)" stroke="#f4f0e8" stroke-opacity="0.18"/>
+        <text x="294" y="340" text-anchor="middle" fill="#c4bfb2">弹幕不挡脸</text>
+      </g>
+      <g opacity="0.28">
+        <rect x="382" y="320" width="118" height="30" rx="15" fill="rgba(255,122,41,0.1)" stroke="#ff7a29" stroke-opacity="0.3"/>
+        <text x="441" y="340" text-anchor="middle" fill="#ffd7bd">骨架识别中</text>
+      </g>
+    </g>
+
+    <!-- 字母徽标 -->
+    <circle cx="498" cy="88" r="40" fill="#ff7a29"/>
+    <text x="498" y="104" text-anchor="middle" font-family="Sora, sans-serif" font-size="40" font-weight="700" fill="#1b1209">弹</text>
+
+    <!-- 名称 -->
+    <text x="50" y="406" font-family="Sora, sans-serif" font-size="30" font-weight="700" fill="#f4f0e8" letter-spacing="-0.5">vane-danmaku</text>
+    <text x="50" y="430" font-family="Manrope, sans-serif" font-size="15" fill="#ff7a29" letter-spacing="2">DANMAKU ENGINE</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+import{P as i,D as l,j as e,L as n,F as d,a as o,C as h,w as m,c as x,b as j,d as p,W as u,m as g}from"./index-DmMmMiOb.js";import{S as a}from"./catalog-Bv8a7vcA.js";const f=g({count:18,seed:2026,heightRange:[120,220]}),v=m(u,[x({minColumnWidth:110,maxColumns:4}),j({columnGap:10,rowGap:10}),p({duration:240})]),N=`import { WaterfallCore, withPlugins } from "vane-waterfall";
+import {
+  createAutoColumnPlugin,
+  createGapPlugin,
+  createInfiniteScrollPlugin,
+} from "vane-waterfall/custom-plugins";
+
+// 1. 装配：一个组件类型，模块顶层调一次
+const Waterfall = withPlugins(WaterfallCore, [
+  createAutoColumnPlugin({ minColumnWidth: 220, maxColumns: 4 }),
+  createGapPlugin({ columnGap: 16, rowGap: 16 }),
+  createInfiniteScrollPlugin({ threshold: 400 }),
+]);
+
+// 2. 使用：和普通列表组件一样
+export function Feed({ items, loadMore }) {
+  return (
+    <Waterfall
+      items={items}
+      onLoadMore={loadMore}
+      containerStyle={{ height: "100vh" }}
+      keyExtractor={(item) => item.id}
+      renderItem={(item) => <Card data={item} />}
+    />
+  );
+}`,C=[["布局是纯函数","computeLayout 不碰 DOM，可直接对快照做等价性单测（8 组数字断言）"],["布局钩子有执行点","calculateColumns / calculateColumnWidth / calculateItemPosition 三处真的会被调用，不是摆设"],["虚拟化只裁渲染","未渲染项按 estimateHeight 占位，总高不会缩水，滚动条不跳"],["钩子有生命周期","onMount 返回的清理函数会被执行，监听不会泄漏"],["priority 越大越先","与旧版语义一致，不做 1000-x 反转"],["插件可单测","26 个插件都能在 happy-dom 里直接调钩子断言，不需要浏览器"]],P=[["装配一次","withPlugins 放模块顶层（纯配置）或 useMemo 里（钩子要读闭包）。每次渲染都调会造出新组件类型，React 直接卸载重建。"],["一插件一职责","26 个插件、20 个钩子。想要什么行为就勾哪个，不想付的代价不装。"],["Core 只做三件事","测量 / 布局 / 滚动。其余所有「旁边那一堆需求」都在插件里。"]];function y(){const c=[{k:`${i.length}`,v:"领域插件",s:"5 组 · 按 priority 串联"},{k:`${a.length}`,v:"组合场景",s:"每卡两份可复制源码"},{k:`${l.length}`,v:"逐项示例",s:"一插件一页 · 参数可拖"},{k:"20",v:"领域钩子",s:"4 生命周期 + 16 业务"}];return e.jsxs("div",{children:[e.jsxs("div",{className:"masthead",children:[e.jsx("b",{children:"specimen № 02"}),e.jsx("s",{"aria-hidden":!0}),e.jsx("span",{children:"masonry · plugin-composed"}),e.jsx("s",{"aria-hidden":!0}),e.jsxs("span",{children:[i.length," plugins / ",a.length," plates"]})]}),e.jsxs("section",{className:"hero",children:[e.jsxs("h1",{children:["瀑布流本身很简单，",e.jsx("em",{children:"难的是它旁边那一堆需求。"})]}),e.jsxs("div",{className:"hero-copy",children:[e.jsxs("p",{className:"lede",children:["可变高、响应式列数、置顶、分组吸顶、拖拽换位、无限加载、千项虚拟化 —— 这些不该揉进一个 800 行的组件里。vane-waterfall 把它们拆成 ",e.jsxs("b",{children:[i.length," 个领域插件"]}),"， Core 只负责「测量 + 布局 + 滚动」。"]}),e.jsx("ul",{className:"feature-list",children:C.map(([s,r],t)=>e.jsxs("li",{children:[e.jsx("em",{"aria-hidden":!0,children:String(t+1).padStart(2,"0")}),e.jsxs("div",{children:[e.jsx("b",{children:s}),e.jsx("span",{children:r})]})]},s))}),e.jsxs("p",{className:"hero-links",children:[e.jsx(n,{to:`/demo/${l[0].meta.slug}`,children:"从「基础示例」开始"}),e.jsxs(n,{to:"/scenarios",children:["看 ",a.length," 个真实版式"]})]})]}),e.jsxs("figure",{className:"plate hero-demo",children:[e.jsxs("figcaption",{className:"plate-cap",children:[e.jsx("b",{children:"plate 00"}),e.jsx("span",{children:"18 items · auto-column · gap 10"}),e.jsx("em",{children:"live"})]}),e.jsx("div",{className:"plate-ruler","aria-hidden":!0}),e.jsx("div",{className:"plate-body",children:e.jsx(v,{items:f,containerStyle:{height:424},keyExtractor:s=>s.id,renderItem:s=>e.jsx(d,{card:s,variant:"plain"})})})]})]}),e.jsx("section",{className:"ledger","aria-label":"项目规模",children:c.map(s=>e.jsxs("div",{children:[e.jsx("b",{children:s.k}),e.jsx("span",{children:s.v}),e.jsx("em",{children:s.s})]},s.v))}),e.jsxs("section",{className:"two-col",children:[e.jsxs("div",{children:[e.jsxs("div",{className:"section-head",children:[e.jsx("h2",{children:"五分钟上手"}),e.jsx("code",{children:"2 steps"})]}),e.jsx("p",{children:"两步：装配成组件类型，然后当普通列表用。所有行为都来自插件，Core 的 props 只有布局相关的那几个。"}),e.jsx("ul",{className:"notes",children:P.map(([s,r],t)=>e.jsxs("li",{children:[e.jsx("em",{"aria-hidden":!0,children:String(t+1).padStart(2,"0")}),e.jsxs("span",{children:[e.jsx("b",{children:s})," —— ",r]})]},s))}),e.jsxs("p",{style:{marginTop:14},children:["想逐个插件看效果，走"," ",e.jsx(n,{to:`/demo/${l[0].meta.slug}`,children:"逐项示例"}),"（",o.length," /"," ",i.length," 个插件各有一页，另有 ref / 事件 / 基础 props 六页）。"]})]}),e.jsx(h,{code:N,title:"feed.tsx",collapseAfter:0,maxHeight:520})]}),e.jsxs("section",{children:[e.jsxs("div",{className:"section-head",children:[e.jsx("h2",{children:"目录"}),e.jsx("code",{children:"contents"})]}),e.jsxs("div",{className:"index-list",children:[e.jsxs(n,{className:"index-row",to:"/plugins",children:[e.jsx("em",{children:"02"}),e.jsxs("span",{children:[e.jsx("strong",{children:"插件工坊"}),e.jsxs("span",{children:["勾选 ",i.length," 个插件，实时看效果并生成装配代码"]})]}),e.jsx("i",{"aria-hidden":!0,children:"→"})]}),e.jsxs(n,{className:"index-row",to:"/scenarios",children:[e.jsx("em",{children:"03"}),e.jsxs("span",{children:[e.jsx("strong",{children:"场景示例"}),e.jsxs("span",{children:[a.length," 个真实版式（图文 / 电商 / 视频 / 看板…），每卡带可复制的完整源码"]})]}),e.jsx("i",{"aria-hidden":!0,children:"→"})]}),e.jsxs(n,{className:"index-row",to:`/demo/${l[0].meta.slug}`,children:[e.jsx("em",{children:"04"}),e.jsxs("span",{children:[e.jsx("strong",{children:"逐项示例"}),e.jsxs("span",{children:[l.length," 页：一插件一页，带参数控件与随参数变化的装配代码"]})]}),e.jsx("i",{"aria-hidden":!0,children:"→"})]})]})]})]})}export{y as HomePage};
