@@ -1,4 +1,4 @@
-import{r as o,P as d,w as y,j as s,G as x,b as g,c as C,d as w,C as P,e as b}from"./index-DA861cpE.js";const S=new Map(d.map(i=>[i.dir,i]));function $(i){return i.map(c=>c.factory).sort().map(c=>{const h=`${c.replace(/^create/,"").replace(/Plugin$/,"")}Plugin`;return`import { ${c} } from "vane-candidate/custom-plugins/${h}";`}).join(`
+import{r as o,P as d,w as y,j as s,G as x,b as g,c as C,d as w,C as P,e as b}from"./index-CIOjJThE.js";const S=new Map(d.map(i=>[i.dir,i]));function $(i){return i.map(c=>c.factory).sort().map(c=>{const h=`${c.replace(/^create/,"").replace(/Plugin$/,"")}Plugin`;return`import { ${c} } from "vane-candidate/custom-plugins/${h}";`}).join(`
 `)}function E(i){return i.length===0?`// 没有勾选任何插件 —— Core 只渲染看板骨架与卡片正文
 const Board = CandidateCore;`:`import { CandidateCore, withPlugins } from "vane-candidate";
 import type { Candidate } from "vane-candidate";

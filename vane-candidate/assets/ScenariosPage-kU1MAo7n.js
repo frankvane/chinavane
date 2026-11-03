@@ -1,4 +1,4 @@
-import{r as d,j as s,C as j,S as r,f as p,U as g}from"./index-DA861cpE.js";import{a as f,s as N}from"./audit-candidate-d0BA5Px3.js";function b(l){return l.plugs.map(i=>i.fn).sort().map(i=>{const n=`${i.replace(/^create/,"").replace(/Plugin$/,"")}Plugin`;return`import { ${i} } from "vane-candidate/custom-plugins/${n}";`}).join(`
+import{r as d,j as s,C as j,S as r,f as p,U as g}from"./index-CIOjJThE.js";import{a as f,s as N}from"./audit-candidate-d0BA5Px3.js";function b(l){return l.plugs.map(i=>i.fn).sort().map(i=>{const n=`${i.replace(/^create/,"").replace(/Plugin$/,"")}Plugin`;return`import { ${i} } from "vane-candidate/custom-plugins/${n}";`}).join(`
 `)}function v(l){const e=l.plugs.map(n=>`  ${n.fn}(${n.cfg?`{ ${n.cfg} }`:""}),`).join(`
 `),i=l.props.map(n=>`      ${n}`).join(`
 `);return`// ${l.title} · 最小装配（照抄即可跑）
