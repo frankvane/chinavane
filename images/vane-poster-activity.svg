@@ -1,0 +1,99 @@
+<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="vane-activity 概念海报">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1206"/>
+      <stop offset="1" stop-color="#0b0a09"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.16" cy="0.08" r="0.78">
+      <stop offset="0" stop-color="#ff7a29" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#ff7a29" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7a29"/>
+      <stop offset="1" stop-color="#ffb066"/>
+    </linearGradient>
+    <linearGradient id="coupon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8f47"/>
+      <stop offset="1" stop-color="#cf4407"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="440" rx="22" fill="url(#bg)"/>
+  <rect width="600" height="440" rx="22" fill="url(#glow)"/>
+
+  <!-- 活动面板 -->
+  <rect x="48" y="64" width="300" height="312" rx="18" fill="#131110" stroke="#2a2320"/>
+
+  <!-- 头部：标题 + 剩余天数徽章 -->
+  <rect x="72" y="88" width="126" height="12" rx="6" fill="#f4efe6"/>
+  <rect x="72" y="110" width="84" height="8" rx="4" fill="#6b7078"/>
+  <rect x="256" y="86" width="68" height="20" rx="10" fill="#3a2214"/>
+  <path d="M268 96h8l2 2-2 2h-8z" fill="#ff7a29"/>
+  <rect x="282" y="93" width="32" height="6" rx="3" fill="#ffb066"/>
+
+  <!-- 进度条 62% -->
+  <rect x="72" y="144" width="252" height="10" rx="5" fill="#2a2320"/>
+  <rect x="72" y="144" width="156" height="10" rx="5" fill="url(#fill)"/>
+  <rect x="272" y="139" width="52" height="20" rx="10" fill="#ff7a29"/>
+  <rect x="284" y="146" width="28" height="6" rx="3" fill="#2a0f00"/>
+
+  <!-- 任务行 ×3 -->
+  <g>
+    <!-- 已完成 -->
+    <circle cx="86" cy="190" r="10" fill="#ff7a29"/>
+    <path d="M81 190l3.5 3.5L91 186" stroke="#2a0f00" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="106" y="182" width="104" height="9" rx="4.5" fill="#cdc6b8"/>
+    <rect x="106" y="196" width="68" height="7" rx="3.5" fill="#5d636a"/>
+    <rect x="262" y="182" width="62" height="20" rx="10" fill="#242120"/>
+    <rect x="276" y="189" width="34" height="6" rx="3" fill="#8a8f98"/>
+
+    <!-- 进行中 -->
+    <circle cx="86" cy="242" r="10" fill="none" stroke="#ff7a29" stroke-width="2.4"/>
+    <circle cx="86" cy="242" r="4" fill="#ff7a29"/>
+    <rect x="106" y="234" width="132" height="9" rx="4.5" fill="#cdc6b8"/>
+    <rect x="106" y="248" width="86" height="7" rx="3.5" fill="#5d636a"/>
+    <rect x="262" y="234" width="62" height="20" rx="10" fill="#cf4407"/>
+    <rect x="276" y="241" width="34" height="6" rx="3" fill="#fff6ee"/>
+
+    <!-- 未解锁 -->
+    <circle cx="86" cy="294" r="10" fill="none" stroke="#3a3a3a" stroke-width="2.4"/>
+    <rect x="83" y="291" width="6" height="7" rx="1.5" fill="#5d636a"/>
+    <path d="M84 291v-2a2 2 0 0 1 4 0v2" stroke="#5d636a" stroke-width="1.8" fill="none"/>
+    <rect x="106" y="286" width="98" height="9" rx="4.5" fill="#8a8f98"/>
+    <rect x="106" y="300" width="62" height="7" rx="3.5" fill="#4a4a4a"/>
+    <rect x="262" y="286" width="62" height="20" rx="10" fill="#242120"/>
+    <rect x="276" y="293" width="34" height="6" rx="3" fill="#6b7078"/>
+  </g>
+
+  <!-- 规则折叠条 -->
+  <rect x="72" y="330" width="252" height="1" fill="#2a2320"/>
+  <rect x="72" y="344" width="56" height="8" rx="4" fill="#8a8f98"/>
+  <path d="M98 362l4 4 4-4" stroke="#ff7a29" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 悬停的奖励券 -->
+  <g transform="rotate(-7 468 190)">
+    <rect x="378" y="140" width="180" height="76" rx="14" fill="url(#coupon)"/>
+    <rect x="398" y="196" width="140" height="1" fill="none" stroke="#2a0f00" stroke-opacity="0.4" stroke-dasharray="4 4"/>
+    <rect x="398" y="158" width="52" height="12" rx="6" fill="#2a0f00"/>
+    <rect x="398" y="178" width="96" height="8" rx="4" fill="#2a0f00" opacity="0.55"/>
+    <text x="504" y="176" font-family="system-ui,sans-serif" font-size="26" font-weight="800" fill="#2a0f00">¥20</text>
+  </g>
+
+  <!-- 第二张券（下层） -->
+  <g transform="rotate(6 470 268)">
+    <rect x="392" y="252" width="164" height="60" rx="12" fill="#241a14" stroke="#3f2a1c"/>
+    <rect x="412" y="268" width="46" height="10" rx="5" fill="#ff7a29"/>
+    <rect x="412" y="286" width="88" height="7" rx="3.5" fill="#6b7078"/>
+    <text x="508" y="290" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#ffb066">-30%</text>
+  </g>
+
+  <!-- 插件 chip 列 -->
+  <g opacity="0.95">
+    <rect x="396" y="336" width="60" height="22" rx="11" fill="#1d1a18" stroke="#332b26"/>
+    <rect x="408" y="345" width="36" height="5" rx="2.5" fill="#ff7a29"/>
+    <rect x="464" y="336" width="52" height="22" rx="11" fill="#1d1a18" stroke="#332b26"/>
+    <rect x="474" y="345" width="32" height="5" rx="2.5" fill="#8a8f98"/>
+    <rect x="524" y="336" width="42" height="22" rx="11" fill="#1d1a18" stroke="#332b26"/>
+    <rect x="534" y="345" width="22" height="5" rx="2.5" fill="#8a8f98"/>
+  </g>
+</svg>

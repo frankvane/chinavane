@@ -1,4 +1,4 @@
-import{r as h,j as s,C as j,S as m,d as x,U as g}from"./index-D30QKEX5.js";function f(l){const e=l.plugs.map(c=>c.fn).sort(),n=e.length>3?`import {
+import{r as h,j as s,C as j,S as m,d as x,U as g}from"./index-B69ncHxO.js";function f(l){const e=l.plugs.map(c=>c.fn).sort(),n=e.length>3?`import {
 ${e.map(c=>`  ${c},`).join(`
 `)}
 } from "vane-resume/custom-plugins";`:`import { ${e.join(", ")} } from "vane-resume/custom-plugins";`,r=l.plugs.map(c=>`  ${c.fn}(${c.cfg?`{ ${c.cfg} }`:""}),`).join(`

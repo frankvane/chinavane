@@ -1,4 +1,4 @@
-import{r as t,P as a,w as y,j as s,G as h,b as g,c as R,C as w,R as b}from"./index-D30QKEX5.js";const P=new Map(a.map(c=>[c.dir,c]));function C(c){if(c.length===0)return`// 没有勾选任何插件 —— Core 只渲染结构化数据
+import{r as t,P as a,w as y,j as s,G as h,b as g,c as R,C as w,R as b}from"./index-B69ncHxO.js";const P=new Map(a.map(c=>[c.dir,c]));function C(c){if(c.length===0)return`// 没有勾选任何插件 —— Core 只渲染结构化数据
 const Resume = ResumeCore;`;const d=c.map(l=>l.factory).sort();return`import { ResumeCore, withResumePlugins } from "vane-resume";
 import type { ResumeData } from "vane-resume";
 ${d.length>3?`import {
