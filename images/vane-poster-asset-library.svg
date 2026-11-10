@@ -1,0 +1,95 @@
+<svg viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="vane-asset-library 概念海报">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d1208"/>
+      <stop offset="1" stop-color="#0c0806"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.8" cy="0.18" r="0.7">
+      <stop offset="0" stop-color="#ff7a29" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff7a29" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="440" rx="22" fill="url(#bg)"/>
+  <rect width="600" height="440" rx="22" fill="url(#glow)"/>
+
+  <!-- 工具栏：搜索框 + 筛选 chip -->
+  <rect x="96" y="84" width="216" height="34" rx="17" fill="none" stroke="#4a3categories019" stroke-width="0"/>
+  <rect x="96" y="84" width="216" height="34" rx="17" fill="rgba(207,68,7,0.10)" stroke="#cf4407" stroke-width="2"/>
+  <circle cx="118" cy="101" r="6" fill="none" stroke="#ffd9c2" stroke-width="2"/>
+  <path d="M122.5 105.5 l7 7" stroke="#ffd9c2" stroke-width="2" stroke-linecap="round"/>
+  <text x="136" y="106" font-family="Manrope, sans-serif" font-size="13" fill="#ffd9c2">搜索素材…</text>
+
+  <g font-family="Manrope, sans-serif" font-size="12" fill="#ffd9c2">
+    <rect x="326" y="86" width="52" height="30" rx="15" fill="rgba(207,68,7,0.16)" stroke="#cf4407" stroke-width="2"/>
+    <text x="352" y="106" text-anchor="middle">全部</text>
+    <rect x="386" y="86" width="52" height="30" rx="15" fill="none" stroke="#5a4030" stroke-width="2"/>
+    <text x="412" y="106" text-anchor="middle">图片</text>
+    <rect x="446" y="86" width="52" height="30" rx="15" fill="none" stroke="#5a4030" stroke-width="2"/>
+    <text x="472" y="106" text-anchor="middle">视频</text>
+  </g>
+
+  <!-- 素材墙：4 × 2 网格瓦片 -->
+  <!-- 瓦片 1：图片（山与太阳） -->
+  <rect x="96" y="140" width="118" height="86" rx="10" fill="rgba(207,68,7,0.12)" stroke="#cf4407" stroke-width="2"/>
+  <circle cx="124" cy="164" r="8" fill="#ff7a29"/>
+  <path d="M104 210 l26 -26 l18 18 l14 -14 l24 24" fill="none" stroke="#ffd9c2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 瓦片 2：选中（打勾角标） -->
+  <rect x="226" y="140" width="118" height="86" rx="10" fill="rgba(255,122,41,0.22)" stroke="#ff7a29" stroke-width="3"/>
+  <circle cx="238" cy="152" r="11" fill="#ff7a29"/>
+  <path d="M232.5 152.5 l4 4 l7.5 -8.5" fill="none" stroke="#1d1208" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M238 196 l24 -24 l16 16 l12 -12 l30 28" fill="none" stroke="#ffd9c2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 瓦片 3：视频（播放键 + 时长角标） -->
+  <rect x="356" y="140" width="118" height="86" rx="10" fill="rgba(207,68,7,0.12)" stroke="#cf4407" stroke-width="2"/>
+  <path d="M402 172 l24 14 l-24 14 z" fill="#ff7a29"/>
+  <rect x="436" y="206" width="30" height="14" rx="4" fill="#1d1208" stroke="#cf4407" stroke-width="1.5"/>
+  <text x="451" y="217" text-anchor="middle" font-family="Manrope, sans-serif" font-size="9" fill="#ffd9c2">02:14</text>
+
+  <!-- 瓦片 4：文档 -->
+  <rect x="486" y="140" width="118" height="86" rx="10" fill="none" stroke="#5a4030" stroke-width="2"/>
+  <path d="M520 158 h34 l14 14 v40 h-48 z" fill="rgba(207,68,7,0.10)" stroke="#cf4407" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M554 158 v14 h14" fill="none" stroke="#cf4407" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M528 190 h30 M528 200 h30 M528 210 h18" stroke="#ffd9c2" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- 第二排：三张瓦片 + 批量操作条 -->
+  <rect x="96" y="238" width="118" height="86" rx="10" fill="none" stroke="#5a4030" stroke-width="2"/>
+  <circle cx="124" cy="262" r="8" fill="none" stroke="#cf4407" stroke-width="2"/>
+  <path d="M104 308 l28 -28 l20 20 l16 -16 l22 22" fill="none" stroke="#ffd9c2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="226" y="238" width="118" height="86" rx="10" fill="rgba(207,68,7,0.12)" stroke="#cf4407" stroke-width="2"/>
+  <path d="M272 270 l24 14 l-24 14 z" fill="none" stroke="#ffd9c2" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="304" y="304" width="30" height="14" rx="4" fill="#1d1208" stroke="#cf4407" stroke-width="1.5"/>
+  <text x="319" y="315" text-anchor="middle" font-family="Manrope, sans-serif" font-size="9" fill="#ffd9c2">00:47</text>
+
+  <rect x="356" y="238" width="118" height="86" rx="10" fill="rgba(255,122,41,0.22)" stroke="#ff7a29" stroke-width="3"/>
+  <circle cx="368" cy="250" r="11" fill="#ff7a29"/>
+  <path d="M362.5 250.5 l4 4 l7.5 -8.5" fill="none" stroke="#1d1208" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M366 296 l24 -24 l16 16 l12 -12 l30 28" fill="none" stroke="#ffd9c2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 批量操作条 -->
+  <rect x="486" y="238" width="118" height="86" rx="10" fill="none" stroke="#5a4030" stroke-width="2"/>
+  <rect x="498" y="250" width="94" height="26" rx="13" fill="rgba(207,68,7,0.16)" stroke="#cf4407" stroke-width="2"/>
+  <text x="545" y="268" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" fill="#ffd9c2">已选 2 项</text>
+  <rect x="498" y="284" width="94" height="26" rx="13" fill="#ff7a29"/>
+  <text x="545" y="302" text-anchor="middle" font-family="Manrope, sans-serif" font-size="11" font-weight="700" fill="#1d1208">批量下载</text>
+
+  <!-- 底部：计数 + 分页 -->
+  <g font-family="Manrope, sans-serif" font-size="12" fill="#ffd9c2">
+    <rect x="96" y="344" width="76" height="30" rx="15" fill="none" stroke="#5a4030" stroke-width="2"/>
+    <text x="134" y="364" text-anchor="middle">全部 48</text>
+    <rect x="180" y="344" width="64" height="30" rx="15" fill="rgba(207,68,7,0.16)" stroke="#cf4407" stroke-width="2"/>
+    <text x="212" y="364" text-anchor="middle">图片 42</text>
+    <rect x="252" y="344" width="64" height="30" rx="15" fill="none" stroke="#5a4030" stroke-width="2"/>
+    <text x="284" y="364" text-anchor="middle">视频 6</text>
+    <g text-anchor="middle">
+      <rect x="432" y="344" width="30" height="30" rx="8" fill="#ff7a29"/>
+      <text x="447" y="364" font-weight="700" fill="#1d1208">1</text>
+      <rect x="468" y="344" width="30" height="30" rx="8" fill="none" stroke="#5a4030" stroke-width="2"/>
+      <text x="483" y="364" fill="#ffd9c2">2</text>
+      <rect x="504" y="344" width="30" height="30" rx="8" fill="none" stroke="#5a4030" stroke-width="2"/>
+      <text x="519" y="364" fill="#ffd9c2">3</text>
+      <path d="M544 352 l8 7 l-8 7" fill="none" stroke="#cf4407" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
